@@ -15,6 +15,8 @@
 		1D7E9B2A1EEE8D34008F18BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7E9B281EEE8D34008F18BF /* LaunchScreen.storyboard */; };
 		1D7E9B351EEE8D34008F18BF /* PodProductTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E9B341EEE8D34008F18BF /* PodProductTests.m */; };
 		1D7E9B401EEE8D34008F18BF /* PodProductUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E9B3F1EEE8D34008F18BF /* PodProductUITests.m */; };
+		1DA672FC1EF0F5E0007C2348 /* BaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA672FB1EF0F5E0007C2348 /* BaseTextField.m */; };
+		1DA672FF1EF0F5F3007C2348 /* BaseTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA672FE1EF0F5F3007C2348 /* BaseTextView.m */; };
 		1DB93AB81EEFE09300A6BAD7 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB93AB71EEFE09300A6BAD7 /* UIView+Extension.m */; };
 		1DB93ABB1EEFE09D00A6BAD7 /* HUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB93ABA1EEFE09D00A6BAD7 /* HUDView.m */; };
 		1DB93ABE1EEFE0D700A6BAD7 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB93ABD1EEFE0D700A6BAD7 /* UIImage+Extension.m */; };
@@ -66,6 +68,10 @@
 		1D7E9B3B1EEE8D34008F18BF /* PodProductUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodProductUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7E9B3F1EEE8D34008F18BF /* PodProductUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodProductUITests.m; sourceTree = "<group>"; };
 		1D7E9B411EEE8D34008F18BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA672FA1EF0F5E0007C2348 /* BaseTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextField.h; sourceTree = "<group>"; };
+		1DA672FB1EF0F5E0007C2348 /* BaseTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextField.m; sourceTree = "<group>"; };
+		1DA672FD1EF0F5F3007C2348 /* BaseTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextView.h; sourceTree = "<group>"; };
+		1DA672FE1EF0F5F3007C2348 /* BaseTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextView.m; sourceTree = "<group>"; };
 		1DB93AAD1EEFDD9600A6BAD7 /* SizeConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeConst.h; sourceTree = "<group>"; };
 		1DB93AAE1EEFDDA600A6BAD7 /* CustomConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomConst.h; sourceTree = "<group>"; };
 		1DB93AAF1EEFDDD900A6BAD7 /* FontConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontConst.h; sourceTree = "<group>"; };
@@ -144,6 +150,10 @@
 				1DB93AD91EEFE64600A6BAD7 /* BaseNavigateController.m */,
 				1DB93ADB1EEFE74400A6BAD7 /* BaseTabBarController.h */,
 				1DB93ADC1EEFE74400A6BAD7 /* BaseTabBarController.m */,
+				1DA672FA1EF0F5E0007C2348 /* BaseTextField.h */,
+				1DA672FB1EF0F5E0007C2348 /* BaseTextField.m */,
+				1DA672FD1EF0F5F3007C2348 /* BaseTextView.h */,
+				1DA672FE1EF0F5F3007C2348 /* BaseTextView.m */,
 			);
 			path = BaseUI;
 			sourceTree = "<group>";
@@ -523,8 +533,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DA672FF1EF0F5F3007C2348 /* BaseTextView.m in Sources */,
 				1DB93AC11EEFE10B00A6BAD7 /* UIColor+HexColor.m in Sources */,
 				1DB93ABB1EEFE09D00A6BAD7 /* HUDView.m in Sources */,
+				1DA672FC1EF0F5E0007C2348 /* BaseTextField.m in Sources */,
 				1DB93ABE1EEFE0D700A6BAD7 /* UIImage+Extension.m in Sources */,
 				1DB93AB81EEFE09300A6BAD7 /* UIView+Extension.m in Sources */,
 				1D7E9B221EEE8D34008F18BF /* ViewController.m in Sources */,
