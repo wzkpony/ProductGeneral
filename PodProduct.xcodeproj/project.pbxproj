@@ -17,6 +17,7 @@
 		1D7E9B401EEE8D34008F18BF /* PodProductUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E9B3F1EEE8D34008F18BF /* PodProductUITests.m */; };
 		1DA672FC1EF0F5E0007C2348 /* BaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA672FB1EF0F5E0007C2348 /* BaseTextField.m */; };
 		1DA672FF1EF0F5F3007C2348 /* BaseTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA672FE1EF0F5F3007C2348 /* BaseTextView.m */; };
+		1DA673031EF11AAF007C2348 /* IconFontImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA673021EF11AAF007C2348 /* IconFontImageView.m */; };
 		1DB93AB81EEFE09300A6BAD7 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB93AB71EEFE09300A6BAD7 /* UIView+Extension.m */; };
 		1DB93ABB1EEFE09D00A6BAD7 /* HUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB93ABA1EEFE09D00A6BAD7 /* HUDView.m */; };
 		1DB93ABE1EEFE0D700A6BAD7 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB93ABD1EEFE0D700A6BAD7 /* UIImage+Extension.m */; };
@@ -72,6 +73,8 @@
 		1DA672FB1EF0F5E0007C2348 /* BaseTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextField.m; sourceTree = "<group>"; };
 		1DA672FD1EF0F5F3007C2348 /* BaseTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextView.h; sourceTree = "<group>"; };
 		1DA672FE1EF0F5F3007C2348 /* BaseTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextView.m; sourceTree = "<group>"; };
+		1DA673011EF11AAF007C2348 /* IconFontImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconFontImageView.h; sourceTree = "<group>"; };
+		1DA673021EF11AAF007C2348 /* IconFontImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconFontImageView.m; sourceTree = "<group>"; };
 		1DB93AAD1EEFDD9600A6BAD7 /* SizeConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeConst.h; sourceTree = "<group>"; };
 		1DB93AAE1EEFDDA600A6BAD7 /* CustomConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomConst.h; sourceTree = "<group>"; };
 		1DB93AAF1EEFDDD900A6BAD7 /* FontConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontConst.h; sourceTree = "<group>"; };
@@ -316,6 +319,7 @@
 		1D7E9B651EEE9309008F18BF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1DA673001EF11AAF007C2348 /* IconFontImageView */,
 				1DB93ABF1EEFE10B00A6BAD7 /* UIColor+HexColor.h */,
 				1DB93AC01EEFE10B00A6BAD7 /* UIColor+HexColor.m */,
 				1DB93AB61EEFE08800A6BAD7 /* UIView+Extension.h */,
@@ -330,6 +334,15 @@
 				1DB93AC91EEFE14700A6BAD7 /* TimeStampToString.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		1DA673001EF11AAF007C2348 /* IconFontImageView */ = {
+			isa = PBXGroup;
+			children = (
+				1DA673011EF11AAF007C2348 /* IconFontImageView.h */,
+				1DA673021EF11AAF007C2348 /* IconFontImageView.m */,
+			);
+			path = IconFontImageView;
 			sourceTree = "<group>";
 		};
 		6DC707D5A025ECE1EA8FD010 /* Pods */ = {
@@ -539,6 +552,7 @@
 				1DA672FC1EF0F5E0007C2348 /* BaseTextField.m in Sources */,
 				1DB93ABE1EEFE0D700A6BAD7 /* UIImage+Extension.m in Sources */,
 				1DB93AB81EEFE09300A6BAD7 /* UIView+Extension.m in Sources */,
+				1DA673031EF11AAF007C2348 /* IconFontImageView.m in Sources */,
 				1D7E9B221EEE8D34008F18BF /* ViewController.m in Sources */,
 				1DB93AD71EEFE61D00A6BAD7 /* BaseViewController.m in Sources */,
 				1DB93ACE1EEFE5E400A6BAD7 /* BaseButton.m in Sources */,
