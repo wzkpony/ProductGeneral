@@ -13,4 +13,5 @@ pod 'Wonderful'
 pod 'Masonry'
 pod 'SDCycleScrollView'
 pod 'NJKWebViewProgress'
+pod 'JKCategories'
 end
