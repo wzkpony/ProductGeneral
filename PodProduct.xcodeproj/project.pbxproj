@@ -22,6 +22,11 @@
 		1D353C6E1F3AFC870021FE15 /* ProductAudio.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1D353C601F3AFC870021FE15 /* ProductAudio.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1D748E731F62484500F6E41E /* ScanQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D748E711F62484500F6E41E /* ScanQRCodeViewController.m */; };
 		1D748E741F62484500F6E41E /* ScanQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D748E721F62484500F6E41E /* ScanQRCodeViewController.xib */; };
+		1D748E771F62787800F6E41E /* ExcelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D748E761F62787800F6E41E /* ExcelViewController.m */; };
+		1D748E821F62788600F6E41E /* ExcelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D748E7B1F62788600F6E41E /* ExcelCell.m */; };
+		1D748E831F62788600F6E41E /* ExcelLeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D748E7D1F62788600F6E41E /* ExcelLeftView.m */; };
+		1D748E841F62788600F6E41E /* ExcelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D748E7F1F62788600F6E41E /* ExcelView.m */; };
+		1D748E851F62788600F6E41E /* SubtypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D748E811F62788600F6E41E /* SubtypeView.m */; };
 		1D7E9B1C1EEE8D34008F18BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E9B1B1EEE8D34008F18BF /* main.m */; };
 		1D7E9B1F1EEE8D34008F18BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E9B1E1EEE8D34008F18BF /* AppDelegate.m */; };
 		1D7E9B221EEE8D34008F18BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E9B211EEE8D34008F18BF /* ViewController.m */; };
@@ -142,6 +147,17 @@
 		1D748E701F62484500F6E41E /* ScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRCodeViewController.h; sourceTree = "<group>"; };
 		1D748E711F62484500F6E41E /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeViewController.m; sourceTree = "<group>"; };
 		1D748E721F62484500F6E41E /* ScanQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRCodeViewController.xib; sourceTree = "<group>"; };
+		1D748E751F62787800F6E41E /* ExcelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelViewController.h; sourceTree = "<group>"; };
+		1D748E761F62787800F6E41E /* ExcelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelViewController.m; sourceTree = "<group>"; };
+		1D748E791F62788600F6E41E /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		1D748E7A1F62788600F6E41E /* ExcelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelCell.h; sourceTree = "<group>"; };
+		1D748E7B1F62788600F6E41E /* ExcelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelCell.m; sourceTree = "<group>"; };
+		1D748E7C1F62788600F6E41E /* ExcelLeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelLeftView.h; sourceTree = "<group>"; };
+		1D748E7D1F62788600F6E41E /* ExcelLeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelLeftView.m; sourceTree = "<group>"; };
+		1D748E7E1F62788600F6E41E /* ExcelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelView.h; sourceTree = "<group>"; };
+		1D748E7F1F62788600F6E41E /* ExcelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelView.m; sourceTree = "<group>"; };
+		1D748E801F62788600F6E41E /* SubtypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubtypeView.h; sourceTree = "<group>"; };
+		1D748E811F62788600F6E41E /* SubtypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubtypeView.m; sourceTree = "<group>"; };
 		1D7E9B171EEE8D34008F18BF /* PodProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7E9B1B1EEE8D34008F18BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1D7E9B1D1EEE8D34008F18BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -350,6 +366,8 @@
 		1D55452C1EEFC7E200180BA7 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1D748E751F62787800F6E41E /* ExcelViewController.h */,
+				1D748E761F62787800F6E41E /* ExcelViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -377,6 +395,22 @@
 				1D748E721F62484500F6E41E /* ScanQRCodeViewController.xib */,
 			);
 			path = ScanQRCode;
+			sourceTree = "<group>";
+		};
+		1D748E781F62788600F6E41E /* ExcelView */ = {
+			isa = PBXGroup;
+			children = (
+				1D748E791F62788600F6E41E /* Constant.h */,
+				1D748E7A1F62788600F6E41E /* ExcelCell.h */,
+				1D748E7B1F62788600F6E41E /* ExcelCell.m */,
+				1D748E7C1F62788600F6E41E /* ExcelLeftView.h */,
+				1D748E7D1F62788600F6E41E /* ExcelLeftView.m */,
+				1D748E7E1F62788600F6E41E /* ExcelView.h */,
+				1D748E7F1F62788600F6E41E /* ExcelView.m */,
+				1D748E801F62788600F6E41E /* SubtypeView.h */,
+				1D748E811F62788600F6E41E /* SubtypeView.m */,
+			);
+			path = ExcelView;
 			sourceTree = "<group>";
 		};
 		1D7E9B0E1EEE8D34008F18BF = {
@@ -505,6 +539,7 @@
 		1D7E9B651EEE9309008F18BF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1D748E781F62788600F6E41E /* ExcelView */,
 				1D748E6E1F62452200F6E41E /* ErCodeVC */,
 				1DF3C17F1F163AB900EC8155 /* font_zf8js534raf6flxr */,
 				1DA673001EF11AAF007C2348 /* IconFontImageView */,
@@ -887,12 +922,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DA672FF1EF0F5F3007C2348 /* BaseTextView.m in Sources */,
+				1D748E851F62788600F6E41E /* SubtypeView.m in Sources */,
 				1DB93AC11EEFE10B00A6BAD7 /* UIColor+HexColor.m in Sources */,
 				1DB93ABB1EEFE09D00A6BAD7 /* HUDView.m in Sources */,
 				1DA672FC1EF0F5E0007C2348 /* BaseTextField.m in Sources */,
 				1DB93ABE1EEFE0D700A6BAD7 /* UIImage+Extension.m in Sources */,
 				1D1AA62E1F59250400A591E8 /* BaseTableViewCell.m in Sources */,
 				1D748E731F62484500F6E41E /* ScanQRCodeViewController.m in Sources */,
+				1D748E821F62788600F6E41E /* ExcelCell.m in Sources */,
+				1D748E841F62788600F6E41E /* ExcelView.m in Sources */,
 				1D1AA62B1F5924F300A591E8 /* BaseTableView.m in Sources */,
 				1DB93AB81EEFE09300A6BAD7 /* UIView+Extension.m in Sources */,
 				1DA673031EF11AAF007C2348 /* IconFontImageView.m in Sources */,
@@ -906,7 +944,9 @@
 				1DB93AD11EEFE5F600A6BAD7 /* BaseLabel.m in Sources */,
 				1DB93ADD1EEFE74400A6BAD7 /* BaseTabBarController.m in Sources */,
 				1DB93ADA1EEFE64600A6BAD7 /* BaseNavigateController.m in Sources */,
+				1D748E771F62787800F6E41E /* ExcelViewController.m in Sources */,
 				1D7E9B1C1EEE8D34008F18BF /* main.m in Sources */,
+				1D748E831F62788600F6E41E /* ExcelLeftView.m in Sources */,
 				1DB93AC41EEFE11900A6BAD7 /* NSString+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

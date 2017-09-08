@@ -26,6 +26,14 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSCameraUsageDescription</key>
+	<string>app需要您的同意，才能访问您的相机</string>
+	<key>NSContactsUsageDescription</key>
+	<string>app需要您的同意，才能访问您的通讯录</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>app需要您的同意，才能在使用期间访问位置</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>app需要您的同意，才能访问您的相册</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="u0C-Kh-cqy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SJX-xl-0I6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="eQ3-Wn-dtN">
+            <objects>
+                <navigationController id="SJX-xl-0I6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vw0-49-Cuk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="u0C-Kh-cqy" kind="relationship" relationship="rootViewController" id="bKB-2x-o9A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lm2-pd-yr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2262" y="-147"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="3M2-ee-V4j">
             <objects>
@@ -27,16 +43,45 @@
                                 <color key="backgroundColor" red="1" green="0.88996343268327416" blue="0.69855541311997316" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="二维码扫描"/>
                                 <connections>
-                                    <segue destination="uFm-Ia-vvN" kind="presentation" id="NBb-tJ-XR7"/>
+                                    <segue destination="uFm-Ia-vvN" kind="push" id="9KN-2g-4hq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J99-hO-Xnr">
+                                <rect key="frame" x="112" y="328" width="150" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Excel"/>
+                                <connections>
+                                    <segue destination="Njy-2W-JZN" kind="push" id="Btx-ze-eLM"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="l7G-pM-5IC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rfy-yq-nMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1482.4000000000001" y="-122.78860569715144"/>
+            <point key="canvasLocation" x="-1446" y="-147"/>
+        </scene>
+        <!--Excel View Controller-->
+        <scene sceneID="1ZK-5W-mhn">
+            <objects>
+                <viewController id="Njy-2W-JZN" customClass="ExcelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UVw-GS-W3a"/>
+                        <viewControllerLayoutGuide type="bottom" id="PzW-Xa-QQv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ROc-8a-xSK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YsE-U9-tCT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJf-TG-J79" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-623" y="198"/>
         </scene>
         <!--ScanQR Code View Controller-->
         <scene sceneID="Ttb-EJ-vlP">
@@ -51,10 +96,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="WBB-2W-op5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3b-tD-zVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-831" y="-122"/>
+            <point key="canvasLocation" x="-671" y="-610"/>
         </scene>
     </scenes>
 </document>

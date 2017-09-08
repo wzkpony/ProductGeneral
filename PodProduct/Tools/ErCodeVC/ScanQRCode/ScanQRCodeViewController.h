@@ -27,7 +27,7 @@ typedef enum {
     RFCSampleDtatilView,
 } ComeToScanQR;
 
-@interface ScanQRCodeViewController : ELTBaseViewController
+@interface ScanQRCodeViewController : UIViewController
 @property (strong,nonatomic)AVCaptureDevice * device;
 @property (strong,nonatomic)AVCaptureDeviceInput * input;
 @property (strong,nonatomic)AVCaptureMetadataOutput * output;
