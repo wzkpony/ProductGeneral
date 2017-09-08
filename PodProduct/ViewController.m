@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "IconFontImageView.h"
+#import "ConfigHead.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    
+    
 }
 
 

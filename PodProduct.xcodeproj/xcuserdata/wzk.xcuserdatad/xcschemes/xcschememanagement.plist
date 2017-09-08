@@ -9,9 +9,39 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ProductAudio.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>ProductShare.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>ProductToday.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1D353C361F3AFA220021FE15</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1D353C4C1F3AFA3C0021FE15</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1D353C5F1F3AFC870021FE15</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1D7E9B161EEE8D34008F18BF</key>
 		<dict>
 			<key>primary</key>

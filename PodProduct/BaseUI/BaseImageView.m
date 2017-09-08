@@ -17,5 +17,25 @@
     // Drawing code
 }
 */
-
+-(void)setNetImageUrl:(NSString *)netImageUrl
+{
+    if (_netImageUrl != netImageUrl) {
+        _netImageUrl = netImageUrl;
+        [self sd_setImageWithURL:[NSURL URLWithString:netImageUrl] placeholderImage:[UIImage imageNamed:_defaultImageName]];
+    }
+    
+    
+}
+-(void)setDefaultImageName:(NSString *)defaultImageName
+{
+    if (_defaultImageName != defaultImageName) {
+        _defaultImageName = defaultImageName;
+        
+        if ((_netImageUrl == nil)||([_netImageUrl isEqualToString:@""])) {
+            self.image = [UIImage imageNamed:defaultImageName];
+        }
+       
+    }
+    
+}
 @end

@@ -18,3 +18,5 @@
 
 -(void)addTargetTap:(id)obj action:(SEL)action;//添加事件
 @end
+
+

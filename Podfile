@@ -14,4 +14,5 @@ pod 'Masonry'
 pod 'SDCycleScrollView'
 pod 'NJKWebViewProgress'
 pod 'JKCategories'
+pod 'pop'
 end
