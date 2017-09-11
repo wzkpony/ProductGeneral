@@ -7,42 +7,43 @@
 //
 
 #import "ExcelLeftView.h"
-
 #import "Constant.h"
 
-@interface ExcelLeftView ()<UITableViewDelegate,UITableViewDataSource>
+@interface ExcelLeftView()<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
 @implementation ExcelLeftView
 
-
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+    self.backgroundColor = [UIColor whiteColor];
+    [self prepareLayout];
+}
 - (instancetype)initWithFrame:(CGRect)frame {
     
     if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = [UIColor whiteColor];
-        [self prepareLayout];
+        
     }
     
     return self;
 }
 
 - (void)prepareLayout {
-        
-    self.tableV = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height) style:(UITableViewStylePlain)];
+    
+    self.tableV = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, cellHeight * self.leftArr.count + mHeight) style:(UITableViewStylePlain)];
     
     self.tableV.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self addSubview:self.tableV];
-    
+    //    self.tableV.bounces = YES;
     self.tableV.delegate = self;
-    
     self.tableV.dataSource = self;
-    self.tableV.backgroundColor = [UIColor whiteColor];
-    
+    self.tableV.scrollEnabled = NO;
     self.tableV.showsVerticalScrollIndicator = NO;
     self.tableV.showsHorizontalScrollIndicator = NO;
-        
-    [self.tableV registerClass:[ExcelLeftCell class] forCellReuseIdentifier:@"ExcelLeftCell"];
+    
+    [self.tableV registerClass:[ExcelTestCell class] forCellReuseIdentifier:@"ExcelTestCell"];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -53,13 +54,12 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     SubtypeView* label = [[SubtypeView alloc] initWithFrame:CGRectMake(0, 0, leftWidth, mHeight)];
     label.font = self.fontRightTop;
-    label.text = _topString;
-    [self addSubview:label];
+    label.text = self.topString;
     return label;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    ExcelLeftCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExcelLeftCell" forIndexPath:indexPath];
+    ExcelTestCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExcelTestCell" forIndexPath:indexPath];
     cell.subtypeView.font = self.fontType;
     cell.subtypeView.text = self.leftArr[indexPath.row];
     return cell;
@@ -74,19 +74,9 @@
     return cellHeight;
 }
 
-//同步左侧右侧
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    
-    if (self.delegate != nil) {
-        if ([self.delegate respondsToSelector:@selector(tableViewDidScroll:)]) {
-            [self.delegate tableViewDidScroll:self];
-        }
-    }
-}
-
 @end
 
-@implementation ExcelLeftCell
+@implementation ExcelTestCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     

@@ -8,21 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ExcelLeftView.h"
-
-@interface ExcelView : UIView<UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic, strong) UITableView *rightTableV;
-@property (nonatomic, strong) ExcelLeftView *leftView;
-
-
-@property (nonatomic, assign) id delegate;
-@property (nonatomic, strong) UIFont *fontNumberTopItem;      //顶部文本字体大小
-@property (nonatomic, strong) UIFont *fontNumberLeftItem;     //左边文本字体大小
-@property (nonatomic, strong) UIFont *fontNumberRithtItem;    //右边文本字体大小
-
-@end
-
-
-
+#import "ExcelRightView.h"
+#import "Constant.h"
+@class ExcelView;
 @protocol ExcelViewDelegate <NSObject>
 
 @required
@@ -39,7 +27,23 @@
 
 -(NSString* )excelViewForRightTopString:(ExcelView*)excelView;
 
-
-
-
 @end
+
+
+
+@interface ExcelView : UIScrollView
+
+
+@property (nonatomic, assign) id<ExcelViewDelegate> excel_delegate;
+@property (nonatomic, strong) UIFont *fontNumberTopItem;      //顶部文本字体大小
+@property (nonatomic, strong) UIFont *fontNumberLeftItem;     //左边文本字体大小
+@property (nonatomic, strong) UIFont *fontNumberRithtItem;    //右边文本字体大小
+
+
+
+-(void)reloadDtaeForTableView;
+@end
+
+
+
+

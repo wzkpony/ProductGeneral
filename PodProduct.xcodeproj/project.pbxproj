@@ -20,6 +20,7 @@
 		1D353C671F3AFC870021FE15 /* AudioUnitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D353C661F3AFC870021FE15 /* AudioUnitViewController.m */; };
 		1D353C6A1F3AFC870021FE15 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D353C681F3AFC870021FE15 /* MainInterface.storyboard */; };
 		1D353C6E1F3AFC870021FE15 /* ProductAudio.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1D353C601F3AFC870021FE15 /* ProductAudio.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1D5ECEF41F66257D00370606 /* ExcelRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5ECEF31F66257D00370606 /* ExcelRightView.m */; };
 		1D748E731F62484500F6E41E /* ScanQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D748E711F62484500F6E41E /* ScanQRCodeViewController.m */; };
 		1D748E741F62484500F6E41E /* ScanQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D748E721F62484500F6E41E /* ScanQRCodeViewController.xib */; };
 		1D748E771F62787800F6E41E /* ExcelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D748E761F62787800F6E41E /* ExcelViewController.m */; };
@@ -144,6 +145,8 @@
 		1D353C691F3AFC870021FE15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		1D353C6B1F3AFC870021FE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D55452E1EEFC90600180BA7 /* RequestHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestHead.h; sourceTree = "<group>"; };
+		1D5ECEF21F66257D00370606 /* ExcelRightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelRightView.h; sourceTree = "<group>"; };
+		1D5ECEF31F66257D00370606 /* ExcelRightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelRightView.m; sourceTree = "<group>"; };
 		1D748E701F62484500F6E41E /* ScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRCodeViewController.h; sourceTree = "<group>"; };
 		1D748E711F62484500F6E41E /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeViewController.m; sourceTree = "<group>"; };
 		1D748E721F62484500F6E41E /* ScanQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRCodeViewController.xib; sourceTree = "<group>"; };
@@ -401,14 +404,16 @@
 			isa = PBXGroup;
 			children = (
 				1D748E791F62788600F6E41E /* Constant.h */,
+				1D748E801F62788600F6E41E /* SubtypeView.h */,
+				1D748E811F62788600F6E41E /* SubtypeView.m */,
 				1D748E7A1F62788600F6E41E /* ExcelCell.h */,
 				1D748E7B1F62788600F6E41E /* ExcelCell.m */,
 				1D748E7C1F62788600F6E41E /* ExcelLeftView.h */,
 				1D748E7D1F62788600F6E41E /* ExcelLeftView.m */,
+				1D5ECEF21F66257D00370606 /* ExcelRightView.h */,
+				1D5ECEF31F66257D00370606 /* ExcelRightView.m */,
 				1D748E7E1F62788600F6E41E /* ExcelView.h */,
 				1D748E7F1F62788600F6E41E /* ExcelView.m */,
-				1D748E801F62788600F6E41E /* SubtypeView.h */,
-				1D748E811F62788600F6E41E /* SubtypeView.m */,
 			);
 			path = ExcelView;
 			sourceTree = "<group>";
@@ -921,6 +926,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5ECEF41F66257D00370606 /* ExcelRightView.m in Sources */,
 				1DA672FF1EF0F5F3007C2348 /* BaseTextView.m in Sources */,
 				1D748E851F62788600F6E41E /* SubtypeView.m in Sources */,
 				1DB93AC11EEFE10B00A6BAD7 /* UIColor+HexColor.m in Sources */,

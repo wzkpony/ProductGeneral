@@ -6,6 +6,7 @@
 //  Copyright © 2017年 Dyf. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
 #import "SubtypeView.h"
 
@@ -20,10 +21,9 @@
 @end
 @protocol ExcelLeftViewDelegate <NSObject>
 
-- (void)tableViewDidScroll:(ExcelLeftView *)leftView;
-
 @end
-@interface ExcelLeftCell : UITableViewCell
+@interface ExcelTestCell : UITableViewCell
 
 @property (nonatomic, strong) SubtypeView *subtypeView;
 @end
+
