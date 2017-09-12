@@ -12,11 +12,11 @@
 #import "Constant.h"
 #import "ExcelView.h"
 #import "MJRefresh.h"
-
 @interface ExcelViewController ()<ExcelViewDelegate>
 {
     ExcelView* e_view;
     NSMutableArray *dataArray;
+    NSInteger page;
 }
 
 
@@ -29,40 +29,35 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     //    self.automaticallyAdjustsScrollViewInsets = NO;
+   
     dataArray = [[NSMutableArray alloc] initWithArray:@[@"周云",@"老董",@"王正魁",@"潘章宝",@"崔娜",@"熊素平",@"张文超",@"余昭阳",@"李志",@"张龙",@"结束啦",@"结束啦",@"结束啦",@"结束啦"]];
     e_view = [[ExcelView alloc] init];
-    e_view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
+    e_view.frame = CGRectMake(0, 64, ScreenWidth, ScreenHeight-64);
     e_view.excel_delegate = self;
-    e_view.contentSize = CGSizeMake(ScreenWidth, dataArray.count * cellHeight + mHeight);
-    e_view.fontNumberTopItem = [UIFont systemFontOfSize:14];
-    e_view.fontNumberLeftItem = [UIFont systemFontOfSize:14];
-    e_view.fontNumberRithtItem = [UIFont systemFontOfSize:14];
+    e_view.backgroundColor = [UIColor redColor];
     [self.view addSubview:e_view];
-    
-    
-    e_view.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        NSLog(@"刷新了");
-         dataArray = [[NSMutableArray alloc] initWithArray:@[@"周云",@"老董",@"王正魁",@"潘章宝",@"崔娜",@"熊素平",@"张文超",@"余昭阳",@"李志",@"张龙",@"结束啦",@"结束啦",@"结束啦",@"结束啦"]];
-        [self performSelector:@selector(endMjrefresh) withObject:self afterDelay:2];
-    }];
-    e_view.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        //Call this Block When enter the refresh status automatically
-        [dataArray addObjectsFromArray:@[@"周云",@"老董",@"王正魁",@"潘章宝",@"崔娜",@"熊素平",@"张文超",@"余昭阳",@"李志",@"张龙",@"结束啦",@"结束啦",@"结束啦",@"结束啦"]];
-        
-        [self performSelector:@selector(endMjrefresh) withObject:self afterDelay:2];
-        NSLog(@"加载了");
-    }];
-    
+    page = 1;
+
+
     
 }
 -(void)endMjrefresh
 {
-    e_view.contentSize = CGSizeMake(ScreenWidth, dataArray.count * cellHeight + mHeight);
-    [e_view.mj_header endRefreshing];
-    [e_view.mj_footer endRefreshing];
-    [e_view reloadDtaeForTableView];
-    
+    [e_view reloadDate];
+}
 
+-(void)pullDownRefresh
+{
+    page = 1;
+     dataArray = [[NSMutableArray alloc] initWithArray:@[@"周云",@"老董",@"王正魁",@"潘章宝",@"崔娜",@"熊素平",@"张文超",@"余昭阳",@"李志",@"张龙",@"结束啦",@"结束啦",@"结束啦",@"结束啦"]];
+    [self performSelector:@selector(endMjrefresh) withObject:self afterDelay:2];
+}
+-(void)addInMore
+{
+    page ++;
+    [dataArray addObjectsFromArray:@[@"周云",@"老董",@"王正魁",@"潘章宝",@"崔娜",@"熊素平",@"张文超",@"余昭阳",@"李志",@"张龙",@"结束啦",@"结束啦",@"结束啦",@"结束啦"]];
+    [self performSelector:@selector(endMjrefresh) withObject:self afterDelay:2];
+    NSLog(@"加载了");
 }
 -(NSArray* )excelViewForTopArr:(ExcelView*)excelView
 {

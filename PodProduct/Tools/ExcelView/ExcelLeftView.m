@@ -31,7 +31,7 @@
 
 - (void)prepareLayout {
     
-    self.tableV = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, cellHeight * self.leftArr.count + mHeight) style:(UITableViewStylePlain)];
+    self.tableV = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, cellHeight * self.leftArr.count) style:(UITableViewStylePlain)];
     
     self.tableV.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self addSubview:self.tableV];
@@ -51,12 +51,12 @@
     return self.leftArr.count;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    SubtypeView* label = [[SubtypeView alloc] initWithFrame:CGRectMake(0, 0, leftWidth, mHeight)];
-    label.font = self.fontRightTop;
-    label.text = self.topString;
-    return label;
-}
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+//    SubtypeView* label = [[SubtypeView alloc] initWithFrame:CGRectMake(0, 0, leftWidth, mHeight)];
+//    label.font = self.fontRightTop;
+//    label.text = self.topString;
+//    return label;
+//}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     ExcelTestCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExcelTestCell" forIndexPath:indexPath];
@@ -64,10 +64,10 @@
     cell.subtypeView.text = self.leftArr[indexPath.row];
     return cell;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    
-    return mHeight;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+//    
+//    return mHeight;
+//}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     

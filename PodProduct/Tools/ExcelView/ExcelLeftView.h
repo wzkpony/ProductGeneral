@@ -6,6 +6,15 @@
 //  Copyright © 2017年 Dyf. All rights reserved.
 //
 
+/**
+ *
+ *
+ *ExcelLeftView 左侧列表 
+ *
+ *
+ */
+
+
 
 #import <UIKit/UIKit.h>
 #import "SubtypeView.h"
@@ -14,7 +23,7 @@
 
 @property (nonatomic, strong) UITableView *tableV;
 @property (nonatomic, strong) NSArray *leftArr;
-@property (nonatomic, copy)NSString* topString;
+//@property (nonatomic, copy)NSString* topString;
 @property (nonatomic, assign)id delegate;
 @property (nonatomic, strong)UIFont *fontType;
 @property (nonatomic, strong)UIFont *fontRightTop;

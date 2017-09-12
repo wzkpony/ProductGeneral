@@ -14,8 +14,7 @@
 #import "MJRefresh.h"
 
 @interface ExcelRightView()<UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic, strong) UIView *headView;
-@property (nonatomic, strong) NSArray *topArr;
+//@property (nonatomic, strong) UIView *headView;
 @end
 @implementation ExcelRightView
 
@@ -28,56 +27,41 @@
     [self prepareLayout];
 }
 
-- (instancetype)initWithFrame:(CGRect)frame withTopArr:(NSArray*)topArray{
+- (instancetype)initWithFrame:(CGRect)frame{
     
     if (self = [super initWithFrame:frame]) {
-        self.topArr = topArray;
     }
     
     return self;
 }
 - (void)prepareLayout {
-    //    头部
-    NSInteger columnNumber =  _topArr.count;
-    UIView *headview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, mWidth * columnNumber, mHeight)];
     
-    self.headView = headview;
-    
-    self.headView.backgroundColor = [UIColor whiteColor];//边框颜色
-    
-    for(int i = 0; i < columnNumber; i++){
-        
-        SubtypeView *head=[[SubtypeView alloc]initWithFrame:CGRectMake(i * (mWidth + 0.5), 0, mWidth - 0.5, mHeight - 1)];
-        
-        head.font = self.fontNumberTopItem;
-        head.text = self.topArr[i];
-        [self.headView addSubview:head];
-    }
-    
+    NSInteger columnNumber =  self.headerNumber;    
     //    右部
-    self.rightTableV = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, mWidth * columnNumber+addWidthSize, _rightArray.count*cellHeight + mHeight) style:(UITableViewStylePlain)];
-    
-    self.myScrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, _rightArray.count*cellHeight + mHeight)];
-    self.myScrollView.backgroundColor = [UIColor whiteColor];
-    [self.myScrollView addSubview: self.rightTableV];
+    self.rightTableV = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, mWidth * columnNumber+addWidthSize, _rightArray.count*cellHeight) style:(UITableViewStylePlain)];
+    self.rightTableV.backgroundColor = [UIColor whiteColor];
+   
     self.rightTableV.delegate = self;
     self.rightTableV.dataSource = self;
     
-    [self.rightTableV registerClass:[ExcelCell class] forCellReuseIdentifier:@"ExcelCell"];
+//    [self.rightTableV registerClass:[ExcelCell class] forCellReuseIdentifier:@"ExcelCell"];
     self.rightTableV.scrollEnabled = NO;
     self.rightTableV.showsVerticalScrollIndicator = NO;
     self.rightTableV.showsHorizontalScrollIndicator = NO;
     self.rightTableV.separatorStyle = UITableViewCellSeparatorStyleNone;
+   
+    self.myScrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, _rightArray.count*cellHeight)];
+    self.myScrollView.delegate = self;
+    self.myScrollView.tag = 1;
+    self.myScrollView.showsVerticalScrollIndicator = NO;
+    self.myScrollView.showsHorizontalScrollIndicator = NO;
+    self.myScrollView.backgroundColor = [UIColor whiteColor];
+    [self.myScrollView addSubview: self.rightTableV];
     [self addSubview:self.myScrollView];
     self.myScrollView.contentSize=CGSizeMake(mWidth * columnNumber+addWidthSize, 0);
-    
+   
 }
 
-//-(void)endMjrefresh
-//{
-//    [self.myScrollView.mj_header endRefreshing];
-//    [self.myScrollView.mj_footer endRefreshing];
-//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _rightArray.count;
@@ -89,21 +73,37 @@
     return cellHeight;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    
-    return self.headView;
-}
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+//    
+//    return nil;
+//}
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    
-    return mHeight;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+//    
+//    return mHeight;
+//}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    ExcelCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExcelCell" forIndexPath:indexPath];
+//    ExcelCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExcelCell" forIndexPath:indexPath];
+    ExcelCell* cell = [[ExcelCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"nil"];
     cell.fontType = self.fontType;
     cell.sourceArr = _rightArray[indexPath.row];
     return cell;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"点击tableviewcell");
+}
 
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (scrollView.tag == 1) {
+        if (self.delegate != nil) {
+            if ([self.delegate respondsToSelector:@selector(rightTableViewDidScroll:)]) {
+                [self.delegate rightTableViewDidScroll:self];
+            }
+        }
+    }
+}
 @end

@@ -52,6 +52,7 @@
 		1DB93AD71EEFE61D00A6BAD7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB93AD61EEFE61D00A6BAD7 /* BaseViewController.m */; };
 		1DB93ADA1EEFE64600A6BAD7 /* BaseNavigateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB93AD91EEFE64600A6BAD7 /* BaseNavigateController.m */; };
 		1DB93ADD1EEFE74400A6BAD7 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB93ADC1EEFE74400A6BAD7 /* BaseTabBarController.m */; };
+		1DC9F5E11F6781410088275C /* ExcelContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC9F5E01F6781410088275C /* ExcelContentView.m */; };
 		1DF3C18A1F163AB900EC8155 /* demo.css in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3C1801F163AB900EC8155 /* demo.css */; };
 		1DF3C18B1F163AB900EC8155 /* demo_fontclass.html in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3C1811F163AB900EC8155 /* demo_fontclass.html */; };
 		1DF3C18C1F163AB900EC8155 /* demo_symbol.html in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3C1821F163AB900EC8155 /* demo_symbol.html */; };
@@ -215,6 +216,8 @@
 		1DB93AD91EEFE64600A6BAD7 /* BaseNavigateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigateController.m; sourceTree = "<group>"; };
 		1DB93ADB1EEFE74400A6BAD7 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		1DB93ADC1EEFE74400A6BAD7 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		1DC9F5DF1F6781410088275C /* ExcelContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelContentView.h; sourceTree = "<group>"; };
+		1DC9F5E01F6781410088275C /* ExcelContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelContentView.m; sourceTree = "<group>"; };
 		1DF3C1801F163AB900EC8155 /* demo.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = demo.css; sourceTree = "<group>"; };
 		1DF3C1811F163AB900EC8155 /* demo_fontclass.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo_fontclass.html; sourceTree = "<group>"; };
 		1DF3C1821F163AB900EC8155 /* demo_symbol.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo_symbol.html; sourceTree = "<group>"; };
@@ -412,6 +415,8 @@
 				1D748E7D1F62788600F6E41E /* ExcelLeftView.m */,
 				1D5ECEF21F66257D00370606 /* ExcelRightView.h */,
 				1D5ECEF31F66257D00370606 /* ExcelRightView.m */,
+				1DC9F5DF1F6781410088275C /* ExcelContentView.h */,
+				1DC9F5E01F6781410088275C /* ExcelContentView.m */,
 				1D748E7E1F62788600F6E41E /* ExcelView.h */,
 				1D748E7F1F62788600F6E41E /* ExcelView.m */,
 			);
@@ -944,6 +949,7 @@
 				1DB93AD71EEFE61D00A6BAD7 /* BaseViewController.m in Sources */,
 				1DB93ACE1EEFE5E400A6BAD7 /* BaseButton.m in Sources */,
 				1DB93AD41EEFE60800A6BAD7 /* BaseImageView.m in Sources */,
+				1DC9F5E11F6781410088275C /* ExcelContentView.m in Sources */,
 				1D7E9B1F1EEE8D34008F18BF /* AppDelegate.m in Sources */,
 				1DB93ACA1EEFE14700A6BAD7 /* TimeStampToString.m in Sources */,
 				1DB93AC71EEFE12F00A6BAD7 /* NetworkManage.m in Sources */,

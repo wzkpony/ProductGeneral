@@ -9,95 +9,139 @@
 
 
 @interface ExcelView()<UIScrollViewDelegate>
+{
+    NSArray* rightArray;
+    NSArray* leftArray;
+    NSArray* topArray;
+    NSString* topString;
+    
+}
 
-@property (nonatomic, strong) ExcelLeftView *leftView;//左边列表
-@property (nonatomic,strong)  ExcelRightView *rightView;//右边列表
-
-
-@property (nonatomic, strong) NSArray *topArr;
-
-@property (nonatomic, strong) NSArray *leftArr;
-
-@property (nonatomic, strong) NSArray *rightArray;
-
-@property (nonatomic, copy)  NSString* topString;
 @end
 @implementation ExcelView
-
--(void)reloadDtaeForTableView
+-(void)reloadDate
 {
-    
-    [self getContents];
-    [self addContentForTable];
-    
-    self.leftView.tableV.frame = CGRectMake(0, 0, self.frame.size.width, cellHeight * self.leftArr.count + mHeight);
-    self.rightView.rightTableV.frame = CGRectMake(0, 0, mWidth * _topArr.count+addWidthSize, _rightArray.count*cellHeight + mHeight);
-    self.rightView.myScrollView.frame = CGRectMake(0, 0, ScreenWidth - leftWidth, _rightArray.count*cellHeight + mHeight);
-    
-    [self.leftView.tableV reloadData];
-    [self.rightView.rightTableV reloadData];
-   
-}
--(void)getContents
-{
-    
-    _leftArr = [self.excel_delegate excelViewForLeftArr:self];
-    _rightArray = [self.excel_delegate excelViewForRightArr:self];
+    [self.contentView.mj_header endRefreshing];
+    [self.contentView.mj_footer endRefreshing];
+    [self reloadDateContent];
+    [self reloadUI];
+    [_contentView reloadDtaeForTableView];
     
 }
--(void)addContentForTable
+-(void)reloadDateContent
 {
-    self.rightView.rightArray = self.rightArray;
-    self.leftView.leftArr = self.leftArr;
+    leftArray = [self.excel_delegate excelViewForLeftArr:self];
+    rightArray = [self.excel_delegate excelViewForRightArr:self];
+    topArray = [self.excel_delegate excelViewForTopArr:self];
+    topString = [self.excel_delegate excelViewForRightTopString:self];
+    
 }
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+-(void)reloadUI
+{
+    _contentView.fontNumberTopItem = _fontNumberTopItem?_fontNumberTopItem:[UIFont systemFontOfSize:14];
+    _contentView.fontNumberLeftItem = _fontNumberLeftItem?_fontNumberLeftItem:[UIFont systemFontOfSize:14];
+    _contentView.fontNumberRithtItem = _fontNumberRithtItem?_fontNumberRithtItem:[UIFont systemFontOfSize:14];
+    
+    _contentView.leftArr = leftArray;
+    _contentView.rightArr = rightArray;
+    _contentView.topNumber = topArray.count;
+    _contentView.contentSize = CGSizeMake(self.frame.size.width, rightArray.count * cellHeight);
+}
 - (void)drawRect:(CGRect)rect {
-    // Drawing code
-    for (UIView *view in self.subviews) {
-        view.backgroundColor = [UIColor whiteColor];
-    }
     
-    self.clipsToBounds = YES;
     if (self.excel_delegate == nil) {
         return;
     }
-    _topArr = [self.excel_delegate excelViewForTopArr:self];
-    _topString = [self.excel_delegate excelViewForRightTopString:self];
-   [self getContents];
+    [self reloadDateContent];
     
-    //   左部
-    self.leftView = [[ExcelLeftView alloc] initWithFrame:CGRectMake(0, 0, leftWidth, ScreenHeight-64)];
-    self.leftView.tableV.bounces = NO;
-    self.leftView.topString = _topString;
-    self.leftView.leftArr = self.leftArr;
-    self.leftView.delegate = self;
-    self.leftView.fontType = self.fontNumberLeftItem;
-    self.leftView.fontRightTop = self.fontNumberTopItem;
-    [self addSubview:self.leftView];
-    
-    //   右部
-    self.rightView = [[ExcelRightView alloc] initWithFrame:CGRectMake(leftWidth, 0, ScreenWidth - leftWidth, ScreenHeight-64) withTopArr:_topArr];
-    self.rightView.rightTableV.bounces = NO;
-    self.rightView.rightArray = self.rightArray;
+    if (_contentView == nil) {
+        _contentView  = [[ExcelContentView alloc] init];
 
-    self.rightView.delegate = self;
-    self.rightView.fontType = self.fontNumberRithtItem;
-    self.rightView.fontNumberTopItem = self.fontNumberTopItem;
-    [self addSubview:self.rightView];
-    
-    
-}
-
-- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
-{
-    UIView *view = [super hitTest:point withEvent:event];
-    if (([view isKindOfClass:[UITableView class]])) {
-        return self.leftView.tableV;
     }
-    return view;
+    _contentView.delegate_content = self;
+    _contentView.frame = CGRectMake(0, mHeight, self.frame.size.width, self.frame.size.height-mHeight);
+    [self reloadUI];
+    [self addSubview:_contentView];
     
-    return self.leftView.tableV;//[super hitTest:point withEvent:event];
+    _contentView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        if (self.excel_delegate !=nil) {
+            if ([self.excel_delegate respondsToSelector:@selector(pullDownRefresh)]) {
+                [self.excel_delegate pullDownRefresh];
+            }
+        }
+    }];
+    _contentView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
+        //Call this Block When enter the refresh status automatically
+        if (self.excel_delegate !=nil) {
+            if ([self.excel_delegate respondsToSelector:@selector(addInMore)]) {
+                [self.excel_delegate addInMore];
+            }
+        }
+       
+    }];
+
+
+    NSInteger columnNumber =  topArray.count;
+    //mWidth * columnNumber
+    if (_headview == nil) {
+         _headview = [[UIScrollView alloc] initWithFrame:CGRectMake(leftWidth, 0, self.frame.size.width-leftWidth, mHeight)];
+    }
+    _headview.backgroundColor = [UIColor whiteColor];//边框颜色
+    for(int i = 0; i < columnNumber; i++){
+
+        SubtypeView *head=[[SubtypeView alloc]initWithFrame:CGRectMake(i * (mWidth + 0.5), 0, mWidth - 0.5, mHeight - 1)];
+
+        head.font = self.fontNumberTopItem;
+        head.text = topArray[i];
+        [_headview addSubview:head];
+    }
+    _headview.delegate = self;
+    _headview.showsVerticalScrollIndicator = NO;
+    _headview.showsHorizontalScrollIndicator = NO;
+    _headview.contentSize = CGSizeMake(mWidth * columnNumber, mHeight);
+    [self addSubview:_headview];
+    SubtypeView* label = [[SubtypeView alloc] initWithFrame:CGRectMake(0, 0, leftWidth, mHeight)];
+    label.text = topString;
+    label.font = _fontNumberTopItem;
+    label.backgroundColor = [UIColor whiteColor];
+    [self addSubview:label];
+    
 }
 
+- (void)didTableViewSlidingForContentView:(ExcelContentView *)contentView
+{
+    CGFloat offsetX =  _contentView.rightView.myScrollView.contentOffset.x;
+    
+    CGPoint timeOffsetX = _headview.contentOffset;
+    
+    timeOffsetX.x = offsetX;
+    
+    _headview.contentOffset = timeOffsetX;
+    
+    if(offsetX == 0) {
+        
+        _headview.contentOffset=CGPointZero;
+        
+    }
+
+}
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGFloat offsetX = scrollView.contentOffset.x;
+    
+    CGPoint timeOffsetX = _contentView.rightView.myScrollView.contentOffset;
+    
+    timeOffsetX.x = offsetX;
+    
+    _contentView.rightView.myScrollView.contentOffset = timeOffsetX;
+    
+    if(offsetX == 0) {
+        
+        _contentView.rightView.myScrollView.contentOffset=CGPointZero;
+        
+    }
+  
+    
+
+}
 @end

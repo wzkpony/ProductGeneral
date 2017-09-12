@@ -9,11 +9,26 @@
 #import <UIKit/UIKit.h>
 #import "ExcelLeftView.h"
 #import "ExcelRightView.h"
+#import "ExcelContentView.h"
 #import "Constant.h"
-@class ExcelView;
+#import "MJRefresh.h"
+@interface ExcelView : UIView
+@property (nonatomic, assign)id excel_delegate;
+
+
+@property (nonatomic, strong) ExcelContentView* contentView;
+@property (nonatomic, strong) UIScrollView *headview;
+@property (nonatomic, strong) UIFont *fontType;                //左上角文本字体
+@property (nonatomic, strong) UIFont *fontNumberTopItem;      //顶部文本字体大小
+@property (nonatomic, strong) UIFont *fontNumberLeftItem;     //左边文本字体大小
+@property (nonatomic, strong) UIFont *fontNumberRithtItem;    //右边文本字体大小
+-(void)reloadDate;                                            //刷新页面
+
+
+@end
+
 @protocol ExcelViewDelegate <NSObject>
 
-@required
 /*
  *  excelViewForTopArr                    顶部的数据源
  *  excelViewForLeftArr                   左边tableView的数据源
@@ -21,29 +36,16 @@
  *  excelViewForRightTopString            左上角的文本数据源
  *
  */
--(NSArray* )excelViewForTopArr:(ExcelView*)excelView;
 -(NSArray* )excelViewForLeftArr:(ExcelView*)excelView;
 -(NSArray* )excelViewForRightArr:(ExcelView*)excelView;
-
+-(NSArray* )excelViewForTopArr:(ExcelView*)excelView;
 -(NSString* )excelViewForRightTopString:(ExcelView*)excelView;
 
+//下拉刷新加在更多代理回调
+-(void)pullDownRefresh;//下拉刷新
+-(void)addInMore;//加在更多
+
+
 @end
-
-
-
-@interface ExcelView : UIScrollView
-
-
-@property (nonatomic, assign) id<ExcelViewDelegate> excel_delegate;
-@property (nonatomic, strong) UIFont *fontNumberTopItem;      //顶部文本字体大小
-@property (nonatomic, strong) UIFont *fontNumberLeftItem;     //左边文本字体大小
-@property (nonatomic, strong) UIFont *fontNumberRithtItem;    //右边文本字体大小
-
-
-
--(void)reloadDtaeForTableView;
-@end
-
-
 
 
