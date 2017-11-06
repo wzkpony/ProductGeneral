@@ -22,6 +22,8 @@
     
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.selectionStyle = UITableViewCellSelectionStyleNone;
+        self.contentView.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [UIColor whiteColor];
     }
     
     return self;
@@ -29,18 +31,22 @@
 
 
 - (void)setSourceArr:(NSArray *)sourceArr {
-    
+    for (UIView* view in self.contentView.subviews) {
+        [view removeFromSuperview];
+    }
     for (int i = 0; i < sourceArr.count; i++) {
         
-        SubtypeView *headView=[[SubtypeView alloc]initWithFrame:CGRectMake(i * (mWidth + 0.5), 0, mWidth - 0.5, cellHeight - 1)];
+        SubtypeView *headView=[[SubtypeView alloc]initWithFrame:CGRectMake(i * (mWidth), 0, mWidth, cellHeight)];
         
-        headView.backgroundColor = [UIColor whiteColor];
         headView.font = self.fontType;
+        headView.textColor = self.textColors;
         headView.text = [NSString stringWithFormat:@"%@",sourceArr[i]];
         if (i == sourceArr.count - 1) {
-            headView.frame = CGRectMake(i * (mWidth + 0.5), 0, mWidth - 0.5 + addWidthSize, cellHeight - 1);
+            headView.frame = CGRectMake(i * (mWidth), 0, mWidth + addWidthSize, cellHeight);
             
         }
+        headView.backgroundColor = [UIColor clearColor];
+    
         [self.contentView addSubview:headView];
     }
     

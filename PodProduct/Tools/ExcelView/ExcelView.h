@@ -22,7 +22,10 @@
 @property (nonatomic, strong) UIFont *fontNumberTopItem;      //顶部文本字体大小
 @property (nonatomic, strong) UIFont *fontNumberLeftItem;     //左边文本字体大小
 @property (nonatomic, strong) UIFont *fontNumberRithtItem;    //右边文本字体大小
--(void)reloadDate;                                            //刷新页面
+@property (nonatomic, strong) UIColor *rightTextColor;         //右边字体颜色
+@property (nonatomic, strong) UIColor *leftTextColor;          //左边字体颜色
+@property (nonatomic, strong) UIColor *topTextColor;           //上边字体颜色
+-(void)reloadDate:(NSMutableArray *)obj;                                            //刷新页面
 
 
 @end

@@ -14,7 +14,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     
     if (self = [super initWithFrame:frame]) {
-        
+        self.backgroundColor = [UIColor whiteColor];
         self.numberOfLines = 0;
         self.textAlignment = NSTextAlignmentCenter;
         

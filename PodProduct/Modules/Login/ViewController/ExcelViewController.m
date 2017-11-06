@@ -34,6 +34,7 @@
     e_view = [[ExcelView alloc] init];
     e_view.frame = CGRectMake(0, 64, ScreenWidth, ScreenHeight-64);
     e_view.excel_delegate = self;
+    e_view.topTextColor = [UIColor grayColor];
     e_view.backgroundColor = [UIColor redColor];
     [self.view addSubview:e_view];
     page = 1;

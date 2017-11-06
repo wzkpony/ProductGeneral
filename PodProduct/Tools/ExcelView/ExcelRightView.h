@@ -23,10 +23,11 @@
 @property (nonatomic, strong) UIScrollView *myScrollView;
 @property (nonatomic, strong) UITableView *rightTableV;//右边列表
 @property (nonatomic, strong)UIFont *fontType;
-@property (nonatomic, strong)UIFont *fontNumberTopItem;
 @property (nonatomic, strong) NSArray *rightArray;
 @property (nonatomic, assign)NSInteger headerNumber;
 @property (nonatomic, assign)id delegate;
+@property (nonatomic, strong) UIColor *rightTextColor;         //右边字体颜色
+
 
 @end
 @protocol ExcelRightViewDelegate <NSObject>

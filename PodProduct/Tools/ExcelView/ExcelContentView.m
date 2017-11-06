@@ -49,7 +49,6 @@
             
         }
     }
-    self.backgroundColor = [UIColor whiteColor];
     self.showsVerticalScrollIndicator = NO;
     self.showsHorizontalScrollIndicator = NO;
     self.clipsToBounds = YES;
@@ -57,24 +56,25 @@
     //   左部
     self.leftView = [[ExcelLeftView alloc] initWithFrame:CGRectMake(0, 0, leftWidth, self.frame.size.height)];
     self.leftView.tableV.bounces = NO;
-//    self.leftView.topString = _topString;
+    self.leftView.backgroundColor = [UIColor whiteColor];
     self.leftView.leftArr = self.leftArr;
     self.leftView.delegate = self;
     self.leftView.fontType = self.fontNumberLeftItem;
-    self.leftView.fontRightTop = self.fontNumberTopItem;
-    
+    self.leftView.leftTextColor = _leftTextColor;
     [self addSubview:self.leftView];
     
     //   右部
     self.rightView = [[ExcelRightView alloc] initWithFrame:CGRectMake(leftWidth, 0, self.frame.size.width - leftWidth, self.frame.size.height)];
+    self.rightView.backgroundColor = [UIColor whiteColor];
+   
     self.rightView.rightTableV.bounces = NO;
+    self.rightView.rightTextColor = _rightTextColor;
     self.rightView.rightArray = self.rightArr;
     self.rightView.headerNumber = self.topNumber;
     self.rightView.delegate = self;
     self.rightView.fontType = self.fontNumberRithtItem;
-    self.rightView.fontNumberTopItem = self.fontNumberTopItem;
     [self addSubview:self.rightView];
-    
+
     
 }
 

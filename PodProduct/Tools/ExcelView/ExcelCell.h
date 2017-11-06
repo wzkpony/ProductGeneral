@@ -12,4 +12,5 @@
 
 @property (nonatomic, strong) NSArray *sourceArr;
 @property (nonatomic, strong) UIFont* fontType;
+@property (nonatomic, strong)UIColor *textColors;
 @end

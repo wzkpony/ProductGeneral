@@ -23,7 +23,6 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     // Drawing code
-    self.backgroundColor = [UIColor whiteColor];
     [self prepareLayout];
 }
 
@@ -43,22 +42,29 @@
    
     self.rightTableV.delegate = self;
     self.rightTableV.dataSource = self;
+
+
     
-//    [self.rightTableV registerClass:[ExcelCell class] forCellReuseIdentifier:@"ExcelCell"];
+    [self.rightTableV registerClass:[ExcelCell class] forCellReuseIdentifier:@"ExcelCell"];
     self.rightTableV.scrollEnabled = NO;
     self.rightTableV.showsVerticalScrollIndicator = NO;
     self.rightTableV.showsHorizontalScrollIndicator = NO;
     self.rightTableV.separatorStyle = UITableViewCellSeparatorStyleNone;
    
     self.myScrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, _rightArray.count*cellHeight)];
+    self.myScrollView.backgroundColor = [UIColor whiteColor];
+    for (UIView *view in self.myScrollView.subviews) {
+        view.backgroundColor = [UIColor whiteColor];
+    }
     self.myScrollView.delegate = self;
     self.myScrollView.tag = 1;
+  
     self.myScrollView.showsVerticalScrollIndicator = NO;
     self.myScrollView.showsHorizontalScrollIndicator = NO;
     self.myScrollView.backgroundColor = [UIColor whiteColor];
     [self.myScrollView addSubview: self.rightTableV];
     [self addSubview:self.myScrollView];
-    self.myScrollView.contentSize=CGSizeMake(mWidth * columnNumber+addWidthSize, 0);
+    self.myScrollView.contentSize=CGSizeMake(mWidth * columnNumber+addWidthSize+layerRightWidth, 0);
    
 }
 
@@ -73,21 +79,19 @@
     return cellHeight;
 }
 
-//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-//    
-//    return nil;
-//}
-
-//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-//    
-//    return mHeight;
-//}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    ExcelCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExcelCell" forIndexPath:indexPath];
-    ExcelCell* cell = [[ExcelCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"nil"];
+    ExcelCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ExcelCell" forIndexPath:indexPath];
     cell.fontType = self.fontType;
     cell.sourceArr = _rightArray[indexPath.row];
+    cell.textColors = _rightTextColor;
+    if (indexPath.row % 2 == 0) {
+        cell.contentView.backgroundColor = pairNumber ;
+         cell.backgroundColor = pairNumber ;
+    } else {
+        cell.contentView.backgroundColor = singleNumber ;
+        cell.backgroundColor = singleNumber ;
+    }
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

@@ -9,7 +9,9 @@
 #import "ViewController.h"
 #import "IconFontImageView.h"
 #import "ConfigHead.h"
+#import "NSNumber+Format.h"
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -19,8 +21,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    
-    
+    NSNumber *number = [NSNumber numberWithDouble:-1];
+    NSLog(@"%@",number.formateCountNum);
+    self.label.text = number.formateCountNum;
 }
 
 

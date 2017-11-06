@@ -23,10 +23,12 @@
 
 @property (nonatomic, strong) UITableView *tableV;
 @property (nonatomic, strong) NSArray *leftArr;
-//@property (nonatomic, copy)NSString* topString;
 @property (nonatomic, assign)id delegate;
 @property (nonatomic, strong)UIFont *fontType;
-@property (nonatomic, strong)UIFont *fontRightTop;
+@property (nonatomic, strong) UIColor *leftTextColor;          //左边字体颜色
+
+
+
 @end
 @protocol ExcelLeftViewDelegate <NSObject>
 
