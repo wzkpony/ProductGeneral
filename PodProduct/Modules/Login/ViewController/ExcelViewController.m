@@ -28,11 +28,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    //    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.automaticallyAdjustsScrollViewInsets = NO;
    
     dataArray = [[NSMutableArray alloc] initWithArray:@[@"周云",@"老董",@"王正魁",@"潘章宝",@"崔娜",@"熊素平",@"张文超",@"余昭阳",@"李志",@"张龙",@"结束啦",@"结束啦",@"结束啦",@"结束啦"]];
     e_view = [[ExcelView alloc] init];
-    e_view.frame = CGRectMake(0, 64, ScreenWidth, ScreenHeight-64);
+    e_view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);
     e_view.excel_delegate = self;
     e_view.topTextColor = [UIColor grayColor];
     e_view.backgroundColor = [UIColor redColor];
@@ -44,7 +44,7 @@
 }
 -(void)endMjrefresh
 {
-    [e_view reloadDate];
+    [e_view reloadDate:dataArray];
 }
 
 -(void)pullDownRefresh
