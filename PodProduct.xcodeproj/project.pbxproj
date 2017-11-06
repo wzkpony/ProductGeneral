@@ -36,7 +36,6 @@
 		1D7E9B2A1EEE8D34008F18BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7E9B281EEE8D34008F18BF /* LaunchScreen.storyboard */; };
 		1D7E9B351EEE8D34008F18BF /* PodProductTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E9B341EEE8D34008F18BF /* PodProductTests.m */; };
 		1D7E9B401EEE8D34008F18BF /* PodProductUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E9B3F1EEE8D34008F18BF /* PodProductUITests.m */; };
-		1D8C10581F7B7F1F005453DF /* NSNumber+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8C10571F7B7F1F005453DF /* NSNumber+Format.m */; };
 		1DA1D52A1FB02CD3003FEB38 /* NSNumber+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1D5211FB02CD3003FEB38 /* NSNumber+Format.m */; };
 		1DA1D52B1FB02CD3003FEB38 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1D5231FB02CD3003FEB38 /* NSString+Extension.m */; };
 		1DA1D52C1FB02CD3003FEB38 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1D5251FB02CD3003FEB38 /* UIColor+HexColor.m */; };
@@ -180,8 +179,6 @@
 		1D7E9B3B1EEE8D34008F18BF /* PodProductUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodProductUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7E9B3F1EEE8D34008F18BF /* PodProductUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodProductUITests.m; sourceTree = "<group>"; };
 		1D7E9B411EEE8D34008F18BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D8C10561F7B7F1F005453DF /* NSNumber+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Format.h"; sourceTree = "<group>"; };
-		1D8C10571F7B7F1F005453DF /* NSNumber+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Format.m"; sourceTree = "<group>"; };
 		1DA1D51E1FB00212003FEB38 /* download.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = download.plist; sourceTree = "<group>"; };
 		1DA1D5201FB02CD3003FEB38 /* NSNumber+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Format.h"; sourceTree = "<group>"; };
 		1DA1D5211FB02CD3003FEB38 /* NSNumber+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Format.m"; sourceTree = "<group>"; };
@@ -473,8 +470,6 @@
 				1D7E9B1E1EEE8D34008F18BF /* AppDelegate.m */,
 				1D7E9B201EEE8D34008F18BF /* ViewController.h */,
 				1D7E9B211EEE8D34008F18BF /* ViewController.m */,
-				1D8C10561F7B7F1F005453DF /* NSNumber+Format.h */,
-				1D8C10571F7B7F1F005453DF /* NSNumber+Format.m */,
 				1D7E9B231EEE8D34008F18BF /* Main.storyboard */,
 				1D7E9B261EEE8D34008F18BF /* Assets.xcassets */,
 				1D7E9B281EEE8D34008F18BF /* LaunchScreen.storyboard */,
@@ -958,7 +953,6 @@
 				1DB93ABB1EEFE09D00A6BAD7 /* HUDView.m in Sources */,
 				1DA672FC1EF0F5E0007C2348 /* BaseTextField.m in Sources */,
 				1D1AA62E1F59250400A591E8 /* BaseTableViewCell.m in Sources */,
-				1D8C10581F7B7F1F005453DF /* NSNumber+Format.m in Sources */,
 				1D748E731F62484500F6E41E /* ScanQRCodeViewController.m in Sources */,
 				1D748E821F62788600F6E41E /* ExcelCell.m in Sources */,
 				1D748E841F62788600F6E41E /* ExcelView.m in Sources */,
