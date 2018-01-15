@@ -33,8 +33,15 @@
 }
 
 - (void)testExample {
+    
+    
+    XCUIApplication *app = [[XCUIApplication alloc] init];
+    [app.buttons[@"二维码扫描"] tap];
+ 
+
+    
     // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
 }
 
 @end

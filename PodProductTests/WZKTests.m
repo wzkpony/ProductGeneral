@@ -1,18 +1,18 @@
 //
-//  PodProductTests.m
+//  WZKTests.m
 //  PodProductTests
 //
-//  Created by wzk on 2017/6/12.
+//  Created by wzk on 2017/12/4.
 //  Copyright © 2017年 wzk. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface PodProductTests : XCTestCase
+@interface WZKTests : XCTestCase
 
 @end
 
-@implementation PodProductTests
+@implementation WZKTests
 
 - (void)setUp {
     [super setUp];
@@ -27,11 +27,9 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    NSLog(@"1234567");
 }
-- (void)testMyClass
-{
-    
-}
+
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
     [self measureBlock:^{
