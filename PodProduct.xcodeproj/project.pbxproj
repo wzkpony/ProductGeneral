@@ -18,6 +18,8 @@
 		1D5A0B84200618A500554142 /* ZhiBoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D5A0B82200618A500554142 /* ZhiBoViewController.xib */; };
 		1D5A0B8720061A0A00554142 /* ConfigZhiBo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5A0B8620061A0A00554142 /* ConfigZhiBo.m */; };
 		1D5ECEF41F66257D00370606 /* ExcelRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5ECEF31F66257D00370606 /* ExcelRightView.m */; };
+		1D678CF4200DCBDF00200B29 /* ColorConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D678CF3200DCBDF00200B29 /* ColorConfig.m */; };
+		1D678CF7200DCC0700200B29 /* FontConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D678CF6200DCC0700200B29 /* FontConfig.m */; };
 		1D748E731F62484500F6E41E /* ScanQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D748E711F62484500F6E41E /* ScanQRCodeViewController.m */; };
 		1D748E741F62484500F6E41E /* ScanQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D748E721F62484500F6E41E /* ScanQRCodeViewController.xib */; };
 		1D748E771F62787800F6E41E /* ExcelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D748E761F62787800F6E41E /* ExcelViewController.m */; };
@@ -120,6 +122,10 @@
 		1D5A0B8620061A0A00554142 /* ConfigZhiBo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigZhiBo.m; sourceTree = "<group>"; };
 		1D5ECEF21F66257D00370606 /* ExcelRightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelRightView.h; sourceTree = "<group>"; };
 		1D5ECEF31F66257D00370606 /* ExcelRightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelRightView.m; sourceTree = "<group>"; };
+		1D678CF2200DCBDF00200B29 /* ColorConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConfig.h; sourceTree = "<group>"; };
+		1D678CF3200DCBDF00200B29 /* ColorConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorConfig.m; sourceTree = "<group>"; };
+		1D678CF5200DCC0700200B29 /* FontConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontConfig.h; sourceTree = "<group>"; };
+		1D678CF6200DCC0700200B29 /* FontConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontConfig.m; sourceTree = "<group>"; };
 		1D748E701F62484500F6E41E /* ScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRCodeViewController.h; sourceTree = "<group>"; };
 		1D748E711F62484500F6E41E /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeViewController.m; sourceTree = "<group>"; };
 		1D748E721F62484500F6E41E /* ScanQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRCodeViewController.xib; sourceTree = "<group>"; };
@@ -170,9 +176,7 @@
 		1DA673021EF11AAF007C2348 /* IconFontImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconFontImageView.m; sourceTree = "<group>"; };
 		1DB93AAD1EEFDD9600A6BAD7 /* SizeConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeConst.h; sourceTree = "<group>"; };
 		1DB93AAE1EEFDDA600A6BAD7 /* CustomConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomConst.h; sourceTree = "<group>"; };
-		1DB93AAF1EEFDDD900A6BAD7 /* FontConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontConst.h; sourceTree = "<group>"; };
 		1DB93AB01EEFDE3600A6BAD7 /* AppKeyConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppKeyConst.h; sourceTree = "<group>"; };
-		1DB93AB11EEFDE5B00A6BAD7 /* ColorConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConst.h; sourceTree = "<group>"; };
 		1DB93AB91EEFE09D00A6BAD7 /* HUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDView.h; sourceTree = "<group>"; };
 		1DB93ABA1EEFE09D00A6BAD7 /* HUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDView.m; sourceTree = "<group>"; };
 		1DB93AC51EEFE12F00A6BAD7 /* NetworkManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManage.h; sourceTree = "<group>"; };
@@ -482,10 +486,12 @@
 				1D55452E1EEFC90600180BA7 /* RequestHead.h */,
 				1DB93AAD1EEFDD9600A6BAD7 /* SizeConst.h */,
 				1DB93AAE1EEFDDA600A6BAD7 /* CustomConst.h */,
-				1DB93AAF1EEFDDD900A6BAD7 /* FontConst.h */,
 				1DB93AB01EEFDE3600A6BAD7 /* AppKeyConst.h */,
-				1DB93AB11EEFDE5B00A6BAD7 /* ColorConst.h */,
 				1D1AA6301F5927BB00A591E8 /* PodLibraryHeader.h */,
+				1D678CF2200DCBDF00200B29 /* ColorConfig.h */,
+				1D678CF3200DCBDF00200B29 /* ColorConfig.m */,
+				1D678CF5200DCC0700200B29 /* FontConfig.h */,
+				1D678CF6200DCC0700200B29 /* FontConfig.m */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -804,6 +810,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D678CF7200DCC0700200B29 /* FontConfig.m in Sources */,
+				1D678CF4200DCBDF00200B29 /* ColorConfig.m in Sources */,
 				1D5ECEF41F66257D00370606 /* ExcelRightView.m in Sources */,
 				1DA1D52C1FB02CD3003FEB38 /* UIColor+HexColor.m in Sources */,
 				1DA672FF1EF0F5F3007C2348 /* BaseTextView.m in Sources */,

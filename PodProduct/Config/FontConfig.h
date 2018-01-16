@@ -1,13 +1,12 @@
 //
-//  FontConst.h
-//  DuoRongApp
+//  FontConfig.h
+//  PodProduct
 //
-//  Created by Panda on 16/9/28.
-//  Copyright © 2016年 Panda. All rights reserved.
+//  Created by wzk on 2018/1/16.
+//  Copyright © 2018年 wzk. All rights reserved.
 //
 
-#ifndef FontConst_h
-#define FontConst_h
+#import <Foundation/Foundation.h>
 #define CONTEXT_TEXT_FONT [UIFont systemFontOfSize:12]
 #define TABLEVIEW_GROUP_TITLE_FONT [UIFont systemFontOfSize:15]
 
@@ -30,5 +29,6 @@
  */
 #define FontTypeAndSize(type,f,scale) [UIFont fontWithName:type size:((f)* (scale))]
 
+@interface FontConfig : NSObject
 
-#endif /* FontConst_h */
+@end

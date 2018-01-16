@@ -1,13 +1,12 @@
 //
-//  ColorConst.h
-//  DuoRongApp
+//  ColorConfig.h
+//  PodProduct
 //
-//  Created by Panda on 16/9/28.
-//  Copyright © 2016年 Panda. All rights reserved.
+//  Created by wzk on 2018/1/16.
+//  Copyright © 2018年 wzk. All rights reserved.
 //
-#ifndef ColorConst_h
-#define ColorConst_h
 
+#import <Foundation/Foundation.h>
 
 // rgb颜色转换（16进制->10进制）
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
@@ -30,5 +29,6 @@
 //十六进制
 #define UICOLOR_HEX(string) [UIColor colorWithHexString:(string)]
 
-#endif /* ColorConst_h */
+@interface ColorConfig : NSObject
 
+@end

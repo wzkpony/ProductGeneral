@@ -10,4 +10,4 @@ xcuserdata
 .xccheckout .moved-aside
 DerivedData
 *.xcuserstate
-
+.DS_Store
