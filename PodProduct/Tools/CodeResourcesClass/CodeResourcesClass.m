@@ -7,7 +7,6 @@
 //
 
 #import "CodeResourcesClass.h"
-
 @implementation CodeResourcesClass
 + (BOOL)codeResourcesTest
 {
@@ -49,7 +48,7 @@
 //从本地服务获取 CodeResources的hash
 + (NSDictionary* )getRequestCodeResources
 {
-    NSString* path = [NSString stringWithFormat:@"%@/readFile.htm?path=api/static/ios/CodeResources.xml",AppMainUrl];
+    NSString* path = [NSString stringWithFormat:@"%@/readFile.htm?path=api/static/ios/CodeResources.xml",BASE_URL];
     NSDictionary* dict = [[NSDictionary alloc] initWithContentsOfURL:[NSURL URLWithString:path]];
     NSDictionary* dictFiled = dict[@"files"];
     return dictFiled;

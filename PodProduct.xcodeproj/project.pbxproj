@@ -7,16 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D03C5B0202306090007C46B /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D03C5AF202306090007C46B /* LoginModel.m */; };
 		1D1AA62B1F5924F300A591E8 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AA62A1F5924F300A591E8 /* BaseTableView.m */; };
 		1D1AA62E1F59250400A591E8 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AA62D1F59250400A591E8 /* BaseTableViewCell.m */; };
 		1D2DDC93200C46E8005E8F53 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC8E200C46E8005E8F53 /* NSData+Base64.m */; };
 		1D2DDC94200C46E8005E8F53 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC90200C46E8005E8F53 /* NSString+Base64.m */; };
 		1D2DDC95200C46E8005E8F53 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC92200C46E8005E8F53 /* RSAEncryptor.m */; };
 		1D2DDC99200C46ED005E8F53 /* CodeResourcesClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC98200C46ED005E8F53 /* CodeResourcesClass.m */; };
-		1D5A0B7F2006186E00554142 /* 直播.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1D5A0B7E2006186D00554142 /* 直播.rtf */; };
-		1D5A0B83200618A500554142 /* ZhiBoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5A0B81200618A500554142 /* ZhiBoViewController.m */; };
-		1D5A0B84200618A500554142 /* ZhiBoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D5A0B82200618A500554142 /* ZhiBoViewController.xib */; };
-		1D5A0B8720061A0A00554142 /* ConfigZhiBo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5A0B8620061A0A00554142 /* ConfigZhiBo.m */; };
+		1D5DC4172016E9A300AA7A4E /* Presents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D5DC4162016E9A300AA7A4E /* Presents.plist */; };
 		1D5ECEF41F66257D00370606 /* ExcelRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5ECEF31F66257D00370606 /* ExcelRightView.m */; };
 		1D678CF4200DCBDF00200B29 /* ColorConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D678CF3200DCBDF00200B29 /* ColorConfig.m */; };
 		1D678CF7200DCC0700200B29 /* FontConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D678CF6200DCC0700200B29 /* FontConfig.m */; };
@@ -98,6 +96,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D03C5AE202306090007C46B /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		1D03C5AF202306090007C46B /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		1D1AA6291F5924F300A591E8 /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
 		1D1AA62A1F5924F300A591E8 /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
 		1D1AA62C1F59250300A591E8 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
@@ -114,12 +114,8 @@
 		1D2DDC98200C46ED005E8F53 /* CodeResourcesClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeResourcesClass.m; sourceTree = "<group>"; };
 		1D353C381F3AFA220021FE15 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		1D55452E1EEFC90600180BA7 /* RequestHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestHead.h; sourceTree = "<group>"; };
-		1D5A0B7E2006186D00554142 /* 直播.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "直播.rtf"; sourceTree = "<group>"; };
-		1D5A0B80200618A500554142 /* ZhiBoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZhiBoViewController.h; sourceTree = "<group>"; };
-		1D5A0B81200618A500554142 /* ZhiBoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZhiBoViewController.m; sourceTree = "<group>"; };
-		1D5A0B82200618A500554142 /* ZhiBoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZhiBoViewController.xib; sourceTree = "<group>"; };
-		1D5A0B8520061A0A00554142 /* ConfigZhiBo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigZhiBo.h; sourceTree = "<group>"; };
-		1D5A0B8620061A0A00554142 /* ConfigZhiBo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigZhiBo.m; sourceTree = "<group>"; };
+		1D5DC3DC2016E19E00AA7A4E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1D5DC4162016E9A300AA7A4E /* Presents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Presents.plist; sourceTree = "<group>"; };
 		1D5ECEF21F66257D00370606 /* ExcelRightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelRightView.h; sourceTree = "<group>"; };
 		1D5ECEF31F66257D00370606 /* ExcelRightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelRightView.m; sourceTree = "<group>"; };
 		1D678CF2200DCBDF00200B29 /* ColorConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConfig.h; sourceTree = "<group>"; };
@@ -261,43 +257,6 @@
 			path = CodeResourcesClass;
 			sourceTree = "<group>";
 		};
-		1D33FFD82005F684009023C2 /* ZhiBo */ = {
-			isa = PBXGroup;
-			children = (
-				1D5A0B7E2006186D00554142 /* 直播.rtf */,
-				1D33FFD92005F684009023C2 /* Model */,
-				1D33FFDA2005F684009023C2 /* ViewController */,
-				1D33FFDB2005F684009023C2 /* ViewModel */,
-				1D5A0B8520061A0A00554142 /* ConfigZhiBo.h */,
-				1D5A0B8620061A0A00554142 /* ConfigZhiBo.m */,
-			);
-			path = ZhiBo;
-			sourceTree = "<group>";
-		};
-		1D33FFD92005F684009023C2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		1D33FFDA2005F684009023C2 /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				1D5A0B80200618A500554142 /* ZhiBoViewController.h */,
-				1D5A0B81200618A500554142 /* ZhiBoViewController.m */,
-				1D5A0B82200618A500554142 /* ZhiBoViewController.xib */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		1D33FFDB2005F684009023C2 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		1D5545251EEF8DD500180BA7 /* BaseUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,7 +288,6 @@
 		1D5545291EEFC7E200180BA7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1D33FFD82005F684009023C2 /* ZhiBo */,
 				1D55452A1EEFC7E200180BA7 /* Login */,
 			);
 			path = Modules;
@@ -348,6 +306,8 @@
 		1D55452B1EEFC7E200180BA7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1D03C5AE202306090007C46B /* LoginModel.h */,
+				1D03C5AF202306090007C46B /* LoginModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -448,6 +408,8 @@
 				1D7E9B281EEE8D34008F18BF /* LaunchScreen.storyboard */,
 				1D7E9B2B1EEE8D34008F18BF /* Info.plist */,
 				1D7E9B1A1EEE8D34008F18BF /* Supporting Files */,
+				1D5DC3DC2016E19E00AA7A4E /* PrefixHeader.pch */,
+				1D5DC4162016E9A300AA7A4E /* Presents.plist */,
 			);
 			path = PodProduct;
 			sourceTree = "<group>";
@@ -725,10 +687,8 @@
 				1DF3C18A1F163AB900EC8155 /* demo.css in Resources */,
 				1D7E9B2A1EEE8D34008F18BF /* LaunchScreen.storyboard in Resources */,
 				1D7E9B271EEE8D34008F18BF /* Assets.xcassets in Resources */,
-				1D5A0B84200618A500554142 /* ZhiBoViewController.xib in Resources */,
 				1DF3C1931F163AB900EC8155 /* iconfont.woff in Resources */,
 				1DF3C18E1F163AB900EC8155 /* iconfont.css in Resources */,
-				1D5A0B7F2006186E00554142 /* 直播.rtf in Resources */,
 				1DF3C18F1F163AB900EC8155 /* iconfont.eot in Resources */,
 				1DF3C1911F163AB900EC8155 /* iconfont.svg in Resources */,
 				1D748E741F62484500F6E41E /* ScanQRCodeViewController.xib in Resources */,
@@ -738,6 +698,7 @@
 				1DF3C18B1F163AB900EC8155 /* demo_fontclass.html in Resources */,
 				1DF3C1901F163AB900EC8155 /* iconfont.js in Resources */,
 				1D7E9B251EEE8D34008F18BF /* Main.storyboard in Resources */,
+				1D5DC4172016E9A300AA7A4E /* Presents.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -830,7 +791,6 @@
 				1DA1D52D1FB02CD3003FEB38 /* UIImage+Extension.m in Sources */,
 				1DB93AD71EEFE61D00A6BAD7 /* BaseViewController.m in Sources */,
 				1DB93ACE1EEFE5E400A6BAD7 /* BaseButton.m in Sources */,
-				1D5A0B83200618A500554142 /* ZhiBoViewController.m in Sources */,
 				1D2DDC99200C46ED005E8F53 /* CodeResourcesClass.m in Sources */,
 				1DB93AD41EEFE60800A6BAD7 /* BaseImageView.m in Sources */,
 				1DA1D52E1FB02CD4003FEB38 /* UIView+Extension.m in Sources */,
@@ -842,10 +802,10 @@
 				1DB93AC71EEFE12F00A6BAD7 /* NetworkManage.m in Sources */,
 				1DB93AD11EEFE5F600A6BAD7 /* BaseLabel.m in Sources */,
 				1DB93ADD1EEFE74400A6BAD7 /* BaseTabBarController.m in Sources */,
-				1D5A0B8720061A0A00554142 /* ConfigZhiBo.m in Sources */,
 				1DB93ADA1EEFE64600A6BAD7 /* BaseNavigateController.m in Sources */,
 				1D748E771F62787800F6E41E /* ExcelViewController.m in Sources */,
 				1D7E9B1C1EEE8D34008F18BF /* main.m in Sources */,
+				1D03C5B0202306090007C46B /* LoginModel.m in Sources */,
 				1D748E831F62788600F6E41E /* ExcelLeftView.m in Sources */,
 				1DA1D52B1FB02CD3003FEB38 /* NSString+Extension.m in Sources */,
 			);
@@ -1001,11 +961,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65ZPEUXB9L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PodProduct/Modules/ZhiBo/Classes/Vendors/NIMSDK/NIMAVChat",
+					"$(PROJECT_DIR)/PodProduct/Modules/ZhiBo/Classes/Vendors/NIMSDK/NIMSDK",
+					"$(PROJECT_DIR)/PodProduct/Tools/Vendors/NIMSDK/NIMAVChat",
+					"$(PROJECT_DIR)/PodProduct/Tools/Vendors/NIMSDK/NIMSDK",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/PodProduct/PrefixHeader.pch";
 				INFOPLIST_FILE = PodProduct/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PodProduct/Modules/ZhiBo/Classes/Vendors/NIMLivePlayer/libs",
+					"$(PROJECT_DIR)/PodProduct/Modules/ZhiBo/Classes/Vendors/NIMSDK/NIMAVChat/Libs",
+					"$(PROJECT_DIR)/PodProduct/Modules/ZhiBo/Classes/Vendors/NIMSDK/NIMSDK/Libs",
+					"$(PROJECT_DIR)/PodProduct/Tools/Vendors/NIMLivePlayer/libs",
+					"$(PROJECT_DIR)/PodProduct/Tools/Vendors/NIMSDK/NIMAVChat/Libs",
+					"$(PROJECT_DIR)/PodProduct/Tools/Vendors/NIMSDK/NIMSDK/Libs",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PodProduct.PodProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1018,11 +997,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 65ZPEUXB9L;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PodProduct/Modules/ZhiBo/Classes/Vendors/NIMSDK/NIMAVChat",
+					"$(PROJECT_DIR)/PodProduct/Modules/ZhiBo/Classes/Vendors/NIMSDK/NIMSDK",
+					"$(PROJECT_DIR)/PodProduct/Tools/Vendors/NIMSDK/NIMAVChat",
+					"$(PROJECT_DIR)/PodProduct/Tools/Vendors/NIMSDK/NIMSDK",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/PodProduct/PrefixHeader.pch";
 				INFOPLIST_FILE = PodProduct/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PodProduct/Modules/ZhiBo/Classes/Vendors/NIMLivePlayer/libs",
+					"$(PROJECT_DIR)/PodProduct/Modules/ZhiBo/Classes/Vendors/NIMSDK/NIMAVChat/Libs",
+					"$(PROJECT_DIR)/PodProduct/Modules/ZhiBo/Classes/Vendors/NIMSDK/NIMSDK/Libs",
+					"$(PROJECT_DIR)/PodProduct/Tools/Vendors/NIMLivePlayer/libs",
+					"$(PROJECT_DIR)/PodProduct/Tools/Vendors/NIMSDK/NIMAVChat/Libs",
+					"$(PROJECT_DIR)/PodProduct/Tools/Vendors/NIMSDK/NIMSDK/Libs",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PodProduct.PodProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

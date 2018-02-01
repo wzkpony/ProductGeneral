@@ -7,7 +7,6 @@
 //
 
 #import "UIView+Extension.h"
-#import "MBProgressHUD.h"
 #import "HUDView.h"
 @implementation UIView (Extension)
 
@@ -17,13 +16,7 @@
  *  @param message 提示的文字内容
  */
 - (void) showTextHud:(NSString *)message{
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
-    hud.bezelView.backgroundColor = [UIColor colorWithHue:0 saturation:0 brightness:0 alpha:0.8];
-    hud.mode = MBProgressHUDModeText;
-    hud.label.text = message;
-    hud.label.numberOfLines = 0;
-    hud.label.textColor = [UIColor whiteColor];
-    [hud hideAnimated:YES afterDelay:1.5];
+   
 }
 
 /**
