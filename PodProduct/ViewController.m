@@ -10,6 +10,7 @@
 #import "IconFontImageView.h"
 #import "ConfigHead.h"
 #import "NSNumber+Format.h"
+#import "AppDelegate.h"
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
@@ -24,6 +25,12 @@
     NSNumber *number = [NSNumber numberWithDouble:-1];
     NSLog(@"%@",number.formateCountNum);
     self.label.text = number.formateCountNum;
+    AppDelegate* app = (AppDelegate* )[UIApplication sharedApplication].delegate;
+    NSMutableString* s = [[NSMutableString alloc] initWithString:@"a"];
+    NSLog(@"对象地址：%p，指针指向的地址：%p",s,&s);
+    app.blockTest(s);
+    NSLog(@"对象地址：%p，指针指向的地址：%p",s,&s);
+    
 }
 
 
