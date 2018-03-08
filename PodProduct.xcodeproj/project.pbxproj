@@ -14,6 +14,9 @@
 		1D2DDC94200C46E8005E8F53 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC90200C46E8005E8F53 /* NSString+Base64.m */; };
 		1D2DDC95200C46E8005E8F53 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC92200C46E8005E8F53 /* RSAEncryptor.m */; };
 		1D2DDC99200C46ED005E8F53 /* CodeResourcesClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC98200C46ED005E8F53 /* CodeResourcesClass.m */; };
+		1D48BEC4204F8ED800F7A9DA /* StudyBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D48BEC3204F8ED800F7A9DA /* StudyBlock.m */; };
+		1D48BEC7204F990200F7A9DA /* StudyRunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D48BEC6204F990200F7A9DA /* StudyRunTime.m */; };
+		1D48BECA204FD83700F7A9DA /* StudyGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D48BEC9204FD83700F7A9DA /* StudyGCD.m */; };
 		1D5DC4172016E9A300AA7A4E /* Presents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D5DC4162016E9A300AA7A4E /* Presents.plist */; };
 		1D5ECEF41F66257D00370606 /* ExcelRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5ECEF31F66257D00370606 /* ExcelRightView.m */; };
 		1D678CF4200DCBDF00200B29 /* ColorConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D678CF3200DCBDF00200B29 /* ColorConfig.m */; };
@@ -113,6 +116,12 @@
 		1D2DDC97200C46ED005E8F53 /* CodeResourcesClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeResourcesClass.h; sourceTree = "<group>"; };
 		1D2DDC98200C46ED005E8F53 /* CodeResourcesClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeResourcesClass.m; sourceTree = "<group>"; };
 		1D353C381F3AFA220021FE15 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		1D48BEC2204F8ED800F7A9DA /* StudyBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudyBlock.h; sourceTree = "<group>"; };
+		1D48BEC3204F8ED800F7A9DA /* StudyBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyBlock.m; sourceTree = "<group>"; };
+		1D48BEC5204F990200F7A9DA /* StudyRunTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudyRunTime.h; sourceTree = "<group>"; };
+		1D48BEC6204F990200F7A9DA /* StudyRunTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyRunTime.m; sourceTree = "<group>"; };
+		1D48BEC8204FD83700F7A9DA /* StudyGCD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudyGCD.h; sourceTree = "<group>"; };
+		1D48BEC9204FD83700F7A9DA /* StudyGCD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyGCD.m; sourceTree = "<group>"; };
 		1D55452E1EEFC90600180BA7 /* RequestHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestHead.h; sourceTree = "<group>"; };
 		1D5DC3DC2016E19E00AA7A4E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1D5DC4162016E9A300AA7A4E /* Presents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Presents.plist; sourceTree = "<group>"; };
@@ -257,6 +266,19 @@
 			path = CodeResourcesClass;
 			sourceTree = "<group>";
 		};
+		1D48BEC1204F8EC000F7A9DA /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				1D48BEC2204F8ED800F7A9DA /* StudyBlock.h */,
+				1D48BEC3204F8ED800F7A9DA /* StudyBlock.m */,
+				1D48BEC5204F990200F7A9DA /* StudyRunTime.h */,
+				1D48BEC6204F990200F7A9DA /* StudyRunTime.m */,
+				1D48BEC8204FD83700F7A9DA /* StudyGCD.h */,
+				1D48BEC9204FD83700F7A9DA /* StudyGCD.m */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
 		1D5545251EEF8DD500180BA7 /* BaseUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +310,7 @@
 		1D5545291EEFC7E200180BA7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1D48BEC1204F8EC000F7A9DA /* Study */,
 				1D55452A1EEFC7E200180BA7 /* Login */,
 			);
 			path = Modules;
@@ -800,11 +823,14 @@
 				1D2DDC95200C46E8005E8F53 /* RSAEncryptor.m in Sources */,
 				1DB93ACA1EEFE14700A6BAD7 /* TimeStampToString.m in Sources */,
 				1DB93AC71EEFE12F00A6BAD7 /* NetworkManage.m in Sources */,
+				1D48BEC4204F8ED800F7A9DA /* StudyBlock.m in Sources */,
 				1DB93AD11EEFE5F600A6BAD7 /* BaseLabel.m in Sources */,
 				1DB93ADD1EEFE74400A6BAD7 /* BaseTabBarController.m in Sources */,
 				1DB93ADA1EEFE64600A6BAD7 /* BaseNavigateController.m in Sources */,
 				1D748E771F62787800F6E41E /* ExcelViewController.m in Sources */,
+				1D48BEC7204F990200F7A9DA /* StudyRunTime.m in Sources */,
 				1D7E9B1C1EEE8D34008F18BF /* main.m in Sources */,
+				1D48BECA204FD83700F7A9DA /* StudyGCD.m in Sources */,
 				1D03C5B0202306090007C46B /* LoginModel.m in Sources */,
 				1D748E831F62788600F6E41E /* ExcelLeftView.m in Sources */,
 				1DA1D52B1FB02CD3003FEB38 /* NSString+Extension.m in Sources */,
