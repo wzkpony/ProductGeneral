@@ -14,5 +14,6 @@ pod 'SDCycleScrollView'
 pod 'NJKWebViewProgress'
 pod 'JKCategories'
 pod 'pop'
+pod 'MJExtension'
 
 end
