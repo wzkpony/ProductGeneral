@@ -13,6 +13,7 @@
 		1D0A80AA2052818E0080600B /* PathAndFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A80A7205265F50080600B /* PathAndFiled.m */; };
 		1D0A80AB205281A10080600B /* UIDevice+Hardware.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D8E159D2052548F0031B19D /* UIDevice+Hardware.h */; };
 		1D0A80AC205281A10080600B /* PathAndFiled.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0A80A6205265F50080600B /* PathAndFiled.h */; };
+		1D0A80BE2052988C0080600B /* WZKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A80BD2052988C0080600B /* WZKAnimation.m */; };
 		1D1AA62B1F5924F300A591E8 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AA62A1F5924F300A591E8 /* BaseTableView.m */; };
 		1D1AA62E1F59250400A591E8 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AA62D1F59250400A591E8 /* BaseTableViewCell.m */; };
 		1D2DDC93200C46E8005E8F53 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC8E200C46E8005E8F53 /* NSData+Base64.m */; };
@@ -142,6 +143,8 @@
 		1D0A80A6205265F50080600B /* PathAndFiled.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathAndFiled.h; sourceTree = "<group>"; };
 		1D0A80A7205265F50080600B /* PathAndFiled.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PathAndFiled.m; sourceTree = "<group>"; };
 		1D0A80BB2052824B0080600B /* WZKLocationSDK copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WZKLocationSDK copy-Info.plist"; path = "/Users/wzk/Desktop/PodProduct/WZKLocationSDK copy-Info.plist"; sourceTree = "<absolute>"; };
+		1D0A80BC2052988C0080600B /* WZKAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZKAnimation.h; sourceTree = "<group>"; };
+		1D0A80BD2052988C0080600B /* WZKAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZKAnimation.m; sourceTree = "<group>"; };
 		1D1AA6291F5924F300A591E8 /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
 		1D1AA62A1F5924F300A591E8 /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
 		1D1AA62C1F59250300A591E8 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
@@ -343,6 +346,8 @@
 		1D48BEC1204F8EC000F7A9DA /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				1D0A80BC2052988C0080600B /* WZKAnimation.h */,
+				1D0A80BD2052988C0080600B /* WZKAnimation.m */,
 				1D48BEC2204F8ED800F7A9DA /* StudyBlock.h */,
 				1D48BEC3204F8ED800F7A9DA /* StudyBlock.m */,
 				1D48BEC5204F990200F7A9DA /* StudyRunTime.h */,
@@ -985,6 +990,7 @@
 				1D8E15AE2052548F0031B19D /* WZKTest.m in Sources */,
 				1D8E15A72052548F0031B19D /* NSURLConnection+WZKConnection.m in Sources */,
 				1D8E15A92052548F0031B19D /* Photo.m in Sources */,
+				1D0A80BE2052988C0080600B /* WZKAnimation.m in Sources */,
 				1D748E731F62484500F6E41E /* ScanQRCodeViewController.m in Sources */,
 				1D748E821F62788600F6E41E /* ExcelCell.m in Sources */,
 				1D748E841F62788600F6E41E /* ExcelView.m in Sources */,
