@@ -43,6 +43,7 @@
 		1D8E15B8205257DC0031B19D /* WZKLocationSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D8E15B6205257DC0031B19D /* WZKLocationSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D8E15BB205257DC0031B19D /* WZKLocationSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8E15B4205257DB0031B19D /* WZKLocationSDK.framework */; };
 		1D8E15BC205257DC0031B19D /* WZKLocationSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8E15B4205257DB0031B19D /* WZKLocationSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1D9AC59A205B651B002ABE58 /* StudyRAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9AC599205B651B002ABE58 /* StudyRAC.m */; };
 		1DA1D52A1FB02CD3003FEB38 /* NSNumber+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1D5211FB02CD3003FEB38 /* NSNumber+Format.m */; };
 		1DA1D52B1FB02CD3003FEB38 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1D5231FB02CD3003FEB38 /* NSString+Extension.m */; };
 		1DA1D52C1FB02CD3003FEB38 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1D5251FB02CD3003FEB38 /* UIColor+HexColor.m */; };
@@ -203,6 +204,8 @@
 		1D8E15B4205257DB0031B19D /* WZKLocationSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WZKLocationSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8E15B6205257DC0031B19D /* WZKLocationSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZKLocationSDK.h; sourceTree = "<group>"; };
 		1D8E15B7205257DC0031B19D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D9AC598205B651B002ABE58 /* StudyRAC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudyRAC.h; sourceTree = "<group>"; };
+		1D9AC599205B651B002ABE58 /* StudyRAC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyRAC.m; sourceTree = "<group>"; };
 		1DA1D51E1FB00212003FEB38 /* download.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = download.plist; sourceTree = "<group>"; };
 		1DA1D5201FB02CD3003FEB38 /* NSNumber+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Format.h"; sourceTree = "<group>"; };
 		1DA1D5211FB02CD3003FEB38 /* NSNumber+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Format.m"; sourceTree = "<group>"; };
@@ -349,6 +352,8 @@
 				1D48BEC6204F990200F7A9DA /* StudyRunTime.m */,
 				1D48BEC8204FD83700F7A9DA /* StudyGCD.h */,
 				1D48BEC9204FD83700F7A9DA /* StudyGCD.m */,
+				1D9AC598205B651B002ABE58 /* StudyRAC.h */,
+				1D9AC599205B651B002ABE58 /* StudyRAC.m */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -947,6 +952,7 @@
 				1D748E851F62788600F6E41E /* SubtypeView.m in Sources */,
 				1DB93ABB1EEFE09D00A6BAD7 /* HUDView.m in Sources */,
 				1DA672FC1EF0F5E0007C2348 /* BaseTextField.m in Sources */,
+				1D9AC59A205B651B002ABE58 /* StudyRAC.m in Sources */,
 				1D8E158D2052533A0031B19D /* LoginVM.m in Sources */,
 				1D1AA62E1F59250400A591E8 /* BaseTableViewCell.m in Sources */,
 				1D0A80BE2052988C0080600B /* WZKAnimation.m in Sources */,

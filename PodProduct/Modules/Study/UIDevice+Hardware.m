@@ -19,7 +19,7 @@
     free(answer);
     return results;
 }
--(NSString* )platform
++(NSString* )platform
 {
     NSLog(@"%@",[UIDevice getSysInfoVyName:"hw.machine"]);
     return[UIDevice getSysInfoVyName:"hw.machine"];
@@ -32,23 +32,23 @@
     sysctl(mib,2,&results,&size,NULL,0);
     return(NSUInteger)results;
 }
--(NSUInteger)cpuFrequecy
++(NSUInteger)cpuFrequecy
 {
     return [UIDevice getSysInfo:HW_CPU_FREQ];
 }
--(NSInteger)busFrequency
++(NSInteger)busFrequency
 {
     return [UIDevice getSysInfo:HW_BUS_FREQ];
 }
--(NSUInteger)totalMemory
++(NSUInteger)totalMemory
 {
     return [UIDevice getSysInfo:HW_PHYSMEM];
 }
--(NSUInteger)userMemory
++(NSUInteger)userMemory
 {
     return [UIDevice getSysInfo:HW_USERMEM];
 }
--(NSUInteger)maxSocketBufferSize
++(NSUInteger)maxSocketBufferSize
 {
     return [UIDevice getSysInfo:KIPC_MAXSOCKBUF];
 }
