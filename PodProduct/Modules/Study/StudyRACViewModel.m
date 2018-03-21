@@ -67,6 +67,11 @@
  return [RACSignal empty];
  }];
  
+ 
+ 宏：
+ RAC:把一个对象的某个属性绑定一个信号,只要发出信号,就会把信号的内容给对象的属性赋值。例如：RAC(self.label, text) = self.textField.rac_textSignal，给label的text属性绑定了文本框改变的信号，如果textField改变，就会赋给text。
+ RACObserve：快速的监听某个对象的某个属性改变，返回的是一个信号,对象的某个属性改变的信号。
+ 
 */
 
 #import "StudyRACViewModel.h"
@@ -271,6 +276,7 @@
     @weakify(self);
     self.loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
         //这个假设的登录方法返回一个信号，当网络请求完成时发送一个值。
+        @strongify(self)
         NSLog(@"耗时操作");
         [mySelf changeModel];
         
