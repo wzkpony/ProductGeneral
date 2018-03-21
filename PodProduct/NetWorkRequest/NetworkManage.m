@@ -77,42 +77,4 @@ static AFHTTPSessionManager *sessionManager;
 }
 
 
-- (void)httpsTest{
-    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
-    
-    //session.securityPolicy.allowInvalidCertificates = YES; // not recommended for production
-    
-    //session.responseSerializer = [AFJSONResponseSerializer serializer];
-    
-    //session.requestSerializer = [AFJSONRequestSerializer serializer];
-    
-    //允许非权威机构颁发的证书
-    session.securityPolicy.allowInvalidCertificates = YES;
-    session.securityPolicy.validatesDomainName = NO;
-    
-    
-    session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",
-                                                         @"text/json",
-                                                         @"text/JavaScript",
-                                                         @"text/html",
-                                                         @"text/plain",
-                                                         nil];
-    
-    [session POST:@"https://v.juhe.cn/toutiao/index"
-       parameters:@{@"type":@"top", @"APPKEY":@"fa358e65d107bf2cf886b7332343e4a0"}
-         progress:^(NSProgress*_NonnulluploadProgress) {
-        
-    }success:^(NSURLSessionDataTask* _Nonnulltask, id _Nullable responseObject) {
-        
-        NSLog(@"sucess = %@",responseObject);
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"https Post成功" message:nil delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
-        [alertView show];
-        
-    }failure:^(NSURLSessionDataTask *_Nullable task,NSError *_Nonnull error) {
-        
-        NSLog(@"error = %@",error);
-    }];
-    
-
-}
 @end

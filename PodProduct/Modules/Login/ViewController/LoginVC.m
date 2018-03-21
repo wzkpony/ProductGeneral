@@ -7,8 +7,12 @@
 //
 
 #import "LoginVC.h"
-
+#import "LoginVM.h"
 @interface LoginVC ()
+@property (nonatomic,strong)LoginVM *viewModel;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
+@property (weak, nonatomic) IBOutlet UIButton *subscribeButton;
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 
 @end
 
@@ -17,6 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+- (void)bindWithViewModel {
+    RAC(self.viewModel, email) = self.emailTextField.rac_textSignal;
+    self.subscribeButton.rac_command = self.viewModel.subscribeCommand;
+    RAC(self.statusLabel, text) = RACObserve(self.viewModel, statusMessage);
 }
 
 - (void)didReceiveMemoryWarning {

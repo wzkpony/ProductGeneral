@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <ReactiveObjC.h>
 @interface LoginModel : NSObject
 @property(nonatomic,copy)NSString* name;
 @property(nonatomic,assign)NSInteger age;

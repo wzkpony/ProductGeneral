@@ -23,5 +23,4 @@
                    success:(void (^)(NSDictionary *responseObject))success
                    failure:(void (^)(NSDictionary *errorObject))failure;
 
-- (void)httpsTest;
 @end

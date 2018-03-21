@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <ReactiveObjC.h>
 @interface LoginVM : NSObject
+@property(nonatomic, strong) RACCommand *subscribeCommand;
+
+// write to this property
+@property(nonatomic, strong) NSString *email;
+
+// read from this property
+@property(nonatomic, strong) NSString *statusMessage;
 
 @end
