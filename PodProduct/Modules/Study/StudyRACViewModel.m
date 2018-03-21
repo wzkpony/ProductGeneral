@@ -134,18 +134,8 @@
     
     /*
      接收一个信号数组,当其中任何一个信号发生变化时,从每个信号都会执行
-     
-     
      // 聚合
-     // combineLatest：将数组合并成一个新的信号，当数组中的所有信号都成功时，才会调用block
-     //
-     // 常见的用法，（先组合在聚合）。combineLatest:(id<NSFastEnumeration>)signals reduce:(id (^)())reduceBlock
-     // reduce中的block简介:
-     // reduceblcok中的参数，有多少信号组合，reduceblcok就有多少参数，每个参数就是之前信号发出的内容
-     // reduceblcok的返回值：聚合信号之后的内容。
-     
-     
-     
+     // combineLatest
      merge：将数组合并成一个新的信号，当数组中的任一一个信号成功时，就会调用block。
      */
     RACSignal *reduceSignal = [RACSignal
