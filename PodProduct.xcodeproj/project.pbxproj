@@ -11,10 +11,17 @@
 		1D0A80BE2052988C0080600B /* WZKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A80BD2052988C0080600B /* WZKAnimation.m */; };
 		1D1AA62B1F5924F300A591E8 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AA62A1F5924F300A591E8 /* BaseTableView.m */; };
 		1D1AA62E1F59250400A591E8 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AA62D1F59250400A591E8 /* BaseTableViewCell.m */; };
+		1D2B818820734D5500AABEF2 /* RunLoopTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B818720734D5500AABEF2 /* RunLoopTime.m */; };
 		1D2DDC93200C46E8005E8F53 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC8E200C46E8005E8F53 /* NSData+Base64.m */; };
 		1D2DDC94200C46E8005E8F53 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC90200C46E8005E8F53 /* NSString+Base64.m */; };
 		1D2DDC95200C46E8005E8F53 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC92200C46E8005E8F53 /* RSAEncryptor.m */; };
 		1D2DDC99200C46ED005E8F53 /* CodeResourcesClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC98200C46ED005E8F53 /* CodeResourcesClass.m */; };
+		1D464CD92073166900F99E93 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC8E200C46E8005E8F53 /* NSData+Base64.m */; };
+		1D464CDA2073166900F99E93 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC90200C46E8005E8F53 /* NSString+Base64.m */; };
+		1D464CDB2073166900F99E93 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC92200C46E8005E8F53 /* RSAEncryptor.m */; };
+		1D464CDC2073169400F99E93 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D2DDC8D200C46E8005E8F53 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1D464CDD2073169400F99E93 /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D2DDC8F200C46E8005E8F53 /* NSString+Base64.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1D464CDE2073169400F99E93 /* RSAEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D2DDC91200C46E8005E8F53 /* RSAEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D48BEC4204F8ED800F7A9DA /* StudyBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D48BEC3204F8ED800F7A9DA /* StudyBlock.m */; };
 		1D48BEC7204F990200F7A9DA /* StudyRunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D48BEC6204F990200F7A9DA /* StudyRunTime.m */; };
 		1D48BECA204FD83700F7A9DA /* StudyGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D48BEC9204FD83700F7A9DA /* StudyGCD.m */; };
@@ -144,6 +151,8 @@
 		1D1AA62D1F59250400A591E8 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		1D1AA62F1F59274A00A591E8 /* BaseUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseUIKit.h; sourceTree = "<group>"; };
 		1D1AA6301F5927BB00A591E8 /* PodLibraryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodLibraryHeader.h; sourceTree = "<group>"; };
+		1D2B818620734D5500AABEF2 /* RunLoopTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopTime.h; sourceTree = "<group>"; };
+		1D2B818720734D5500AABEF2 /* RunLoopTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopTime.m; sourceTree = "<group>"; };
 		1D2DDC8D200C46E8005E8F53 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		1D2DDC8E200C46E8005E8F53 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		1D2DDC8F200C46E8005E8F53 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
@@ -364,6 +373,8 @@
 				1D4ACCFB2061FDE100C2A92B /* StudyRACView.m */,
 				1D4ACCFD2061FE0200C2A92B /* StudyRACViewModel.h */,
 				1D4ACCFE2061FE0200C2A92B /* StudyRACViewModel.m */,
+				1D2B818620734D5500AABEF2 /* RunLoopTime.h */,
+				1D2B818720734D5500AABEF2 /* RunLoopTime.m */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -713,6 +724,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D8E15B8205257DC0031B19D /* WZKLocationSDK.h in Headers */,
+				1D464CDE2073169400F99E93 /* RSAEncryptor.h in Headers */,
+				1D464CDC2073169400F99E93 /* NSData+Base64.h in Headers */,
+				1D464CDD2073169400F99E93 /* NSString+Base64.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1004,6 +1018,7 @@
 				1D03C5B0202306090007C46B /* LoginModel.m in Sources */,
 				1D748E831F62788600F6E41E /* ExcelLeftView.m in Sources */,
 				1DA1D52B1FB02CD3003FEB38 /* NSString+Extension.m in Sources */,
+				1D2B818820734D5500AABEF2 /* RunLoopTime.m in Sources */,
 				1D4ACCFC2061FDE100C2A92B /* StudyRACView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1029,6 +1044,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D464CD92073166900F99E93 /* NSData+Base64.m in Sources */,
+				1D464CDA2073166900F99E93 /* NSString+Base64.m in Sources */,
+				1D464CDB2073166900F99E93 /* RSAEncryptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1306,8 +1324,9 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = WZKLocationSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = WZKDemo.WZKLocationSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1340,8 +1359,9 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = WZKLocationSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = WZKDemo.WZKLocationSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -101,6 +102,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJf-TG-J79" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-730.078125" y="232.51056338028167"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Gs7-cj-QgE">
+            <objects>
+                <viewController id="VUy-Y5-unW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lf6-0d-kXx"/>
+                        <viewControllerLayoutGuide type="bottom" id="JTb-R6-L4f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FWZ-XK-Bu0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Loo-KF-rZK">
+                                <rect key="frame" x="40" y="90" width="240" height="388"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7L-KD-HXi">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="K7L-KD-HXi" firstAttribute="leading" secondItem="Loo-KF-rZK" secondAttribute="leading" id="2l6-G7-95O"/>
+                                    <constraint firstItem="K7L-KD-HXi" firstAttribute="top" secondItem="Loo-KF-rZK" secondAttribute="top" id="YOf-yN-xU5"/>
+                                    <constraint firstAttribute="bottom" secondItem="K7L-KD-HXi" secondAttribute="bottom" id="meo-SE-X8L"/>
+                                    <constraint firstAttribute="trailing" secondItem="K7L-KD-HXi" secondAttribute="trailing" id="y4n-M1-3Y2"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Loo-KF-rZK" secondAttribute="trailing" constant="24" id="DhG-ji-b44"/>
+                            <constraint firstItem="JTb-R6-L4f" firstAttribute="top" secondItem="Loo-KF-rZK" secondAttribute="bottom" constant="90" id="IdH-MW-FrY"/>
+                            <constraint firstItem="Loo-KF-rZK" firstAttribute="leading" secondItem="FWZ-XK-Bu0" secondAttribute="leadingMargin" constant="24" id="R8h-f6-SU8"/>
+                            <constraint firstItem="Loo-KF-rZK" firstAttribute="top" secondItem="lf6-0d-kXx" secondAttribute="bottom" constant="70" id="cuL-pE-lW8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgu-6I-onz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.75" y="222.88732394366198"/>
         </scene>
         <!--ScanQR Code View Controller-->
         <scene sceneID="Ttb-EJ-vlP">

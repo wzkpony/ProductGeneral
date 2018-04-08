@@ -14,7 +14,7 @@
 #define BASE_URL @"http://"          //测试服3
 #define BASE_URL @"http://"          //开发环境
 
-#define PublicKey @"PublicKey"
+
 
 /******************     注册登录    相关接口    *****************/
 #define LOGIN_API                   @""

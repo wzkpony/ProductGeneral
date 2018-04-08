@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+#define PublicKey @"PublicKey"
+#define PrivateKey @"PrivateKey"
+/*
+ //使用body转成的字符串进行使用公钥加密
+ NSString* RSAString = [RSAEncryptor encryptString:bodyString publicKey:PublicKey];
+ //使用body转成的字符串 进行使用私钥SHA1加密
+ NSString* signString = [RSAEncryptor signTheDataSHA1WithRSA:bodyString privateKey:PrivateKey];
+ 
+ */
+
+
 @interface RSAEncryptor : NSObject
 /**
  *  加密方法
