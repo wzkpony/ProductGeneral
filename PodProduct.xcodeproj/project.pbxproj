@@ -16,12 +16,6 @@
 		1D2DDC94200C46E8005E8F53 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC90200C46E8005E8F53 /* NSString+Base64.m */; };
 		1D2DDC95200C46E8005E8F53 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC92200C46E8005E8F53 /* RSAEncryptor.m */; };
 		1D2DDC99200C46ED005E8F53 /* CodeResourcesClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC98200C46ED005E8F53 /* CodeResourcesClass.m */; };
-		1D464CD92073166900F99E93 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC8E200C46E8005E8F53 /* NSData+Base64.m */; };
-		1D464CDA2073166900F99E93 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC90200C46E8005E8F53 /* NSString+Base64.m */; };
-		1D464CDB2073166900F99E93 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC92200C46E8005E8F53 /* RSAEncryptor.m */; };
-		1D464CDC2073169400F99E93 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D2DDC8D200C46E8005E8F53 /* NSData+Base64.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1D464CDD2073169400F99E93 /* NSString+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D2DDC8F200C46E8005E8F53 /* NSString+Base64.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		1D464CDE2073169400F99E93 /* RSAEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D2DDC91200C46E8005E8F53 /* RSAEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D48BEC4204F8ED800F7A9DA /* StudyBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D48BEC3204F8ED800F7A9DA /* StudyBlock.m */; };
 		1D48BEC7204F990200F7A9DA /* StudyRunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D48BEC6204F990200F7A9DA /* StudyRunTime.m */; };
 		1D48BECA204FD83700F7A9DA /* StudyGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D48BEC9204FD83700F7A9DA /* StudyGCD.m */; };
@@ -49,9 +43,6 @@
 		1D8E158920523A9B0031B19D /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E158720523A9B0031B19D /* LoginVC.m */; };
 		1D8E158A20523A9B0031B19D /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8E158820523A9B0031B19D /* LoginVC.xib */; };
 		1D8E158D2052533A0031B19D /* LoginVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E158C2052533A0031B19D /* LoginVM.m */; };
-		1D8E15B8205257DC0031B19D /* WZKLocationSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D8E15B6205257DC0031B19D /* WZKLocationSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D8E15BB205257DC0031B19D /* WZKLocationSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8E15B4205257DB0031B19D /* WZKLocationSDK.framework */; };
-		1D8E15BC205257DC0031B19D /* WZKLocationSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8E15B4205257DB0031B19D /* WZKLocationSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1D9AC59A205B651B002ABE58 /* StudyRACModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9AC599205B651B002ABE58 /* StudyRACModel.m */; };
 		1DA1D52A1FB02CD3003FEB38 /* NSNumber+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1D5211FB02CD3003FEB38 /* NSNumber+Format.m */; };
 		1DA1D52B1FB02CD3003FEB38 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1D5231FB02CD3003FEB38 /* NSString+Extension.m */; };
@@ -106,13 +97,6 @@
 			remoteGlobalIDString = 1D7E9B161EEE8D34008F18BF;
 			remoteInfo = PodProduct;
 		};
-		1D8E15B9205257DC0031B19D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1D7E9B0F1EEE8D34008F18BF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1D8E15B3205257DB0031B19D;
-			remoteInfo = WZKLocationSDK;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -132,7 +116,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1D8E15BC205257DC0031B19D /* WZKLocationSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +125,6 @@
 /* Begin PBXFileReference section */
 		1D03C5AE202306090007C46B /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
 		1D03C5AF202306090007C46B /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
-		1D0A80BB2052824B0080600B /* WZKLocationSDK copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "WZKLocationSDK copy-Info.plist"; path = "/Users/wzk/Desktop/PodProduct/WZKLocationSDK copy-Info.plist"; sourceTree = "<absolute>"; };
 		1D0A80BC2052988C0080600B /* WZKAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZKAnimation.h; sourceTree = "<group>"; };
 		1D0A80BD2052988C0080600B /* WZKAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZKAnimation.m; sourceTree = "<group>"; };
 		1D1AA6291F5924F300A591E8 /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
@@ -216,9 +198,6 @@
 		1D8E158820523A9B0031B19D /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 		1D8E158B2052533A0031B19D /* LoginVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVM.h; sourceTree = "<group>"; };
 		1D8E158C2052533A0031B19D /* LoginVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVM.m; sourceTree = "<group>"; };
-		1D8E15B4205257DB0031B19D /* WZKLocationSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WZKLocationSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D8E15B6205257DC0031B19D /* WZKLocationSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZKLocationSDK.h; sourceTree = "<group>"; };
-		1D8E15B7205257DC0031B19D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D9AC598205B651B002ABE58 /* StudyRACModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudyRACModel.h; sourceTree = "<group>"; };
 		1D9AC599205B651B002ABE58 /* StudyRACModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyRACModel.m; sourceTree = "<group>"; };
 		1DA1D51E1FB00212003FEB38 /* download.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = download.plist; sourceTree = "<group>"; };
@@ -295,7 +274,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A95660C888921491DF5CA4C8 /* libPods-PodProduct.a in Frameworks */,
-				1D8E15BB205257DC0031B19D /* WZKLocationSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,13 +285,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1D7E9B381EEE8D34008F18BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1D8E15B0205257DB0031B19D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -493,17 +464,36 @@
 			path = ExcelView;
 			sourceTree = "<group>";
 		};
+		1D77CFB5209C6C530048B7CF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		1D77CFB6209C6C530048B7CF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		1D77CFB7209C6C530048B7CF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		1D7E9B0E1EEE8D34008F18BF = {
 			isa = PBXGroup;
 			children = (
 				1D7E9B191EEE8D34008F18BF /* PodProduct */,
 				1D7E9B331EEE8D34008F18BF /* PodProductTests */,
 				1D7E9B3E1EEE8D34008F18BF /* PodProductUITests */,
-				1D8E15B5205257DC0031B19D /* WZKLocationSDK */,
 				1D7E9B181EEE8D34008F18BF /* Products */,
 				6DC707D5A025ECE1EA8FD010 /* Pods */,
 				F41C781773D326753B251DE4 /* Frameworks */,
-				1D0A80BB2052824B0080600B /* WZKLocationSDK copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -513,7 +503,6 @@
 				1D7E9B171EEE8D34008F18BF /* PodProduct.app */,
 				1D7E9B301EEE8D34008F18BF /* PodProductTests.xctest */,
 				1D7E9B3B1EEE8D34008F18BF /* PodProductUITests.xctest */,
-				1D8E15B4205257DB0031B19D /* WZKLocationSDK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -521,12 +510,12 @@
 		1D7E9B191EEE8D34008F18BF /* PodProduct */ = {
 			isa = PBXGroup;
 			children = (
+				1D77CFB6209C6C530048B7CF /* Extension */,
+				1D77CFB5209C6C530048B7CF /* Library */,
+				1D77CFB7209C6C530048B7CF /* Resource */,
 				1D5545251EEF8DD500180BA7 /* BaseUI */,
 				1D7E9B5F1EEE9309008F18BF /* Config */,
-				1D7E9B601EEE9309008F18BF /* Extension */,
-				1D7E9B611EEE9309008F18BF /* Library */,
 				1D7E9B631EEE9309008F18BF /* NetWorkRequest */,
-				1D7E9B641EEE9309008F18BF /* Resource */,
 				1D7E9B651EEE9309008F18BF /* Tools */,
 				1D5545291EEFC7E200180BA7 /* Modules */,
 				1D7E9B1D1EEE8D34008F18BF /* AppDelegate.h */,
@@ -588,20 +577,6 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
-		1D7E9B601EEE9309008F18BF /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		1D7E9B611EEE9309008F18BF /* Library */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Library;
-			sourceTree = "<group>";
-		};
 		1D7E9B631EEE9309008F18BF /* NetWorkRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -609,13 +584,6 @@
 				1DB93AC61EEFE12F00A6BAD7 /* NetworkManage.m */,
 			);
 			path = NetWorkRequest;
-			sourceTree = "<group>";
-		};
-		1D7E9B641EEE9309008F18BF /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		1D7E9B651EEE9309008F18BF /* Tools */ = {
@@ -644,15 +612,6 @@
 				1D8E158420523A520031B19D /* ExcelViewController.m */,
 			);
 			path = ExcelVC;
-			sourceTree = "<group>";
-		};
-		1D8E15B5205257DC0031B19D /* WZKLocationSDK */ = {
-			isa = PBXGroup;
-			children = (
-				1D8E15B6205257DC0031B19D /* WZKLocationSDK.h */,
-				1D8E15B7205257DC0031B19D /* Info.plist */,
-			);
-			path = WZKLocationSDK;
 			sourceTree = "<group>";
 		};
 		1DA1D51F1FB02CD3003FEB38 /* extension */ = {
@@ -718,20 +677,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		1D8E15B1205257DB0031B19D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1D8E15B8205257DC0031B19D /* WZKLocationSDK.h in Headers */,
-				1D464CDE2073169400F99E93 /* RSAEncryptor.h in Headers */,
-				1D464CDC2073169400F99E93 /* NSData+Base64.h in Headers */,
-				1D464CDD2073169400F99E93 /* NSString+Base64.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		1D7E9B161EEE8D34008F18BF /* PodProduct */ = {
 			isa = PBXNativeTarget;
@@ -749,7 +694,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				1D8E15BA205257DC0031B19D /* PBXTargetDependency */,
 			);
 			name = PodProduct;
 			productName = PodProduct;
@@ -792,24 +736,6 @@
 			productReference = 1D7E9B3B1EEE8D34008F18BF /* PodProductUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		1D8E15B3205257DB0031B19D /* WZKLocationSDK */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1D8E15BD205257DC0031B19D /* Build configuration list for PBXNativeTarget "WZKLocationSDK" */;
-			buildPhases = (
-				1D8E15AF205257DB0031B19D /* Sources */,
-				1D8E15B0205257DB0031B19D /* Frameworks */,
-				1D8E15B1205257DB0031B19D /* Headers */,
-				1D8E15B2205257DB0031B19D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WZKLocationSDK;
-			productName = WZKLocationSDK;
-			productReference = 1D8E15B4205257DB0031B19D /* WZKLocationSDK.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -839,11 +765,6 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1D7E9B161EEE8D34008F18BF;
 					};
-					1D8E15B3205257DB0031B19D = {
-						CreatedOnToolsVersion = 9.2;
-						DevelopmentTeam = 65ZPEUXB9L;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = 1D7E9B121EEE8D34008F18BF /* Build configuration list for PBXProject "PodProduct" */;
@@ -862,7 +783,6 @@
 				1D7E9B161EEE8D34008F18BF /* PodProduct */,
 				1D7E9B2F1EEE8D34008F18BF /* PodProductTests */,
 				1D7E9B3A1EEE8D34008F18BF /* PodProductUITests */,
-				1D8E15B3205257DB0031B19D /* WZKLocationSDK */,
 			);
 		};
 /* End PBXProject section */
@@ -900,13 +820,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1D7E9B391EEE8D34008F18BF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1D8E15B2205257DB0031B19D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1040,16 +953,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D8E15AF205257DB0031B19D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1D464CD92073166900F99E93 /* NSData+Base64.m in Sources */,
-				1D464CDA2073166900F99E93 /* NSString+Base64.m in Sources */,
-				1D464CDB2073166900F99E93 /* RSAEncryptor.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1062,11 +965,6 @@
 			isa = PBXTargetDependency;
 			target = 1D7E9B161EEE8D34008F18BF /* PodProduct */;
 			targetProxy = 1D7E9B3C1EEE8D34008F18BF /* PBXContainerItemProxy */;
-		};
-		1D8E15BA205257DC0031B19D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1D8E15B3205257DB0031B19D /* WZKLocationSDK */;
-			targetProxy = 1D8E15B9205257DC0031B19D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1302,75 +1200,6 @@
 			};
 			name = Release;
 		};
-		1D8E15BE205257DC0031B19D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 65ZPEUXB9L;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = WZKLocationSDK/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = WZKDemo.WZKLocationSDK;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1D8E15BF205257DC0031B19D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 65ZPEUXB9L;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = WZKLocationSDK/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				PRODUCT_BUNDLE_IDENTIFIER = WZKDemo.WZKLocationSDK;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1406,15 +1235,6 @@
 			buildConfigurations = (
 				1D7E9B4B1EEE8D34008F18BF /* Debug */,
 				1D7E9B4C1EEE8D34008F18BF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1D8E15BD205257DC0031B19D /* Build configuration list for PBXNativeTarget "WZKLocationSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1D8E15BE205257DC0031B19D /* Debug */,
-				1D8E15BF205257DC0031B19D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
