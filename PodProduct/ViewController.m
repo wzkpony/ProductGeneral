@@ -38,10 +38,6 @@
         NSLog(@"%@",laer);
     }
     
-    
-    
-  
-    
     _redVeiw = [[StudyRACView alloc] initWithFrame:CGRectMake(0, 88, 100, 200)];
     [_redVeiw configView];
     

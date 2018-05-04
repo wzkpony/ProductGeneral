@@ -68,6 +68,6 @@
 @implementation RunLoopTime
 -(void)studyRunloop
 {
-    NSRunLoop
+    
 }
 @end

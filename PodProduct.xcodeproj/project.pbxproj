@@ -747,8 +747,8 @@
 				TargetAttributes = {
 					1D7E9B161EEE8D34008F18BF = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 65ZPEUXB9L;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 686532JGRW;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1089,8 +1089,8 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65ZPEUXB9L;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 686532JGRW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PodProduct/Modules/ZhiBo/Classes/Vendors/NIMSDK/NIMAVChat",
@@ -1111,9 +1111,10 @@
 					"$(PROJECT_DIR)/PodProduct/Tools/Vendors/NIMSDK/NIMAVChat/Libs",
 					"$(PROJECT_DIR)/PodProduct/Tools/Vendors/NIMSDK/NIMSDK/Libs",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PodProduct.PodProduct;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carwins.testApp.test001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "87b4f035-1b9c-45e6-bafa-f4d22ca3a461";
+				PROVISIONING_PROFILE_SPECIFIER = CarwinsTestAppTest001;
 			};
 			name = Debug;
 		};
@@ -1126,8 +1127,8 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 65ZPEUXB9L;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 686532JGRW;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PodProduct/Modules/ZhiBo/Classes/Vendors/NIMSDK/NIMAVChat",
@@ -1148,9 +1149,10 @@
 					"$(PROJECT_DIR)/PodProduct/Tools/Vendors/NIMSDK/NIMAVChat/Libs",
 					"$(PROJECT_DIR)/PodProduct/Tools/Vendors/NIMSDK/NIMSDK/Libs",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PodProduct.PodProduct;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carwins.testApp.test001;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "87b4f035-1b9c-45e6-bafa-f4d22ca3a461";
+				PROVISIONING_PROFILE_SPECIFIER = CarwinsTestAppTest001;
 			};
 			name = Release;
 		};
