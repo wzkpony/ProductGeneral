@@ -22,10 +22,12 @@
  merge：将数组合并成一个新的信号，当数组中的任一一个信号成功时，就会调用block。
  
  combineLatest:将多个信号合并起来，并且拿到各个信号的最新的值,必须每个合并的signal至少都有过一次sendNext，才会触发合并的信号。
- 聚合
+ 
+
  combineLatest：将数组合并成一个新的信号，当数组中的所有信号都成功时，才会调用block
- 常见的用法，（先组合在聚合）。combineLatest:(id<NSFastEnumeration>)signals reduce:(id (^)())reduceBlock
- reduce中的block简介:
+ 常见的用法，（先组合在聚合）。combineLatest:(id<NSFastEnumeration>)signals reduce:(id (^)())reduceBlock。
+ 
+ reduce中的block简介: 聚合也就是合并，和merge，combineLatest结合使用
  reduceblcok中的参数，有多少信号组合，reduceblcok就有多少参数，每个参数就是之前信号发出的内容
  reduceblcok的返回值：聚合信号之后的内容。
  -----
@@ -140,7 +142,7 @@
     /*
      接收一个信号数组,当其中任何一个信号发生变化时,从每个信号都会执行
      // 聚合
-     // combineLatest
+     // combineLatest：将数组合并成一个新的信号，当数组中的所有信号都成功时，就会调用block
      merge：将数组合并成一个新的信号，当数组中的任一一个信号成功时，就会调用block。
      */
     RACSignal *reduceSignal = [RACSignal
@@ -274,6 +276,7 @@
 {
    __weak StudyRACViewModel *mySelf = (StudyRACViewModel *)self;
     @weakify(self);
+    //先封装loginCommand，做一个耗时操作（网络请求）。
     self.loginCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
         //这个假设的登录方法返回一个信号，当网络请求完成时发送一个值。
         @strongify(self)
@@ -282,9 +285,9 @@
         
         return [RACSignal empty];
     }];
-    
+    //当点击按钮时，会先执行loginCommand 的封装信号。信号执行完成。在执行executionSignals（以下代码的信号，返回一个信号：[loginSignal subscribeCompleted:^{ NSLog(@"Logged in successfully!");}] 用来输出这句话）
     [self.loginCommand.executionSignals subscribeNext:^(RACSignal *loginSignal) {
-        //
+        //下边这行代码是输出@"Logged in successfully!"的信号。
         [loginSignal subscribeCompleted:^{
             NSLog(@"Logged in successfully!");
         }];

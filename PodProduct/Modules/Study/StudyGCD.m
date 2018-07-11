@@ -112,11 +112,19 @@
 
 /*
  dispatch_group
+ dispatch_get_global_queue 全局队列，是并行的
+ dispatch_queue_create 创建一个串行队列
+ dispatch_queue_create 创建一个并行队列
+ dispatch_get_main_queue 主队列主线程
+ 
+ dispatch_queue_t serialqueue = dispatch_queue_create("serialqueue", DISPATCH_QUEUE_SERIAL);//串行线程队列
+ dispatch_queue_t concurrentqueue = dispatch_queue_create("concurrent", DISPATCH_QUEUE_CONCURRENT);//并行线程队列
  
  
  */
 - (void)funcStudyGCDGroup
 {
+    
     dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_group_t gp = dispatch_group_create();
     // ---------------dipatch_group------------

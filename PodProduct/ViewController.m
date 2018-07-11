@@ -67,7 +67,7 @@
     
 #pragma mark -- runTime End --
 #pragma mark -- GCD --
-//    [self selectButtonTest:nil];
+    [self selectButtonTest:nil];
 #pragma mark -- RAC --
     
 #pragma mark --  --
@@ -76,7 +76,7 @@
 - (IBAction)selectButtonTest:(id)sender {
     /*
      GCD测试
-    
+    */
     StudyGCD *gcd = [[StudyGCD alloc] init];
     [gcd funcStudyGCD_Dispatch_Async];
     [gcd funcStudyGCDMain];
@@ -88,11 +88,11 @@
     [gcd funcSemaphoreSync];
     [gcd funcGroupEnterAndLeave];
     
-    */
+    
     /*
      ReactiveCocoa 测试
      */
-    [self racTest];
+    //[self racTest];
 }
 
 -(void)racTest

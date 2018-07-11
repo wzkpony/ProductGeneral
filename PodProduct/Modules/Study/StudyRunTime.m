@@ -44,7 +44,13 @@ void gotoSchool(id self,SEL cmd,id value) {
     }
     return [super resolveInstanceMethod:sel];
 }
-//当动态方法解析和备援接收者都没有进行处理的话，就会执行
+//当动态方法解析没有实现或者无法处理的时候，就会执行----备援接收者
+
+- (id)forwardingTargetForSelector:(SEL)aSelector
+{
+    return self;//备援接者对象
+}
+//当动态方法解析和备援接收者都没有进行处理的话，就会执行----消息转发，如果消息转发再没有了，就会调用：doesNotRecognizeSelector报错信息，就崩溃了。
 - (void)forwardInvocation:(NSInvocation *)anInvocation {
     NSLog(@"%@ can't handle by People",NSStringFromSelector([anInvocation selector]));
 }
