@@ -319,33 +319,12 @@
 		1D48BEC1204F8EC000F7A9DA /* Study */ = {
 			isa = PBXGroup;
 			children = (
-				1DBA008A205A7C1D0019DB1A /* AudioMethod.h */,
-				1DBA0088205A7C1D0019DB1A /* AudioMethod.m */,
-				1DBA0087205A7C1D0019DB1A /* CallSMS.h */,
-				1DBA0085205A7C1C0019DB1A /* CallSMS.m */,
-				1DBA0089205A7C1D0019DB1A /* PathAndFiled.h */,
-				1DBA0081205A7C1C0019DB1A /* PathAndFiled.m */,
-				1DBA0082205A7C1C0019DB1A /* PhotoImage.h */,
-				1DBA0083205A7C1C0019DB1A /* PhotoImage.m */,
-				1DBA0084205A7C1C0019DB1A /* sound.plist */,
-				1DBA008B205A7C1D0019DB1A /* UIDevice+Hardware.h */,
-				1DBA0086205A7C1D0019DB1A /* UIDevice+Hardware.m */,
-				1D0A80BC2052988C0080600B /* WZKAnimation.h */,
-				1D0A80BD2052988C0080600B /* WZKAnimation.m */,
-				1D48BEC2204F8ED800F7A9DA /* StudyBlock.h */,
-				1D48BEC3204F8ED800F7A9DA /* StudyBlock.m */,
-				1D48BEC5204F990200F7A9DA /* StudyRunTime.h */,
-				1D48BEC6204F990200F7A9DA /* StudyRunTime.m */,
-				1D48BEC8204FD83700F7A9DA /* StudyGCD.h */,
-				1D48BEC9204FD83700F7A9DA /* StudyGCD.m */,
-				1D9AC598205B651B002ABE58 /* StudyRACModel.h */,
-				1D9AC599205B651B002ABE58 /* StudyRACModel.m */,
-				1D4ACCFA2061FDE100C2A92B /* StudyRACView.h */,
-				1D4ACCFB2061FDE100C2A92B /* StudyRACView.m */,
-				1D4ACCFD2061FE0200C2A92B /* StudyRACViewModel.h */,
-				1D4ACCFE2061FE0200C2A92B /* StudyRACViewModel.m */,
-				1D2B818620734D5500AABEF2 /* RunLoopTime.h */,
-				1D2B818720734D5500AABEF2 /* RunLoopTime.m */,
+				1DDC9AF32126A33700F53074 /* System */,
+				1DDC9AF42126A35E00F53074 /* Block */,
+				1DDC9AF52126A36600F53074 /* Runtime */,
+				1DDC9AF62126A36F00F53074 /* GCD */,
+				1DDC9AF72126A37900F53074 /* RAC */,
+				1DDC9AF82126A38200F53074 /* RunLoop */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -638,6 +617,75 @@
 				1DA673021EF11AAF007C2348 /* IconFontImageView.m */,
 			);
 			path = IconFontImageView;
+			sourceTree = "<group>";
+		};
+		1DDC9AF32126A33700F53074 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				1DBA008A205A7C1D0019DB1A /* AudioMethod.h */,
+				1DBA0088205A7C1D0019DB1A /* AudioMethod.m */,
+				1DBA0087205A7C1D0019DB1A /* CallSMS.h */,
+				1DBA0085205A7C1C0019DB1A /* CallSMS.m */,
+				1DBA0089205A7C1D0019DB1A /* PathAndFiled.h */,
+				1DBA0081205A7C1C0019DB1A /* PathAndFiled.m */,
+				1DBA0082205A7C1C0019DB1A /* PhotoImage.h */,
+				1DBA0083205A7C1C0019DB1A /* PhotoImage.m */,
+				1DBA0084205A7C1C0019DB1A /* sound.plist */,
+				1DBA008B205A7C1D0019DB1A /* UIDevice+Hardware.h */,
+				1DBA0086205A7C1D0019DB1A /* UIDevice+Hardware.m */,
+				1D0A80BC2052988C0080600B /* WZKAnimation.h */,
+				1D0A80BD2052988C0080600B /* WZKAnimation.m */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		1DDC9AF42126A35E00F53074 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				1D48BEC2204F8ED800F7A9DA /* StudyBlock.h */,
+				1D48BEC3204F8ED800F7A9DA /* StudyBlock.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		1DDC9AF52126A36600F53074 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				1D48BEC5204F990200F7A9DA /* StudyRunTime.h */,
+				1D48BEC6204F990200F7A9DA /* StudyRunTime.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		1DDC9AF62126A36F00F53074 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				1D48BEC8204FD83700F7A9DA /* StudyGCD.h */,
+				1D48BEC9204FD83700F7A9DA /* StudyGCD.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		1DDC9AF72126A37900F53074 /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				1D9AC598205B651B002ABE58 /* StudyRACModel.h */,
+				1D9AC599205B651B002ABE58 /* StudyRACModel.m */,
+				1D4ACCFA2061FDE100C2A92B /* StudyRACView.h */,
+				1D4ACCFB2061FDE100C2A92B /* StudyRACView.m */,
+				1D4ACCFD2061FE0200C2A92B /* StudyRACViewModel.h */,
+				1D4ACCFE2061FE0200C2A92B /* StudyRACViewModel.m */,
+			);
+			path = RAC;
+			sourceTree = "<group>";
+		};
+		1DDC9AF82126A38200F53074 /* RunLoop */ = {
+			isa = PBXGroup;
+			children = (
+				1D2B818620734D5500AABEF2 /* RunLoopTime.h */,
+				1D2B818720734D5500AABEF2 /* RunLoopTime.m */,
+			);
+			path = RunLoop;
 			sourceTree = "<group>";
 		};
 		1DF3C17F1F163AB900EC8155 /* font_zf8js534raf6flxr */ = {
