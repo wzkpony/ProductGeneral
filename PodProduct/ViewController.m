@@ -30,16 +30,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-    NSNumber *number = [NSNumber numberWithDouble:-1];
-    NSLog(@"%@",number.formateCountNum);
-    self.label.text = number.formateCountNum;
-    
-    for (id laer in [self.label.layer sublayers]) {
-        NSLog(@"%@",laer);
-    }
-    
-    _redVeiw = [[StudyRACView alloc] initWithFrame:CGRectMake(0, 88, 100, 200)];
-    [_redVeiw configView];
+//    NSNumber *number = [NSNumber numberWithDouble:-1];
+//    NSLog(@"%@",number.formateCountNum);
+//    self.label.text = number.formateCountNum;
+//
+//    for (id laer in [self.label.layer sublayers]) {
+//        NSLog(@"%@",laer);
+//    }
+//
+//    _redVeiw = [[StudyRACView alloc] initWithFrame:CGRectMake(0, 88, 100, 200)];
+//    [_redVeiw configView];
     
   
     
@@ -67,7 +67,7 @@
     
 #pragma mark -- runTime End --
 #pragma mark -- GCD --
-    [self selectButtonTest:nil];
+//    [self selectButtonTest:nil];
 #pragma mark -- RAC --
     
 #pragma mark --  --
