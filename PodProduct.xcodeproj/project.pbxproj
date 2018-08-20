@@ -39,6 +39,20 @@
 		1D7E9B2A1EEE8D34008F18BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7E9B281EEE8D34008F18BF /* LaunchScreen.storyboard */; };
 		1D7E9B351EEE8D34008F18BF /* PodProductTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E9B341EEE8D34008F18BF /* PodProductTests.m */; };
 		1D7E9B401EEE8D34008F18BF /* PodProductUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E9B3F1EEE8D34008F18BF /* PodProductUITests.m */; };
+		1D822623212A6499002D3EA0 /* AbstractFactoryPatternDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822609212A6499002D3EA0 /* AbstractFactoryPatternDemo.m */; };
+		1D822624212A6499002D3EA0 /* Blue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82260C212A6499002D3EA0 /* Blue.m */; };
+		1D822625212A6499002D3EA0 /* Green.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82260F212A6499002D3EA0 /* Green.m */; };
+		1D822626212A6499002D3EA0 /* Red.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822611212A6499002D3EA0 /* Red.m */; };
+		1D822627212A6499002D3EA0 /* AbstractFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822614212A6499002D3EA0 /* AbstractFactory.m */; };
+		1D822628212A6499002D3EA0 /* ColorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822616212A6499002D3EA0 /* ColorFactory.m */; };
+		1D822629212A6499002D3EA0 /* ShapeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822618212A6499002D3EA0 /* ShapeFactory.m */; };
+		1D82262A212A6499002D3EA0 /* FactoryProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82261A212A6499002D3EA0 /* FactoryProducer.m */; };
+		1D82262B212A6499002D3EA0 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82261D212A6499002D3EA0 /* Circle.m */; };
+		1D82262C212A6499002D3EA0 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82261F212A6499002D3EA0 /* Rectangle.m */; };
+		1D82262D212A6499002D3EA0 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822622212A6499002D3EA0 /* Square.m */; };
+		1D822630212A64BB002D3EA0 /* SingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82262F212A64BB002D3EA0 /* SingleObject.m */; };
+		1D822631212A678D002D3EA0 /* SingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82262F212A64BB002D3EA0 /* SingleObject.m */; };
+		1D822632212A678D002D3EA0 /* SingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82262F212A64BB002D3EA0 /* SingleObject.m */; };
 		1D8E158520523A520031B19D /* ExcelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E158420523A520031B19D /* ExcelViewController.m */; };
 		1D8E158920523A9B0031B19D /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E158720523A9B0031B19D /* LoginVC.m */; };
 		1D8E158A20523A9B0031B19D /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8E158820523A9B0031B19D /* LoginVC.xib */; };
@@ -69,37 +83,6 @@
 		1DBA0090205A7C1D0019DB1A /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA0086205A7C1D0019DB1A /* UIDevice+Hardware.m */; };
 		1DBA0091205A7C1D0019DB1A /* AudioMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA0088205A7C1D0019DB1A /* AudioMethod.m */; };
 		1DC9F5E11F6781410088275C /* ExcelContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC9F5E01F6781410088275C /* ExcelContentView.m */; };
-		1DCCADB62126BA72000E64BD /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9AFE2126A48500F53074 /* Rectangle.m */; };
-		1DCCADB72126BA72000E64BD /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9AFE2126A48500F53074 /* Rectangle.m */; };
-		1DCCADB82126BA75000E64BD /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B012126A4F700F53074 /* Square.m */; };
-		1DCCADB92126BA76000E64BD /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B012126A4F700F53074 /* Square.m */; };
-		1DCCADBA2126BA78000E64BD /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B042126A52100F53074 /* Circle.m */; };
-		1DCCADBB2126BA78000E64BD /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B042126A52100F53074 /* Circle.m */; };
-		1DCCADBC2126BA7C000E64BD /* Red.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B082126A58800F53074 /* Red.m */; };
-		1DCCADBD2126BA7D000E64BD /* Red.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B082126A58800F53074 /* Red.m */; };
-		1DCCADBE2126BA7F000E64BD /* Green.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B0B2126A5A900F53074 /* Green.m */; };
-		1DCCADBF2126BA7F000E64BD /* Green.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B0B2126A5A900F53074 /* Green.m */; };
-		1DCCADC02126BA82000E64BD /* Blue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B0E2126A5C800F53074 /* Blue.m */; };
-		1DCCADC12126BA83000E64BD /* Blue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B0E2126A5C800F53074 /* Blue.m */; };
-		1DCCADC22126BA90000E64BD /* ShapeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B142126A76400F53074 /* ShapeFactory.m */; };
-		1DCCADC32126BA91000E64BD /* ShapeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B142126A76400F53074 /* ShapeFactory.m */; };
-		1DCCADC42126BA93000E64BD /* ColorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B172126A8A900F53074 /* ColorFactory.m */; };
-		1DCCADC52126BA93000E64BD /* ColorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B172126A8A900F53074 /* ColorFactory.m */; };
-		1DCCADC62126BA95000E64BD /* FactoryProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B1C2126AA4400F53074 /* FactoryProducer.m */; };
-		1DCCADC72126BA96000E64BD /* FactoryProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B1C2126AA4400F53074 /* FactoryProducer.m */; };
-		1DCCADC82126BA98000E64BD /* AbstractFactoryPatternDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B202126ADBF00F53074 /* AbstractFactoryPatternDemo.m */; };
-		1DCCADC92126BA99000E64BD /* AbstractFactoryPatternDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B202126ADBF00F53074 /* AbstractFactoryPatternDemo.m */; };
-		1DCCADCC2126BDF6000E64BD /* AbstractFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCCADCB2126BDF6000E64BD /* AbstractFactory.m */; };
-		1DDC9AFF2126A48500F53074 /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9AFE2126A48500F53074 /* Rectangle.m */; };
-		1DDC9B022126A4F700F53074 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B012126A4F700F53074 /* Square.m */; };
-		1DDC9B052126A52100F53074 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B042126A52100F53074 /* Circle.m */; };
-		1DDC9B092126A58800F53074 /* Red.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B082126A58800F53074 /* Red.m */; };
-		1DDC9B0C2126A5A900F53074 /* Green.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B0B2126A5A900F53074 /* Green.m */; };
-		1DDC9B0F2126A5C800F53074 /* Blue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B0E2126A5C800F53074 /* Blue.m */; };
-		1DDC9B152126A76400F53074 /* ShapeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B142126A76400F53074 /* ShapeFactory.m */; };
-		1DDC9B182126A8A900F53074 /* ColorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B172126A8A900F53074 /* ColorFactory.m */; };
-		1DDC9B1D2126AA4400F53074 /* FactoryProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B1C2126AA4400F53074 /* FactoryProducer.m */; };
-		1DDC9B212126ADBF00F53074 /* AbstractFactoryPatternDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDC9B202126ADBF00F53074 /* AbstractFactoryPatternDemo.m */; };
 		1DF3C18A1F163AB900EC8155 /* demo.css in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3C1801F163AB900EC8155 /* demo.css */; };
 		1DF3C18B1F163AB900EC8155 /* demo_fontclass.html in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3C1811F163AB900EC8155 /* demo_fontclass.html */; };
 		1DF3C18C1F163AB900EC8155 /* demo_symbol.html in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3C1821F163AB900EC8155 /* demo_symbol.html */; };
@@ -222,6 +205,34 @@
 		1D7E9B3B1EEE8D34008F18BF /* PodProductUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodProductUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7E9B3F1EEE8D34008F18BF /* PodProductUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PodProductUITests.m; sourceTree = "<group>"; };
 		1D7E9B411EEE8D34008F18BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D822608212A6499002D3EA0 /* AbstractFactoryPatternDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractFactoryPatternDemo.h; sourceTree = "<group>"; };
+		1D822609212A6499002D3EA0 /* AbstractFactoryPatternDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractFactoryPatternDemo.m; sourceTree = "<group>"; };
+		1D82260B212A6499002D3EA0 /* Blue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blue.h; sourceTree = "<group>"; };
+		1D82260C212A6499002D3EA0 /* Blue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Blue.m; sourceTree = "<group>"; };
+		1D82260D212A6499002D3EA0 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		1D82260E212A6499002D3EA0 /* Green.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Green.h; sourceTree = "<group>"; };
+		1D82260F212A6499002D3EA0 /* Green.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Green.m; sourceTree = "<group>"; };
+		1D822610212A6499002D3EA0 /* Red.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Red.h; sourceTree = "<group>"; };
+		1D822611212A6499002D3EA0 /* Red.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Red.m; sourceTree = "<group>"; };
+		1D822613212A6499002D3EA0 /* AbstractFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractFactory.h; sourceTree = "<group>"; };
+		1D822614212A6499002D3EA0 /* AbstractFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractFactory.m; sourceTree = "<group>"; };
+		1D822615212A6499002D3EA0 /* ColorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorFactory.h; sourceTree = "<group>"; };
+		1D822616212A6499002D3EA0 /* ColorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorFactory.m; sourceTree = "<group>"; };
+		1D822617212A6499002D3EA0 /* ShapeFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeFactory.h; sourceTree = "<group>"; };
+		1D822618212A6499002D3EA0 /* ShapeFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeFactory.m; sourceTree = "<group>"; };
+		1D822619212A6499002D3EA0 /* FactoryProducer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactoryProducer.h; sourceTree = "<group>"; };
+		1D82261A212A6499002D3EA0 /* FactoryProducer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactoryProducer.m; sourceTree = "<group>"; };
+		1D82261C212A6499002D3EA0 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		1D82261D212A6499002D3EA0 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		1D82261E212A6499002D3EA0 /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		1D82261F212A6499002D3EA0 /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		1D822620212A6499002D3EA0 /* Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		1D822621212A6499002D3EA0 /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		1D822622212A6499002D3EA0 /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		1D82262E212A64BB002D3EA0 /* SingleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleObject.h; sourceTree = "<group>"; };
+		1D82262F212A64BB002D3EA0 /* SingleObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleObject.m; sourceTree = "<group>"; };
+		1D822636212A83AD002D3EA0 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		1D822637212A840D002D3EA0 /* Packing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Packing.h; sourceTree = "<group>"; };
 		1D8E158320523A520031B19D /* ExcelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelViewController.h; sourceTree = "<group>"; };
 		1D8E158420523A520031B19D /* ExcelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelViewController.m; sourceTree = "<group>"; };
 		1D8E158620523A9B0031B19D /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
@@ -284,30 +295,6 @@
 		1DBA008B205A7C1D0019DB1A /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
 		1DC9F5DF1F6781410088275C /* ExcelContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelContentView.h; sourceTree = "<group>"; };
 		1DC9F5E01F6781410088275C /* ExcelContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelContentView.m; sourceTree = "<group>"; };
-		1DCCADCA2126BDF6000E64BD /* AbstractFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractFactory.h; sourceTree = "<group>"; };
-		1DCCADCB2126BDF6000E64BD /* AbstractFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractFactory.m; sourceTree = "<group>"; };
-		1DDC9AFC2126A45C00F53074 /* Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
-		1DDC9AFD2126A48500F53074 /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
-		1DDC9AFE2126A48500F53074 /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
-		1DDC9B002126A4F700F53074 /* Square.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
-		1DDC9B012126A4F700F53074 /* Square.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
-		1DDC9B032126A52100F53074 /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
-		1DDC9B042126A52100F53074 /* Circle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
-		1DDC9B062126A56200F53074 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
-		1DDC9B072126A58800F53074 /* Red.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Red.h; sourceTree = "<group>"; };
-		1DDC9B082126A58800F53074 /* Red.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Red.m; sourceTree = "<group>"; };
-		1DDC9B0A2126A5A900F53074 /* Green.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Green.h; sourceTree = "<group>"; };
-		1DDC9B0B2126A5A900F53074 /* Green.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Green.m; sourceTree = "<group>"; };
-		1DDC9B0D2126A5C800F53074 /* Blue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Blue.h; sourceTree = "<group>"; };
-		1DDC9B0E2126A5C800F53074 /* Blue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blue.m; sourceTree = "<group>"; };
-		1DDC9B132126A76400F53074 /* ShapeFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeFactory.h; sourceTree = "<group>"; };
-		1DDC9B142126A76400F53074 /* ShapeFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeFactory.m; sourceTree = "<group>"; };
-		1DDC9B162126A8A900F53074 /* ColorFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorFactory.h; sourceTree = "<group>"; };
-		1DDC9B172126A8A900F53074 /* ColorFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorFactory.m; sourceTree = "<group>"; };
-		1DDC9B1B2126AA4400F53074 /* FactoryProducer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryProducer.h; sourceTree = "<group>"; };
-		1DDC9B1C2126AA4400F53074 /* FactoryProducer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactoryProducer.m; sourceTree = "<group>"; };
-		1DDC9B1F2126ADBF00F53074 /* AbstractFactoryPatternDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractFactoryPatternDemo.h; sourceTree = "<group>"; };
-		1DDC9B202126ADBF00F53074 /* AbstractFactoryPatternDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractFactoryPatternDemo.m; sourceTree = "<group>"; };
 		1DF3C1801F163AB900EC8155 /* demo.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = demo.css; sourceTree = "<group>"; };
 		1DF3C1811F163AB900EC8155 /* demo_fontclass.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo_fontclass.html; sourceTree = "<group>"; };
 		1DF3C1821F163AB900EC8155 /* demo_symbol.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo_symbol.html; sourceTree = "<group>"; };
@@ -374,7 +361,7 @@
 		1D48BEC1204F8EC000F7A9DA /* Study */ = {
 			isa = PBXGroup;
 			children = (
-				1DDC9AFA2126A40F00F53074 /* 设计模式 */,
+				1D822605212A6499002D3EA0 /* 设计模式 */,
 				1DDC9AF32126A33700F53074 /* System */,
 				1DDC9AF42126A35E00F53074 /* Block */,
 				1DDC9AF52126A36600F53074 /* Runtime */,
@@ -640,6 +627,105 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		1D822605212A6499002D3EA0 /* 设计模式 */ = {
+			isa = PBXGroup;
+			children = (
+				1D822634212A6818002D3EA0 /* 建造者模式 */,
+				1D822635212A6818002D3EA0 /* 适配器模式 */,
+				1D822633212A6818002D3EA0 /* 原型模式 */,
+				1D822606212A6499002D3EA0 /* 单例模式 */,
+				1D822607212A6499002D3EA0 /* 工厂模式 */,
+			);
+			path = "设计模式";
+			sourceTree = "<group>";
+		};
+		1D822606212A6499002D3EA0 /* 单例模式 */ = {
+			isa = PBXGroup;
+			children = (
+				1D82262E212A64BB002D3EA0 /* SingleObject.h */,
+				1D82262F212A64BB002D3EA0 /* SingleObject.m */,
+			);
+			path = "单例模式";
+			sourceTree = "<group>";
+		};
+		1D822607212A6499002D3EA0 /* 工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+				1D822608212A6499002D3EA0 /* AbstractFactoryPatternDemo.h */,
+				1D822609212A6499002D3EA0 /* AbstractFactoryPatternDemo.m */,
+				1D82260A212A6499002D3EA0 /* Color */,
+				1D822612212A6499002D3EA0 /* Factory */,
+				1D822619212A6499002D3EA0 /* FactoryProducer.h */,
+				1D82261A212A6499002D3EA0 /* FactoryProducer.m */,
+				1D82261B212A6499002D3EA0 /* Shape */,
+			);
+			path = "工厂模式";
+			sourceTree = "<group>";
+		};
+		1D82260A212A6499002D3EA0 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				1D82260B212A6499002D3EA0 /* Blue.h */,
+				1D82260C212A6499002D3EA0 /* Blue.m */,
+				1D82260D212A6499002D3EA0 /* Color.h */,
+				1D82260E212A6499002D3EA0 /* Green.h */,
+				1D82260F212A6499002D3EA0 /* Green.m */,
+				1D822610212A6499002D3EA0 /* Red.h */,
+				1D822611212A6499002D3EA0 /* Red.m */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		1D822612212A6499002D3EA0 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				1D822613212A6499002D3EA0 /* AbstractFactory.h */,
+				1D822614212A6499002D3EA0 /* AbstractFactory.m */,
+				1D822615212A6499002D3EA0 /* ColorFactory.h */,
+				1D822616212A6499002D3EA0 /* ColorFactory.m */,
+				1D822617212A6499002D3EA0 /* ShapeFactory.h */,
+				1D822618212A6499002D3EA0 /* ShapeFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		1D82261B212A6499002D3EA0 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				1D82261C212A6499002D3EA0 /* Circle.h */,
+				1D82261D212A6499002D3EA0 /* Circle.m */,
+				1D82261E212A6499002D3EA0 /* Rectangle.h */,
+				1D82261F212A6499002D3EA0 /* Rectangle.m */,
+				1D822620212A6499002D3EA0 /* Shape.h */,
+				1D822621212A6499002D3EA0 /* Square.h */,
+				1D822622212A6499002D3EA0 /* Square.m */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		1D822633212A6818002D3EA0 /* 原型模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "原型模式";
+			sourceTree = "<group>";
+		};
+		1D822634212A6818002D3EA0 /* 建造者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				1D822636212A83AD002D3EA0 /* Item.h */,
+				1D822637212A840D002D3EA0 /* Packing.h */,
+			);
+			path = "建造者模式";
+			sourceTree = "<group>";
+		};
+		1D822635212A6818002D3EA0 /* 适配器模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "适配器模式";
+			sourceTree = "<group>";
+		};
 		1D8E158220523A520031B19D /* ExcelVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -742,69 +828,6 @@
 				1D2B818720734D5500AABEF2 /* RunLoopTime.m */,
 			);
 			path = RunLoop;
-			sourceTree = "<group>";
-		};
-		1DDC9AFA2126A40F00F53074 /* 设计模式 */ = {
-			isa = PBXGroup;
-			children = (
-				1DDC9AFB2126A42B00F53074 /* 工厂模式 */,
-			);
-			path = "设计模式";
-			sourceTree = "<group>";
-		};
-		1DDC9AFB2126A42B00F53074 /* 工厂模式 */ = {
-			isa = PBXGroup;
-			children = (
-				1DDC9B1A2126A8D600F53074 /* Shape */,
-				1DDC9B192126A8B800F53074 /* Color */,
-				1DDC9B1E2126AC4600F53074 /* Factory */,
-				1DDC9B1B2126AA4400F53074 /* FactoryProducer.h */,
-				1DDC9B1C2126AA4400F53074 /* FactoryProducer.m */,
-				1DDC9B1F2126ADBF00F53074 /* AbstractFactoryPatternDemo.h */,
-				1DDC9B202126ADBF00F53074 /* AbstractFactoryPatternDemo.m */,
-			);
-			path = "工厂模式";
-			sourceTree = "<group>";
-		};
-		1DDC9B192126A8B800F53074 /* Color */ = {
-			isa = PBXGroup;
-			children = (
-				1DDC9B062126A56200F53074 /* Color.h */,
-				1DDC9B072126A58800F53074 /* Red.h */,
-				1DDC9B082126A58800F53074 /* Red.m */,
-				1DDC9B0A2126A5A900F53074 /* Green.h */,
-				1DDC9B0B2126A5A900F53074 /* Green.m */,
-				1DDC9B0D2126A5C800F53074 /* Blue.h */,
-				1DDC9B0E2126A5C800F53074 /* Blue.m */,
-			);
-			path = Color;
-			sourceTree = "<group>";
-		};
-		1DDC9B1A2126A8D600F53074 /* Shape */ = {
-			isa = PBXGroup;
-			children = (
-				1DDC9AFC2126A45C00F53074 /* Shape.h */,
-				1DDC9AFD2126A48500F53074 /* Rectangle.h */,
-				1DDC9AFE2126A48500F53074 /* Rectangle.m */,
-				1DDC9B002126A4F700F53074 /* Square.h */,
-				1DDC9B012126A4F700F53074 /* Square.m */,
-				1DDC9B032126A52100F53074 /* Circle.h */,
-				1DDC9B042126A52100F53074 /* Circle.m */,
-			);
-			path = Shape;
-			sourceTree = "<group>";
-		};
-		1DDC9B1E2126AC4600F53074 /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				1DCCADCA2126BDF6000E64BD /* AbstractFactory.h */,
-				1DCCADCB2126BDF6000E64BD /* AbstractFactory.m */,
-				1DDC9B132126A76400F53074 /* ShapeFactory.h */,
-				1DDC9B142126A76400F53074 /* ShapeFactory.m */,
-				1DDC9B162126A8A900F53074 /* ColorFactory.h */,
-				1DDC9B172126A8A900F53074 /* ColorFactory.m */,
-			);
-			path = Factory;
 			sourceTree = "<group>";
 		};
 		1DF3C17F1F163AB900EC8155 /* font_zf8js534raf6flxr */ = {
@@ -1050,62 +1073,63 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DDC9B022126A4F700F53074 /* Square.m in Sources */,
 				1D678CF7200DCC0700200B29 /* FontConfig.m in Sources */,
 				1D678CF4200DCBDF00200B29 /* ColorConfig.m in Sources */,
 				1D5ECEF41F66257D00370606 /* ExcelRightView.m in Sources */,
+				1D82262C212A6499002D3EA0 /* Rectangle.m in Sources */,
 				1DA1D52C1FB02CD3003FEB38 /* UIColor+HexColor.m in Sources */,
-				1DDC9B0F2126A5C800F53074 /* Blue.m in Sources */,
 				1DA672FF1EF0F5F3007C2348 /* BaseTextView.m in Sources */,
 				1D748E851F62788600F6E41E /* SubtypeView.m in Sources */,
 				1DB93ABB1EEFE09D00A6BAD7 /* HUDView.m in Sources */,
 				1DA672FC1EF0F5E0007C2348 /* BaseTextField.m in Sources */,
 				1D9AC59A205B651B002ABE58 /* StudyRACModel.m in Sources */,
 				1D8E158D2052533A0031B19D /* LoginVM.m in Sources */,
-				1DDC9B182126A8A900F53074 /* ColorFactory.m in Sources */,
 				1D1AA62E1F59250400A591E8 /* BaseTableViewCell.m in Sources */,
-				1DDC9B052126A52100F53074 /* Circle.m in Sources */,
 				1D0A80BE2052988C0080600B /* WZKAnimation.m in Sources */,
+				1D822623212A6499002D3EA0 /* AbstractFactoryPatternDemo.m in Sources */,
+				1D822625212A6499002D3EA0 /* Green.m in Sources */,
 				1DBA0091205A7C1D0019DB1A /* AudioMethod.m in Sources */,
 				1D748E731F62484500F6E41E /* ScanQRCodeViewController.m in Sources */,
 				1D748E821F62788600F6E41E /* ExcelCell.m in Sources */,
 				1DBA008C205A7C1D0019DB1A /* PathAndFiled.m in Sources */,
+				1D822629212A6499002D3EA0 /* ShapeFactory.m in Sources */,
 				1D748E841F62788600F6E41E /* ExcelView.m in Sources */,
 				1DBA008F205A7C1D0019DB1A /* CallSMS.m in Sources */,
 				1D8E158920523A9B0031B19D /* LoginVC.m in Sources */,
-				1DCCADCC2126BDF6000E64BD /* AbstractFactory.m in Sources */,
-				1DDC9B152126A76400F53074 /* ShapeFactory.m in Sources */,
-				1DDC9B212126ADBF00F53074 /* AbstractFactoryPatternDemo.m in Sources */,
 				1D1AA62B1F5924F300A591E8 /* BaseTableView.m in Sources */,
 				1D4ACCFF2061FE0200C2A92B /* StudyRACViewModel.m in Sources */,
+				1D822627212A6499002D3EA0 /* AbstractFactory.m in Sources */,
 				1DA1D52A1FB02CD3003FEB38 /* NSNumber+Format.m in Sources */,
-				1DDC9B0C2126A5A900F53074 /* Green.m in Sources */,
 				1DA673031EF11AAF007C2348 /* IconFontImageView.m in Sources */,
 				1D7E9B221EEE8D34008F18BF /* ViewController.m in Sources */,
+				1D822624212A6499002D3EA0 /* Blue.m in Sources */,
 				1D8E158520523A520031B19D /* ExcelViewController.m in Sources */,
 				1D2DDC93200C46E8005E8F53 /* NSData+Base64.m in Sources */,
 				1DBA0090205A7C1D0019DB1A /* UIDevice+Hardware.m in Sources */,
 				1DA1D52D1FB02CD3003FEB38 /* UIImage+Extension.m in Sources */,
+				1D822630212A64BB002D3EA0 /* SingleObject.m in Sources */,
+				1D822628212A6499002D3EA0 /* ColorFactory.m in Sources */,
 				1DB93AD71EEFE61D00A6BAD7 /* BaseViewController.m in Sources */,
 				1DB93ACE1EEFE5E400A6BAD7 /* BaseButton.m in Sources */,
 				1D2DDC99200C46ED005E8F53 /* CodeResourcesClass.m in Sources */,
-				1DDC9B1D2126AA4400F53074 /* FactoryProducer.m in Sources */,
 				1DB93AD41EEFE60800A6BAD7 /* BaseImageView.m in Sources */,
 				1DA1D52E1FB02CD4003FEB38 /* UIView+Extension.m in Sources */,
 				1DC9F5E11F6781410088275C /* ExcelContentView.m in Sources */,
 				1D2DDC94200C46E8005E8F53 /* NSString+Base64.m in Sources */,
 				1D7E9B1F1EEE8D34008F18BF /* AppDelegate.m in Sources */,
+				1D82262B212A6499002D3EA0 /* Circle.m in Sources */,
 				1D2DDC95200C46E8005E8F53 /* RSAEncryptor.m in Sources */,
+				1D82262D212A6499002D3EA0 /* Square.m in Sources */,
 				1DBA008D205A7C1D0019DB1A /* PhotoImage.m in Sources */,
-				1DDC9AFF2126A48500F53074 /* Rectangle.m in Sources */,
 				1DB93ACA1EEFE14700A6BAD7 /* TimeStampToString.m in Sources */,
 				1DB93AC71EEFE12F00A6BAD7 /* NetworkManage.m in Sources */,
-				1DDC9B092126A58800F53074 /* Red.m in Sources */,
+				1D822626212A6499002D3EA0 /* Red.m in Sources */,
 				1D48BEC4204F8ED800F7A9DA /* StudyBlock.m in Sources */,
 				1DB93AD11EEFE5F600A6BAD7 /* BaseLabel.m in Sources */,
 				1DB93ADD1EEFE74400A6BAD7 /* BaseTabBarController.m in Sources */,
 				1DB93ADA1EEFE64600A6BAD7 /* BaseNavigateController.m in Sources */,
 				1D48BEC7204F990200F7A9DA /* StudyRunTime.m in Sources */,
+				1D82262A212A6499002D3EA0 /* FactoryProducer.m in Sources */,
 				1D7E9B1C1EEE8D34008F18BF /* main.m in Sources */,
 				1D48BECA204FD83700F7A9DA /* StudyGCD.m in Sources */,
 				1D03C5B0202306090007C46B /* LoginModel.m in Sources */,
@@ -1120,18 +1144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DCCADC62126BA95000E64BD /* FactoryProducer.m in Sources */,
-				1DCCADB82126BA75000E64BD /* Square.m in Sources */,
-				1DCCADC22126BA90000E64BD /* ShapeFactory.m in Sources */,
-				1DCCADC02126BA82000E64BD /* Blue.m in Sources */,
-				1DCCADBE2126BA7F000E64BD /* Green.m in Sources */,
 				1DA5063D1FD4FA2200C48CFE /* WZKTests.m in Sources */,
-				1DCCADC82126BA98000E64BD /* AbstractFactoryPatternDemo.m in Sources */,
-				1DCCADBA2126BA78000E64BD /* Circle.m in Sources */,
-				1DCCADBC2126BA7C000E64BD /* Red.m in Sources */,
+				1D822631212A678D002D3EA0 /* SingleObject.m in Sources */,
 				1D7E9B351EEE8D34008F18BF /* PodProductTests.m in Sources */,
-				1DCCADC42126BA93000E64BD /* ColorFactory.m in Sources */,
-				1DCCADB62126BA72000E64BD /* Rectangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1139,17 +1154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DCCADB92126BA76000E64BD /* Square.m in Sources */,
-				1DCCADBB2126BA78000E64BD /* Circle.m in Sources */,
-				1DCCADC72126BA96000E64BD /* FactoryProducer.m in Sources */,
-				1DCCADC32126BA91000E64BD /* ShapeFactory.m in Sources */,
+				1D822632212A678D002D3EA0 /* SingleObject.m in Sources */,
 				1D7E9B401EEE8D34008F18BF /* PodProductUITests.m in Sources */,
-				1DCCADC52126BA93000E64BD /* ColorFactory.m in Sources */,
-				1DCCADC12126BA83000E64BD /* Blue.m in Sources */,
-				1DCCADC92126BA99000E64BD /* AbstractFactoryPatternDemo.m in Sources */,
-				1DCCADBF2126BA7F000E64BD /* Green.m in Sources */,
-				1DCCADBD2126BA7D000E64BD /* Red.m in Sources */,
-				1DCCADB72126BA72000E64BD /* Rectangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

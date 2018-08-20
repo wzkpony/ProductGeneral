@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "AbstractFactoryPatternDemo.h"
+#import "SingleObject.h"
 @interface PodProductTests : XCTestCase
 
 @end
@@ -18,7 +19,7 @@
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
     NSLog(@"setUp");
-   
+    [SingleObject shareSingleObject].index = 100;
 }
 
 - (void)tearDown {
@@ -32,8 +33,14 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     NSLog(@"testExample");
 //    [AbstractFactoryPatternDemo testColorFuntory];
-    
+    /**测试工厂
     [AbstractFactoryPatternDemo testShapeFuntory];
+     */
+    
+    /**测试单例
+     NSLog(@"%ld",(long)[SingleObject shareSingleObject].index);
+
+     */
     
 }
 - (void)testMyClass
