@@ -53,6 +53,17 @@
 		1D822630212A64BB002D3EA0 /* SingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82262F212A64BB002D3EA0 /* SingleObject.m */; };
 		1D822631212A678D002D3EA0 /* SingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82262F212A64BB002D3EA0 /* SingleObject.m */; };
 		1D822632212A678D002D3EA0 /* SingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82262F212A64BB002D3EA0 /* SingleObject.m */; };
+		1D82263A212A8535002D3EA0 /* Wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822639212A8535002D3EA0 /* Wrapper.m */; };
+		1D82263D212A8582002D3EA0 /* Bottle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82263C212A8582002D3EA0 /* Bottle.m */; };
+		1D822640212A8661002D3EA0 /* Burger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82263F212A8661002D3EA0 /* Burger.m */; };
+		1D822643212A87D9002D3EA0 /* ColdDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822642212A87D9002D3EA0 /* ColdDrink.m */; };
+		1D822646212A8866002D3EA0 /* VegBurger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822645212A8866002D3EA0 /* VegBurger.m */; };
+		1D822649212A88C4002D3EA0 /* ChickenBurger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822648212A88C4002D3EA0 /* ChickenBurger.m */; };
+		1D82264C212A8B62002D3EA0 /* Coke.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82264B212A8B62002D3EA0 /* Coke.m */; };
+		1D82264F212A8D06002D3EA0 /* Pepsi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82264E212A8D06002D3EA0 /* Pepsi.m */; };
+		1D822652212A8D33002D3EA0 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822651212A8D33002D3EA0 /* Meal.m */; };
+		1D822655212A90DB002D3EA0 /* MealBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822654212A90DB002D3EA0 /* MealBuilder.m */; };
+		1D822658212A936F002D3EA0 /* BuilderPatternDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822657212A936F002D3EA0 /* BuilderPatternDemo.m */; };
 		1D8E158520523A520031B19D /* ExcelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E158420523A520031B19D /* ExcelViewController.m */; };
 		1D8E158920523A9B0031B19D /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D8E158720523A9B0031B19D /* LoginVC.m */; };
 		1D8E158A20523A9B0031B19D /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8E158820523A9B0031B19D /* LoginVC.xib */; };
@@ -233,6 +244,28 @@
 		1D82262F212A64BB002D3EA0 /* SingleObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleObject.m; sourceTree = "<group>"; };
 		1D822636212A83AD002D3EA0 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		1D822637212A840D002D3EA0 /* Packing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Packing.h; sourceTree = "<group>"; };
+		1D822638212A8535002D3EA0 /* Wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wrapper.h; sourceTree = "<group>"; };
+		1D822639212A8535002D3EA0 /* Wrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wrapper.m; sourceTree = "<group>"; };
+		1D82263B212A8582002D3EA0 /* Bottle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bottle.h; sourceTree = "<group>"; };
+		1D82263C212A8582002D3EA0 /* Bottle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bottle.m; sourceTree = "<group>"; };
+		1D82263E212A8661002D3EA0 /* Burger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Burger.h; sourceTree = "<group>"; };
+		1D82263F212A8661002D3EA0 /* Burger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Burger.m; sourceTree = "<group>"; };
+		1D822641212A87D9002D3EA0 /* ColdDrink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColdDrink.h; sourceTree = "<group>"; };
+		1D822642212A87D9002D3EA0 /* ColdDrink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColdDrink.m; sourceTree = "<group>"; };
+		1D822644212A8866002D3EA0 /* VegBurger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VegBurger.h; sourceTree = "<group>"; };
+		1D822645212A8866002D3EA0 /* VegBurger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VegBurger.m; sourceTree = "<group>"; };
+		1D822647212A88C4002D3EA0 /* ChickenBurger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChickenBurger.h; sourceTree = "<group>"; };
+		1D822648212A88C4002D3EA0 /* ChickenBurger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChickenBurger.m; sourceTree = "<group>"; };
+		1D82264A212A8B62002D3EA0 /* Coke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coke.h; sourceTree = "<group>"; };
+		1D82264B212A8B62002D3EA0 /* Coke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coke.m; sourceTree = "<group>"; };
+		1D82264D212A8D06002D3EA0 /* Pepsi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pepsi.h; sourceTree = "<group>"; };
+		1D82264E212A8D06002D3EA0 /* Pepsi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pepsi.m; sourceTree = "<group>"; };
+		1D822650212A8D33002D3EA0 /* Meal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
+		1D822651212A8D33002D3EA0 /* Meal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
+		1D822653212A90DB002D3EA0 /* MealBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MealBuilder.h; sourceTree = "<group>"; };
+		1D822654212A90DB002D3EA0 /* MealBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MealBuilder.m; sourceTree = "<group>"; };
+		1D822656212A936F002D3EA0 /* BuilderPatternDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuilderPatternDemo.h; sourceTree = "<group>"; };
+		1D822657212A936F002D3EA0 /* BuilderPatternDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuilderPatternDemo.m; sourceTree = "<group>"; };
 		1D8E158320523A520031B19D /* ExcelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelViewController.h; sourceTree = "<group>"; };
 		1D8E158420523A520031B19D /* ExcelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelViewController.m; sourceTree = "<group>"; };
 		1D8E158620523A9B0031B19D /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
@@ -713,8 +746,14 @@
 		1D822634212A6818002D3EA0 /* 建造者模式 */ = {
 			isa = PBXGroup;
 			children = (
-				1D822636212A83AD002D3EA0 /* Item.h */,
-				1D822637212A840D002D3EA0 /* Packing.h */,
+				1D822659212A961F002D3EA0 /* 包装 */,
+				1D82265A212A9DDE002D3EA0 /* 素材 */,
+				1D822650212A8D33002D3EA0 /* Meal.h */,
+				1D822651212A8D33002D3EA0 /* Meal.m */,
+				1D822653212A90DB002D3EA0 /* MealBuilder.h */,
+				1D822654212A90DB002D3EA0 /* MealBuilder.m */,
+				1D822656212A936F002D3EA0 /* BuilderPatternDemo.h */,
+				1D822657212A936F002D3EA0 /* BuilderPatternDemo.m */,
 			);
 			path = "建造者模式";
 			sourceTree = "<group>";
@@ -724,6 +763,54 @@
 			children = (
 			);
 			path = "适配器模式";
+			sourceTree = "<group>";
+		};
+		1D822659212A961F002D3EA0 /* 包装 */ = {
+			isa = PBXGroup;
+			children = (
+				1D822637212A840D002D3EA0 /* Packing.h */,
+				1D822638212A8535002D3EA0 /* Wrapper.h */,
+				1D822639212A8535002D3EA0 /* Wrapper.m */,
+				1D82263B212A8582002D3EA0 /* Bottle.h */,
+				1D82263C212A8582002D3EA0 /* Bottle.m */,
+			);
+			name = "包装";
+			sourceTree = "<group>";
+		};
+		1D82265A212A9DDE002D3EA0 /* 素材 */ = {
+			isa = PBXGroup;
+			children = (
+				1D822636212A83AD002D3EA0 /* Item.h */,
+				1D82265B212A9E04002D3EA0 /* 汉堡 */,
+				1D82265C212A9E18002D3EA0 /* 可乐 */,
+			);
+			path = "素材";
+			sourceTree = "<group>";
+		};
+		1D82265B212A9E04002D3EA0 /* 汉堡 */ = {
+			isa = PBXGroup;
+			children = (
+				1D82263E212A8661002D3EA0 /* Burger.h */,
+				1D82263F212A8661002D3EA0 /* Burger.m */,
+				1D822644212A8866002D3EA0 /* VegBurger.h */,
+				1D822645212A8866002D3EA0 /* VegBurger.m */,
+				1D822647212A88C4002D3EA0 /* ChickenBurger.h */,
+				1D822648212A88C4002D3EA0 /* ChickenBurger.m */,
+			);
+			path = "汉堡";
+			sourceTree = "<group>";
+		};
+		1D82265C212A9E18002D3EA0 /* 可乐 */ = {
+			isa = PBXGroup;
+			children = (
+				1D822641212A87D9002D3EA0 /* ColdDrink.h */,
+				1D822642212A87D9002D3EA0 /* ColdDrink.m */,
+				1D82264A212A8B62002D3EA0 /* Coke.h */,
+				1D82264B212A8B62002D3EA0 /* Coke.m */,
+				1D82264D212A8D06002D3EA0 /* Pepsi.h */,
+				1D82264E212A8D06002D3EA0 /* Pepsi.m */,
+			);
+			path = "可乐";
 			sourceTree = "<group>";
 		};
 		1D8E158220523A520031B19D /* ExcelVC */ = {
@@ -1078,8 +1165,11 @@
 				1D5ECEF41F66257D00370606 /* ExcelRightView.m in Sources */,
 				1D82262C212A6499002D3EA0 /* Rectangle.m in Sources */,
 				1DA1D52C1FB02CD3003FEB38 /* UIColor+HexColor.m in Sources */,
+				1D822658212A936F002D3EA0 /* BuilderPatternDemo.m in Sources */,
+				1D822640212A8661002D3EA0 /* Burger.m in Sources */,
 				1DA672FF1EF0F5F3007C2348 /* BaseTextView.m in Sources */,
 				1D748E851F62788600F6E41E /* SubtypeView.m in Sources */,
+				1D82264C212A8B62002D3EA0 /* Coke.m in Sources */,
 				1DB93ABB1EEFE09D00A6BAD7 /* HUDView.m in Sources */,
 				1DA672FC1EF0F5E0007C2348 /* BaseTextField.m in Sources */,
 				1D9AC59A205B651B002ABE58 /* StudyRACModel.m in Sources */,
@@ -1088,6 +1178,7 @@
 				1D0A80BE2052988C0080600B /* WZKAnimation.m in Sources */,
 				1D822623212A6499002D3EA0 /* AbstractFactoryPatternDemo.m in Sources */,
 				1D822625212A6499002D3EA0 /* Green.m in Sources */,
+				1D82263D212A8582002D3EA0 /* Bottle.m in Sources */,
 				1DBA0091205A7C1D0019DB1A /* AudioMethod.m in Sources */,
 				1D748E731F62484500F6E41E /* ScanQRCodeViewController.m in Sources */,
 				1D748E821F62788600F6E41E /* ExcelCell.m in Sources */,
@@ -1095,7 +1186,10 @@
 				1D822629212A6499002D3EA0 /* ShapeFactory.m in Sources */,
 				1D748E841F62788600F6E41E /* ExcelView.m in Sources */,
 				1DBA008F205A7C1D0019DB1A /* CallSMS.m in Sources */,
+				1D822643212A87D9002D3EA0 /* ColdDrink.m in Sources */,
 				1D8E158920523A9B0031B19D /* LoginVC.m in Sources */,
+				1D82264F212A8D06002D3EA0 /* Pepsi.m in Sources */,
+				1D822655212A90DB002D3EA0 /* MealBuilder.m in Sources */,
 				1D1AA62B1F5924F300A591E8 /* BaseTableView.m in Sources */,
 				1D4ACCFF2061FE0200C2A92B /* StudyRACViewModel.m in Sources */,
 				1D822627212A6499002D3EA0 /* AbstractFactory.m in Sources */,
@@ -1120,17 +1214,21 @@
 				1D82262B212A6499002D3EA0 /* Circle.m in Sources */,
 				1D2DDC95200C46E8005E8F53 /* RSAEncryptor.m in Sources */,
 				1D82262D212A6499002D3EA0 /* Square.m in Sources */,
+				1D822649212A88C4002D3EA0 /* ChickenBurger.m in Sources */,
+				1D822652212A8D33002D3EA0 /* Meal.m in Sources */,
 				1DBA008D205A7C1D0019DB1A /* PhotoImage.m in Sources */,
 				1DB93ACA1EEFE14700A6BAD7 /* TimeStampToString.m in Sources */,
 				1DB93AC71EEFE12F00A6BAD7 /* NetworkManage.m in Sources */,
 				1D822626212A6499002D3EA0 /* Red.m in Sources */,
 				1D48BEC4204F8ED800F7A9DA /* StudyBlock.m in Sources */,
+				1D82263A212A8535002D3EA0 /* Wrapper.m in Sources */,
 				1DB93AD11EEFE5F600A6BAD7 /* BaseLabel.m in Sources */,
 				1DB93ADD1EEFE74400A6BAD7 /* BaseTabBarController.m in Sources */,
 				1DB93ADA1EEFE64600A6BAD7 /* BaseNavigateController.m in Sources */,
 				1D48BEC7204F990200F7A9DA /* StudyRunTime.m in Sources */,
 				1D82262A212A6499002D3EA0 /* FactoryProducer.m in Sources */,
 				1D7E9B1C1EEE8D34008F18BF /* main.m in Sources */,
+				1D822646212A8866002D3EA0 /* VegBurger.m in Sources */,
 				1D48BECA204FD83700F7A9DA /* StudyGCD.m in Sources */,
 				1D03C5B0202306090007C46B /* LoginModel.m in Sources */,
 				1D748E831F62788600F6E41E /* ExcelLeftView.m in Sources */,

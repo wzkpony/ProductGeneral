@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "Packing.h"
+
+/**<将商品（汉堡、可乐）的方法抽象出来。*/
+
 @protocol Item <NSObject>
 
 - (NSString *)name;
-- (Packing *)packing;
+- (id<Packing>)packing;
 - (float)price;
 @end
