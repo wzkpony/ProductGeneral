@@ -53,8 +53,6 @@
 		1D822630212A64BB002D3EA0 /* SingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82262F212A64BB002D3EA0 /* SingleObject.m */; };
 		1D822631212A678D002D3EA0 /* SingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82262F212A64BB002D3EA0 /* SingleObject.m */; };
 		1D822632212A678D002D3EA0 /* SingleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82262F212A64BB002D3EA0 /* SingleObject.m */; };
-		1D82263A212A8535002D3EA0 /* Wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822639212A8535002D3EA0 /* Wrapper.m */; };
-		1D82263D212A8582002D3EA0 /* Bottle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82263C212A8582002D3EA0 /* Bottle.m */; };
 		1D822640212A8661002D3EA0 /* Burger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D82263F212A8661002D3EA0 /* Burger.m */; };
 		1D822643212A87D9002D3EA0 /* ColdDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822642212A87D9002D3EA0 /* ColdDrink.m */; };
 		1D822646212A8866002D3EA0 /* VegBurger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D822645212A8866002D3EA0 /* VegBurger.m */; };
@@ -104,6 +102,8 @@
 		1DF3C1911F163AB900EC8155 /* iconfont.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3C1871F163AB900EC8155 /* iconfont.svg */; };
 		1DF3C1921F163AB900EC8155 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3C1881F163AB900EC8155 /* iconfont.ttf */; };
 		1DF3C1931F163AB900EC8155 /* iconfont.woff in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3C1891F163AB900EC8155 /* iconfont.woff */; };
+		1DF50209212AC9D6002C87BA /* Bottle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF50205212AC9D6002C87BA /* Bottle.m */; };
+		1DF5020A212AC9D6002C87BA /* Wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF50208212AC9D6002C87BA /* Wrapper.m */; };
 		A95660C888921491DF5CA4C8 /* libPods-PodProduct.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82890BD67DF50D42652E4BCD /* libPods-PodProduct.a */; };
 /* End PBXBuildFile section */
 
@@ -243,11 +243,6 @@
 		1D82262E212A64BB002D3EA0 /* SingleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleObject.h; sourceTree = "<group>"; };
 		1D82262F212A64BB002D3EA0 /* SingleObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleObject.m; sourceTree = "<group>"; };
 		1D822636212A83AD002D3EA0 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		1D822637212A840D002D3EA0 /* Packing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Packing.h; sourceTree = "<group>"; };
-		1D822638212A8535002D3EA0 /* Wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wrapper.h; sourceTree = "<group>"; };
-		1D822639212A8535002D3EA0 /* Wrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wrapper.m; sourceTree = "<group>"; };
-		1D82263B212A8582002D3EA0 /* Bottle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bottle.h; sourceTree = "<group>"; };
-		1D82263C212A8582002D3EA0 /* Bottle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bottle.m; sourceTree = "<group>"; };
 		1D82263E212A8661002D3EA0 /* Burger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Burger.h; sourceTree = "<group>"; };
 		1D82263F212A8661002D3EA0 /* Burger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Burger.m; sourceTree = "<group>"; };
 		1D822641212A87D9002D3EA0 /* ColdDrink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColdDrink.h; sourceTree = "<group>"; };
@@ -338,6 +333,11 @@
 		1DF3C1871F163AB900EC8155 /* iconfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = iconfont.svg; sourceTree = "<group>"; };
 		1DF3C1881F163AB900EC8155 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		1DF3C1891F163AB900EC8155 /* iconfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.woff; sourceTree = "<group>"; };
+		1DF50204212AC9D6002C87BA /* Bottle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bottle.h; sourceTree = "<group>"; };
+		1DF50205212AC9D6002C87BA /* Bottle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bottle.m; sourceTree = "<group>"; };
+		1DF50206212AC9D6002C87BA /* Packing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Packing.h; sourceTree = "<group>"; };
+		1DF50207212AC9D6002C87BA /* Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wrapper.h; sourceTree = "<group>"; };
+		1DF50208212AC9D6002C87BA /* Wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wrapper.m; sourceTree = "<group>"; };
 		26C6B9F64F74D38DB6598374 /* Pods-PodProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodProduct/Pods-PodProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		53661698CC4DFE175F61A405 /* Pods-PodProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodProduct.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodProduct/Pods-PodProduct.release.xcconfig"; sourceTree = "<group>"; };
 		82890BD67DF50D42652E4BCD /* libPods-PodProduct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PodProduct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -746,7 +746,7 @@
 		1D822634212A6818002D3EA0 /* 建造者模式 */ = {
 			isa = PBXGroup;
 			children = (
-				1D822659212A961F002D3EA0 /* 包装 */,
+				1DF50203212AC9D6002C87BA /* 包装 */,
 				1D82265A212A9DDE002D3EA0 /* 素材 */,
 				1D822650212A8D33002D3EA0 /* Meal.h */,
 				1D822651212A8D33002D3EA0 /* Meal.m */,
@@ -763,18 +763,6 @@
 			children = (
 			);
 			path = "适配器模式";
-			sourceTree = "<group>";
-		};
-		1D822659212A961F002D3EA0 /* 包装 */ = {
-			isa = PBXGroup;
-			children = (
-				1D822637212A840D002D3EA0 /* Packing.h */,
-				1D822638212A8535002D3EA0 /* Wrapper.h */,
-				1D822639212A8535002D3EA0 /* Wrapper.m */,
-				1D82263B212A8582002D3EA0 /* Bottle.h */,
-				1D82263C212A8582002D3EA0 /* Bottle.m */,
-			);
-			name = "包装";
 			sourceTree = "<group>";
 		};
 		1D82265A212A9DDE002D3EA0 /* 素材 */ = {
@@ -932,6 +920,18 @@
 				1DF3C1891F163AB900EC8155 /* iconfont.woff */,
 			);
 			path = font_zf8js534raf6flxr;
+			sourceTree = "<group>";
+		};
+		1DF50203212AC9D6002C87BA /* 包装 */ = {
+			isa = PBXGroup;
+			children = (
+				1DF50204212AC9D6002C87BA /* Bottle.h */,
+				1DF50205212AC9D6002C87BA /* Bottle.m */,
+				1DF50206212AC9D6002C87BA /* Packing.h */,
+				1DF50207212AC9D6002C87BA /* Wrapper.h */,
+				1DF50208212AC9D6002C87BA /* Wrapper.m */,
+			);
+			path = "包装";
 			sourceTree = "<group>";
 		};
 		6DC707D5A025ECE1EA8FD010 /* Pods */ = {
@@ -1178,7 +1178,6 @@
 				1D0A80BE2052988C0080600B /* WZKAnimation.m in Sources */,
 				1D822623212A6499002D3EA0 /* AbstractFactoryPatternDemo.m in Sources */,
 				1D822625212A6499002D3EA0 /* Green.m in Sources */,
-				1D82263D212A8582002D3EA0 /* Bottle.m in Sources */,
 				1DBA0091205A7C1D0019DB1A /* AudioMethod.m in Sources */,
 				1D748E731F62484500F6E41E /* ScanQRCodeViewController.m in Sources */,
 				1D748E821F62788600F6E41E /* ExcelCell.m in Sources */,
@@ -1193,7 +1192,9 @@
 				1D1AA62B1F5924F300A591E8 /* BaseTableView.m in Sources */,
 				1D4ACCFF2061FE0200C2A92B /* StudyRACViewModel.m in Sources */,
 				1D822627212A6499002D3EA0 /* AbstractFactory.m in Sources */,
+				1DF5020A212AC9D6002C87BA /* Wrapper.m in Sources */,
 				1DA1D52A1FB02CD3003FEB38 /* NSNumber+Format.m in Sources */,
+				1DF50209212AC9D6002C87BA /* Bottle.m in Sources */,
 				1DA673031EF11AAF007C2348 /* IconFontImageView.m in Sources */,
 				1D7E9B221EEE8D34008F18BF /* ViewController.m in Sources */,
 				1D822624212A6499002D3EA0 /* Blue.m in Sources */,
@@ -1221,7 +1222,6 @@
 				1DB93AC71EEFE12F00A6BAD7 /* NetworkManage.m in Sources */,
 				1D822626212A6499002D3EA0 /* Red.m in Sources */,
 				1D48BEC4204F8ED800F7A9DA /* StudyBlock.m in Sources */,
-				1D82263A212A8535002D3EA0 /* Wrapper.m in Sources */,
 				1DB93AD11EEFE5F600A6BAD7 /* BaseLabel.m in Sources */,
 				1DB93ADD1EEFE74400A6BAD7 /* BaseTabBarController.m in Sources */,
 				1DB93ADA1EEFE64600A6BAD7 /* BaseNavigateController.m in Sources */,
