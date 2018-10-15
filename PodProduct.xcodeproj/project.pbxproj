@@ -25,6 +25,7 @@
 		1D5ECEF41F66257D00370606 /* ExcelRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5ECEF31F66257D00370606 /* ExcelRightView.m */; };
 		1D678CF4200DCBDF00200B29 /* ColorConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D678CF3200DCBDF00200B29 /* ColorConfig.m */; };
 		1D678CF7200DCC0700200B29 /* FontConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D678CF6200DCC0700200B29 /* FontConfig.m */; };
+		1D69B0EC2174747300F0CAA6 /* 文件资源文件夹.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1D69B0EB2174747300F0CAA6 /* 文件资源文件夹.rtf */; };
 		1D748E731F62484500F6E41E /* ScanQRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D748E711F62484500F6E41E /* ScanQRCodeViewController.m */; };
 		1D748E741F62484500F6E41E /* ScanQRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D748E721F62484500F6E41E /* ScanQRCodeViewController.xib */; };
 		1D748E821F62788600F6E41E /* ExcelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D748E7B1F62788600F6E41E /* ExcelCell.m */; };
@@ -188,6 +189,7 @@
 		1D678CF3200DCBDF00200B29 /* ColorConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorConfig.m; sourceTree = "<group>"; };
 		1D678CF5200DCC0700200B29 /* FontConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontConfig.h; sourceTree = "<group>"; };
 		1D678CF6200DCC0700200B29 /* FontConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FontConfig.m; sourceTree = "<group>"; };
+		1D69B0EB2174747300F0CAA6 /* 文件资源文件夹.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "文件资源文件夹.rtf"; sourceTree = "<group>"; };
 		1D748E701F62484500F6E41E /* ScanQRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanQRCodeViewController.h; sourceTree = "<group>"; };
 		1D748E711F62484500F6E41E /* ScanQRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanQRCodeViewController.m; sourceTree = "<group>"; };
 		1D748E721F62484500F6E41E /* ScanQRCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanQRCodeViewController.xib; sourceTree = "<group>"; };
@@ -481,6 +483,33 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		1D69B0E82174733500F0CAA6 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				1DB93AB91EEFE09D00A6BAD7 /* HUDView.h */,
+				1DB93ABA1EEFE09D00A6BAD7 /* HUDView.m */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		1D69B0EA2174737B00F0CAA6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1DA1D5201FB02CD3003FEB38 /* NSNumber+Format.h */,
+				1DA1D5211FB02CD3003FEB38 /* NSNumber+Format.m */,
+				1DA1D5221FB02CD3003FEB38 /* NSString+Extension.h */,
+				1DA1D5231FB02CD3003FEB38 /* NSString+Extension.m */,
+				1DA1D5241FB02CD3003FEB38 /* UIColor+HexColor.h */,
+				1DA1D5251FB02CD3003FEB38 /* UIColor+HexColor.m */,
+				1DA1D5261FB02CD3003FEB38 /* UIImage+Extension.h */,
+				1DA1D5271FB02CD3003FEB38 /* UIImage+Extension.m */,
+				1DA1D5281FB02CD3003FEB38 /* UIView+Extension.h */,
+				1DA1D5291FB02CD3003FEB38 /* UIView+Extension.m */,
+			);
+			name = Extension;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		1D748E6E1F62452200F6E41E /* ErCodeVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -522,20 +551,15 @@
 		1D77CFB5209C6C530048B7CF /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				1D69B0EB2174747300F0CAA6 /* 文件资源文件夹.rtf */,
 			);
 			path = Library;
-			sourceTree = "<group>";
-		};
-		1D77CFB6209C6C530048B7CF /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		1D77CFB7209C6C530048B7CF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1DF3C17F1F163AB900EC8155 /* iconFont */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -565,7 +589,7 @@
 		1D7E9B191EEE8D34008F18BF /* PodProduct */ = {
 			isa = PBXGroup;
 			children = (
-				1D77CFB6209C6C530048B7CF /* Extension */,
+				1D69B0EA2174737B00F0CAA6 /* Extension */,
 				1D77CFB5209C6C530048B7CF /* Library */,
 				1D77CFB7209C6C530048B7CF /* Resource */,
 				1D5545251EEF8DD500180BA7 /* BaseUI */,
@@ -644,16 +668,13 @@
 		1D7E9B651EEE9309008F18BF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1D69B0E82174733500F0CAA6 /* HUD */,
 				1D2DDC96200C46ED005E8F53 /* CodeResourcesClass */,
 				1D2DDC8C200C46E8005E8F53 /* RSA */,
-				1DA1D51F1FB02CD3003FEB38 /* extension */,
 				1DA1D51E1FB00212003FEB38 /* download.plist */,
 				1D748E781F62788600F6E41E /* ExcelView */,
 				1D748E6E1F62452200F6E41E /* ErCodeVC */,
-				1DF3C17F1F163AB900EC8155 /* font_zf8js534raf6flxr */,
 				1DA673001EF11AAF007C2348 /* IconFontImageView */,
-				1DB93AB91EEFE09D00A6BAD7 /* HUDView.h */,
-				1DB93ABA1EEFE09D00A6BAD7 /* HUDView.m */,
 				1DB93AC81EEFE14700A6BAD7 /* TimeStampToString.h */,
 				1DB93AC91EEFE14700A6BAD7 /* TimeStampToString.m */,
 			);
@@ -810,23 +831,6 @@
 			path = ExcelVC;
 			sourceTree = "<group>";
 		};
-		1DA1D51F1FB02CD3003FEB38 /* extension */ = {
-			isa = PBXGroup;
-			children = (
-				1DA1D5201FB02CD3003FEB38 /* NSNumber+Format.h */,
-				1DA1D5211FB02CD3003FEB38 /* NSNumber+Format.m */,
-				1DA1D5221FB02CD3003FEB38 /* NSString+Extension.h */,
-				1DA1D5231FB02CD3003FEB38 /* NSString+Extension.m */,
-				1DA1D5241FB02CD3003FEB38 /* UIColor+HexColor.h */,
-				1DA1D5251FB02CD3003FEB38 /* UIColor+HexColor.m */,
-				1DA1D5261FB02CD3003FEB38 /* UIImage+Extension.h */,
-				1DA1D5271FB02CD3003FEB38 /* UIImage+Extension.m */,
-				1DA1D5281FB02CD3003FEB38 /* UIView+Extension.h */,
-				1DA1D5291FB02CD3003FEB38 /* UIView+Extension.m */,
-			);
-			path = extension;
-			sourceTree = "<group>";
-		};
 		1DA673001EF11AAF007C2348 /* IconFontImageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -905,7 +909,7 @@
 			path = RunLoop;
 			sourceTree = "<group>";
 		};
-		1DF3C17F1F163AB900EC8155 /* font_zf8js534raf6flxr */ = {
+		1DF3C17F1F163AB900EC8155 /* iconFont */ = {
 			isa = PBXGroup;
 			children = (
 				1DF3C1801F163AB900EC8155 /* demo.css */,
@@ -919,7 +923,7 @@
 				1DF3C1881F163AB900EC8155 /* iconfont.ttf */,
 				1DF3C1891F163AB900EC8155 /* iconfont.woff */,
 			);
-			path = font_zf8js534raf6flxr;
+			path = iconFont;
 			sourceTree = "<group>";
 		};
 		1DF50203212AC9D6002C87BA /* 包装 */ = {
@@ -1081,6 +1085,7 @@
 				1D748E741F62484500F6E41E /* ScanQRCodeViewController.xib in Resources */,
 				1DBA008E205A7C1D0019DB1A /* sound.plist in Resources */,
 				1DF3C18D1F163AB900EC8155 /* demo_unicode.html in Resources */,
+				1D69B0EC2174747300F0CAA6 /* 文件资源文件夹.rtf in Resources */,
 				1DF3C18C1F163AB900EC8155 /* demo_symbol.html in Resources */,
 				1DF3C1921F163AB900EC8155 /* iconfont.ttf in Resources */,
 				1DF3C18B1F163AB900EC8155 /* demo_fontclass.html in Resources */,
