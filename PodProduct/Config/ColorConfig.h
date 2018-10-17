@@ -24,10 +24,24 @@
 //RGB的设置颜色
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 
+#define kFontGray UIColorFromRGB(0x8E8E93)
 
 
 //十六进制
 #define UICOLOR_HEX(string) [UIColor colorWithHexString:(string)]
+
+
+//默认字体:平方体
+#define PFFONT(font) [UIFont fontWithName:@"PingFangSC-Regular" size:font]
+#define PFMFONT(font) [UIFont fontWithName:@"PingFangSC-Medium" size:font]
+#define PFLFONT(font) [UIFont fontWithName:@"PingFangSC-Light" size:font]
+#define PFBFONT(font) [UIFont fontWithName:@"PingFangSC-Bold" size:font]
+#define PFSFONT(font) [UIFont fontWithName:@"PingFangSC-Semibold" size:font]
+
+
+
+
+
 
 @interface ColorConfig : NSObject
 

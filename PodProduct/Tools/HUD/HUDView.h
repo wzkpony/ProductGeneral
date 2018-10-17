@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <SVProgressHUD.h>
 @interface HUDView : UIView
 - (void)showLoadingInView:(UIView *)view;
 @end

@@ -67,10 +67,10 @@
         
         CGFloat outputW = scanWidth;
         CGFloat outputH = outputW;
-        CGFloat x = (SCREEN_WIDTH - outputW)/2;
-        CGFloat y = (SCREEN_HEIGHT-64 - outputH)/2;
-        CGFloat width = SCREEN_WIDTH;
-        CGFloat height = SCREEN_HEIGHT-64;
+        CGFloat x = (KWIDTH - outputW)/2;
+        CGFloat y = (KHEIGHT-64 - outputH)/2;
+        CGFloat width = KWIDTH;
+        CGFloat height = KHEIGHT-64;
         
         _output.rectOfInterest = CGRectMake(y/height, x/width, outputH/height, outputW/width);
         
