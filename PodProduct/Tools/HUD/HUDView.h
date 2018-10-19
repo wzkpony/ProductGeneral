@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <SVProgressHUD.h>
 @interface HUDView : UIView
-- (void)showLoadingInView:(UIView *)view;
++ (void)showToastWith:(NSString *)status;
++ (void)showToastWith:(NSString *)status allowUserInteractions:(BOOL)allow;
++ (void)showWhiteToastWith:(NSString *)status allowUserInteractions:(BOOL)allow;
++ (void)showToastAutoDismiss:(NSString *)status;
++ (void)showTip:(NSString *)tip;
++ (void)dismiss_t;
 @end

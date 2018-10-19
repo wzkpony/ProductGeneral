@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    self.title = @"RunTime";
      StudyRunTime* runtime_ = [[StudyRunTime alloc] init];
      [runtime_ gotoSchool];
      [runtime_ funGetAllProperty];

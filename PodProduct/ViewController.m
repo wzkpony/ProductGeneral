@@ -14,7 +14,12 @@
 
 #import "ScanQRCodeViewController.h"
 #import "ExcelViewController.h"
-
+#import "GCDViewController.h"
+#import "RuntimeViewController.h"
+#import "BlockViewController.h"
+#import "RACViewController.h"
+#import "RunLoopViewController.h"
+#import "BlueToothViewController.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSMutableArray *dataSource;
@@ -66,26 +71,33 @@
         [self.navigationController pushViewController:excelVC animated:YES];
     }
     else if ([dataSource[indexPath.row] isEqualToString:@"GCD"]){
-        
+        GCDViewController *gcdVC = [[GCDViewController alloc] init];
+         [self.navigationController pushViewController:gcdVC animated:YES];
         
     }
     else if ([dataSource[indexPath.row] isEqualToString:@"Runtime"]){
-        
+        RuntimeViewController *runtimeVC = [[RuntimeViewController alloc] init];
+        [self.navigationController pushViewController:runtimeVC animated:YES];
     }
     else if ([dataSource[indexPath.row] isEqualToString:@"设计模式"]){
         
     }
     else if ([dataSource[indexPath.row] isEqualToString:@"Block"]){
-        
+        BlockViewController *blockVC = [[BlockViewController alloc] init];
+        [self.navigationController pushViewController:blockVC animated:YES];
     }
     else if ([dataSource[indexPath.row] isEqualToString:@"RAC"]){
-        
+        RACViewController *racVC = [[RACViewController alloc] init];
+        [self.navigationController pushViewController:racVC animated:YES];
     }
     else if ([dataSource[indexPath.row] isEqualToString:@"RunLoop"]){
-        
+        RunLoopViewController *runloopVC = [[RunLoopViewController alloc] init];
+        [self.navigationController pushViewController:runloopVC animated:YES];
     }
     else if ([dataSource[indexPath.row] isEqualToString:@"蓝牙"]){
-        
+        BlueToothViewController *blueTooth = [[BlueToothViewController alloc] init];
+        [self.navigationController pushViewController:blueTooth animated:YES];
+;
     }
     
 }

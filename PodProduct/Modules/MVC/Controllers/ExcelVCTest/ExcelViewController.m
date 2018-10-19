@@ -29,7 +29,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
-   
+   self.title = @"Excel表";
     dataArray = [[NSMutableArray alloc] initWithArray:@[@"周云",@"老董",@"王正魁",@"潘章宝",@"崔娜",@"熊素平",@"张文超",@"余昭阳",@"李志",@"张龙",@"结束啦",@"结束啦",@"结束啦",@"结束啦"]];
     e_view = [[ExcelView alloc] init];
     e_view.frame = CGRectMake(0, 0, ScreenWidth, ScreenHeight);

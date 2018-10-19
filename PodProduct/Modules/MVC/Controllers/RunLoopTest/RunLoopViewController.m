@@ -1,29 +1,23 @@
 //
-//  BlockViewController.m
+//  RunLoopViewController.m
 //  PodProduct
 //
 //  Created by wzk on 2018/10/19.
 //  Copyright © 2018年 wzk. All rights reserved.
 //
 
-#import "BlockViewController.h"
-#import "StudyBlock.h"
-@interface BlockViewController ()
+#import "RunLoopViewController.h"
+
+@interface RunLoopViewController ()
 
 @end
 
-@implementation BlockViewController
+@implementation RunLoopViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"Block";
-     StudyBlock *block = [StudyBlock shareStudyBlock];
-     NSMutableString* s = [[NSMutableString alloc] initWithString:@"a"];
-     NSLog(@"对象地址：%p，指针指向的地址：%p",s,&s);
-     block.blockTest(s);
-     NSLog(@"对象地址：%p，指针指向的地址：%p",s,&s);
-    
+    self.title = @"RunLoop";
 }
 
 /*

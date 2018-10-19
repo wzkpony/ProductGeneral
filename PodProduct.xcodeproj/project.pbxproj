@@ -27,6 +27,11 @@
 		1D396E0021798C5200505A6E /* RuntimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D396DFE21798C5200505A6E /* RuntimeViewController.xib */; };
 		1D396E0521798D7200505A6E /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D396E0321798D7200505A6E /* RACViewController.m */; };
 		1D396E0621798D7200505A6E /* RACViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D396E0421798D7200505A6E /* RACViewController.xib */; };
+		1D396E0B2179A24400505A6E /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D396E092179A24400505A6E /* RunLoopViewController.m */; };
+		1D396E0C2179A24400505A6E /* RunLoopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D396E0A2179A24400505A6E /* RunLoopViewController.xib */; };
+		1D396E102179A3DD00505A6E /* Bluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D396E0F2179A3DD00505A6E /* Bluetooth.m */; };
+		1D396E152179A66D00505A6E /* BlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D396E132179A66D00505A6E /* BlueToothViewController.m */; };
+		1D396E162179A66D00505A6E /* BlueToothViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D396E142179A66D00505A6E /* BlueToothViewController.xib */; };
 		1D48BEC4204F8ED800F7A9DA /* StudyBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D48BEC3204F8ED800F7A9DA /* StudyBlock.m */; };
 		1D48BEC7204F990200F7A9DA /* StudyRunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D48BEC6204F990200F7A9DA /* StudyRunTime.m */; };
 		1D48BECA204FD83700F7A9DA /* StudyGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D48BEC9204FD83700F7A9DA /* StudyGCD.m */; };
@@ -123,7 +128,6 @@
 		1DA1D52B1FB02CD3003FEB38 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1D5231FB02CD3003FEB38 /* NSString+Extension.m */; };
 		1DA1D52C1FB02CD3003FEB38 /* UIColor+HexColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1D5251FB02CD3003FEB38 /* UIColor+HexColor.m */; };
 		1DA1D52D1FB02CD3003FEB38 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1D5271FB02CD3003FEB38 /* UIImage+Extension.m */; };
-		1DA1D52E1FB02CD4003FEB38 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1D5291FB02CD3003FEB38 /* UIView+Extension.m */; };
 		1DA5063D1FD4FA2200C48CFE /* WZKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA5063C1FD4FA2200C48CFE /* WZKTests.m */; };
 		1DA672FC1EF0F5E0007C2348 /* BaseTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA672FB1EF0F5E0007C2348 /* BaseTextField.m */; };
 		1DA672FF1EF0F5F3007C2348 /* BaseTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA672FE1EF0F5F3007C2348 /* BaseTextView.m */; };
@@ -237,6 +241,14 @@
 		1D396E0221798D7200505A6E /* RACViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
 		1D396E0321798D7200505A6E /* RACViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
 		1D396E0421798D7200505A6E /* RACViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RACViewController.xib; sourceTree = "<group>"; };
+		1D396E082179A24400505A6E /* RunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
+		1D396E092179A24400505A6E /* RunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
+		1D396E0A2179A24400505A6E /* RunLoopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RunLoopViewController.xib; sourceTree = "<group>"; };
+		1D396E0E2179A3DD00505A6E /* Bluetooth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bluetooth.h; sourceTree = "<group>"; };
+		1D396E0F2179A3DD00505A6E /* Bluetooth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bluetooth.m; sourceTree = "<group>"; };
+		1D396E122179A66D00505A6E /* BlueToothViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueToothViewController.h; sourceTree = "<group>"; };
+		1D396E132179A66D00505A6E /* BlueToothViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueToothViewController.m; sourceTree = "<group>"; };
+		1D396E142179A66D00505A6E /* BlueToothViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlueToothViewController.xib; sourceTree = "<group>"; };
 		1D48BEC2204F8ED800F7A9DA /* StudyBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudyBlock.h; sourceTree = "<group>"; };
 		1D48BEC3204F8ED800F7A9DA /* StudyBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyBlock.m; sourceTree = "<group>"; };
 		1D48BEC5204F990200F7A9DA /* StudyRunTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudyRunTime.h; sourceTree = "<group>"; };
@@ -426,8 +438,6 @@
 		1DA1D5251FB02CD3003FEB38 /* UIColor+HexColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColor.m"; sourceTree = "<group>"; };
 		1DA1D5261FB02CD3003FEB38 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		1DA1D5271FB02CD3003FEB38 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
-		1DA1D5281FB02CD3003FEB38 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
-		1DA1D5291FB02CD3003FEB38 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		1DA5063C1FD4FA2200C48CFE /* WZKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZKTests.m; sourceTree = "<group>"; };
 		1DA672FA1EF0F5E0007C2348 /* BaseTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTextField.h; sourceTree = "<group>"; };
 		1DA672FB1EF0F5E0007C2348 /* BaseTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTextField.m; sourceTree = "<group>"; };
@@ -556,6 +566,8 @@
 		1D396DDE2179780000505A6E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1D396E112179A64600505A6E /* BlueToothTest */,
+				1D396E072179A20A00505A6E /* RunLoopTest */,
 				1D396E0121798D4700505A6E /* RACTest */,
 				1D396DFB21798C3B00505A6E /* RuntimeTest */,
 				1D396DF521798BCC00505A6E /* BlockTest */,
@@ -650,9 +662,39 @@
 			path = RACTest;
 			sourceTree = "<group>";
 		};
+		1D396E072179A20A00505A6E /* RunLoopTest */ = {
+			isa = PBXGroup;
+			children = (
+				1D396E082179A24400505A6E /* RunLoopViewController.h */,
+				1D396E092179A24400505A6E /* RunLoopViewController.m */,
+				1D396E0A2179A24400505A6E /* RunLoopViewController.xib */,
+			);
+			path = RunLoopTest;
+			sourceTree = "<group>";
+		};
+		1D396E0D2179A31900505A6E /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				1D396E0E2179A3DD00505A6E /* Bluetooth.h */,
+				1D396E0F2179A3DD00505A6E /* Bluetooth.m */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		1D396E112179A64600505A6E /* BlueToothTest */ = {
+			isa = PBXGroup;
+			children = (
+				1D396E122179A66D00505A6E /* BlueToothViewController.h */,
+				1D396E132179A66D00505A6E /* BlueToothViewController.m */,
+				1D396E142179A66D00505A6E /* BlueToothViewController.xib */,
+			);
+			path = BlueToothTest;
+			sourceTree = "<group>";
+		};
 		1D48BEC1204F8EC000F7A9DA /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				1D396E0D2179A31900505A6E /* Bluetooth */,
 				1D822605212A6499002D3EA0 /* 设计模式 */,
 				1DDC9AF32126A33700F53074 /* System */,
 				1DDC9AF42126A35E00F53074 /* Block */,
@@ -724,8 +766,6 @@
 				1DA1D5251FB02CD3003FEB38 /* UIColor+HexColor.m */,
 				1DA1D5261FB02CD3003FEB38 /* UIImage+Extension.h */,
 				1DA1D5271FB02CD3003FEB38 /* UIImage+Extension.m */,
-				1DA1D5281FB02CD3003FEB38 /* UIView+Extension.h */,
-				1DA1D5291FB02CD3003FEB38 /* UIView+Extension.m */,
 				1D69B16A2174786200F0CAA6 /* UIView+XZZAdd.h */,
 				1D69B16B2174786200F0CAA6 /* UIView+XZZAdd.m */,
 			);
@@ -1425,6 +1465,7 @@
 				1DF3C18A1F163AB900EC8155 /* demo.css in Resources */,
 				1D7E9B2A1EEE8D34008F18BF /* LaunchScreen.storyboard in Resources */,
 				1D69B131217475EE00F0CAA6 /* README.md in Resources */,
+				1D396E162179A66D00505A6E /* BlueToothViewController.xib in Resources */,
 				1D7E9B271EEE8D34008F18BF /* Assets.xcassets in Resources */,
 				1DF3C1931F163AB900EC8155 /* iconfont.woff in Resources */,
 				1DF3C18E1F163AB900EC8155 /* iconfont.css in Resources */,
@@ -1437,6 +1478,7 @@
 				1DBA008E205A7C1D0019DB1A /* sound.plist in Resources */,
 				1DF3C18D1F163AB900EC8155 /* demo_unicode.html in Resources */,
 				1D69B0EC2174747300F0CAA6 /* 文件资源文件夹.rtf in Resources */,
+				1D396E0C2179A24400505A6E /* RunLoopViewController.xib in Resources */,
 				1D69B1702174975D00F0CAA6 /* PYSearchImage@2x.png in Resources */,
 				1DF3C18C1F163AB900EC8155 /* demo_symbol.html in Resources */,
 				1DF3C1921F163AB900EC8155 /* iconfont.ttf in Resources */,
@@ -1530,6 +1572,7 @@
 				1DA672FF1EF0F5F3007C2348 /* BaseTextView.m in Sources */,
 				1D396DF321798B6E00505A6E /* GCDViewController.m in Sources */,
 				1D748E851F62788600F6E41E /* SubtypeView.m in Sources */,
+				1D396E152179A66D00505A6E /* BlueToothViewController.m in Sources */,
 				1D82264C212A8B62002D3EA0 /* Coke.m in Sources */,
 				1D69B12D217475EE00F0CAA6 /* PYSearchConst.m in Sources */,
 				1DB93ABB1EEFE09D00A6BAD7 /* HUDView.m in Sources */,
@@ -1573,6 +1616,7 @@
 				1D7E9B221EEE8D34008F18BF /* ViewController.m in Sources */,
 				1D822624212A6499002D3EA0 /* Blue.m in Sources */,
 				1D8E158520523A520031B19D /* ExcelViewController.m in Sources */,
+				1D396E0B2179A24400505A6E /* RunLoopViewController.m in Sources */,
 				1D396DFF21798C5200505A6E /* RuntimeViewController.m in Sources */,
 				1D2DDC93200C46E8005E8F53 /* NSData+Base64.m in Sources */,
 				1D69B10D217475C700F0CAA6 /* LTSCircleView.m in Sources */,
@@ -1583,6 +1627,7 @@
 				1D69B15E217475FC00F0CAA6 /* TZLocationManager.m in Sources */,
 				1D69B15A217475FC00F0CAA6 /* TZImageManager.m in Sources */,
 				1D822628212A6499002D3EA0 /* ColorFactory.m in Sources */,
+				1D396E102179A3DD00505A6E /* Bluetooth.m in Sources */,
 				1DB93AD71EEFE61D00A6BAD7 /* BaseViewController.m in Sources */,
 				1D69B15B217475FC00F0CAA6 /* TZPhotoPickerController.m in Sources */,
 				1D69B15C217475FC00F0CAA6 /* TZPhotoPreviewCell.m in Sources */,
@@ -1592,7 +1637,6 @@
 				1D2DDC99200C46ED005E8F53 /* CodeResourcesClass.m in Sources */,
 				1D396DE821797AF300505A6E /* LoginModel.m in Sources */,
 				1DB93AD41EEFE60800A6BAD7 /* BaseImageView.m in Sources */,
-				1DA1D52E1FB02CD4003FEB38 /* UIView+Extension.m in Sources */,
 				1DC9F5E11F6781410088275C /* ExcelContentView.m in Sources */,
 				1D2DDC94200C46E8005E8F53 /* NSString+Base64.m in Sources */,
 				1D396DE921797AF300505A6E /* LoginVC.m in Sources */,
