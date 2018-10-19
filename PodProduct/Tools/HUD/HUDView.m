@@ -106,7 +106,7 @@
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
     [SVProgressHUD setFont:PFFONT(12)];
     [SVProgressHUD setMinimumDismissTimeInterval:100.0];
-    [SVProgressHUD showImage:[UIImage imageWithGIFNamed:@"白色loading"] status:status];
+    [SVProgressHUD showImage:[UIImage imageNamed:@"白色loading"] status:status];
 }
 - (void)showToastWith:(NSString *)status allowUserInteractions:(BOOL)allow{
     if (!allow) {
@@ -119,7 +119,7 @@
     [SVProgressHUD setCornerRadius:3];
     [SVProgressHUD setMinimumDismissTimeInterval:CGFLOAT_MAX];
     [SVProgressHUD setFont:PFFONT(12)];
-    [SVProgressHUD showImage:[UIImage imageWithGIFNamed:@"白色loading"] status:status];
+    [SVProgressHUD showImage:[UIImage imageNamed:@"白色loading"] status:status];
 }
 - (void)showWhiteToastWith:(NSString *)status allowUserInteractions:(BOOL)allow{
     if (!allow) {
@@ -133,7 +133,7 @@
     [SVProgressHUD setCornerRadius:3];
     [SVProgressHUD setMinimumDismissTimeInterval:CGFLOAT_MAX];
     [SVProgressHUD setFont:PFFONT(12)];
-    [SVProgressHUD showImage:[UIImage imageWithGIFNamed:@"白色loading"] status:status];
+    [SVProgressHUD showImage:[UIImage imageNamed:@"白色loading"] status:status];
 }
 
 - (void)showToastAutoDismiss:(NSString *)status{
@@ -145,7 +145,7 @@
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
     [SVProgressHUD setFont:PFFONT(12)];
     [SVProgressHUD setMinimumDismissTimeInterval:1.5];
-    [SVProgressHUD showImage:[UIImage imageWithGIFNamed:@"白色loading"] status:status];
+    [SVProgressHUD showImage:[UIImage imageNamed:@"白色loading"] status:status];
 }
 
 - (void)showTip:(NSString *)tip {

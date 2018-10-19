@@ -26,6 +26,11 @@ typedef enum {
     AddCantact,
     RFCSampleDtatilView,
 } ComeToScanQR;
+@protocol ScanQRCodeViewControllerDelegate <NSObject>
+
+//二维码扫描回调
+
+@end
 
 @interface ScanQRCodeViewController : UIViewController
 @property (strong,nonatomic)AVCaptureDevice * device;

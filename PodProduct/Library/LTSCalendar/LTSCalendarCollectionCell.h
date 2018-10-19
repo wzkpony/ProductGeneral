@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "LTSCalendarDayItem.h"
-#import "UIView+XZZAdd.h"
 @interface LTSCalendarCollectionCell : UICollectionViewCell
 @property (nonatomic,strong)LTSCalendarDayItem *item;
 @property (nonatomic,assign)BOOL isSelected;

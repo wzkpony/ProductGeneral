@@ -41,7 +41,6 @@
 //普通POST请求 json 提交
 +(void)requestPost:(NSString *)action para:(id)params completionBlock:(void(^)(NSInteger statusCode,id errorString, id responseObject ))completionBlock{
     if ([AFNetworkReachabilityManager sharedManager].networkReachabilityStatus==0){
-        [self dismiss_t];
         [MHTToast showCenterWithText:@"网络连接失败,请检查您的网络"];
         completionBlock(0,nil,nil);
         return;
@@ -89,11 +88,9 @@
         }
         NSInteger statusCode = [response statusCode];
         if (statusCode==403) {
-            [self dismiss_t];
             [self reLogin];
             return ;
         }
-//        [self dismiss_t];
         NSLog(@"请求失败 url = %@\nerror = %@",url,error.description);
         completionBlock(statusCode,error.description,nil);
     }];
@@ -104,7 +101,7 @@
 //普通Get请求
 +(void)requestGet:(NSString *)action para:(id)params completionBlock:(void(^)(NSInteger statusCode,id errorString, id responseObject ))completionBlock{
     if ([AFNetworkReachabilityManager sharedManager].networkReachabilityStatus==0){
-        [self dismiss_t];
+        
         [MHTToast showCenterWithText:@"网络连接失败,请检查您的网络"];
         completionBlock(0,@"网络连接失败,请检查您的网络",nil);
         return;
@@ -143,11 +140,11 @@
         
         NSInteger statusCode = [response statusCode];
         if (statusCode==403) {
-            [self dismiss_t];
+            
             [self reLogin];
             return ;
         }
-//        [self dismiss_t];
+//
         NSLog(@"请求失败 url = %@\nerror = %@",url,error.description);
         completionBlock(statusCode,error.description,nil);
     }];
@@ -156,7 +153,7 @@
 //普通Patch请求
 +(void)requestPatch:(NSString *)action para:(id)params completionBlock:(void(^)(NSInteger statusCode,id errorString, id responseObject ))completionBlock{
     if ([AFNetworkReachabilityManager sharedManager].networkReachabilityStatus==0){
-        [self dismiss_t];
+        
         [MHTToast showCenterWithText:@"网络连接失败,请检查您的网络"];
         completionBlock(0,@"网络连接失败,请检查您的网络",nil);
         return;
@@ -190,11 +187,10 @@
         }
         NSInteger statusCode = [response statusCode];
         if (statusCode==403) {
-            [self dismiss_t];
             [self reLogin];
             return ;
         }
-//        [self dismiss_t];
+//
         NSLog(@"请求失败 url = %@\nerror = %@",url,error.description);
         completionBlock(statusCode,error.description,nil);
     }];
@@ -205,7 +201,7 @@
 + (void)requestDelete:(NSString *)action para:(id)params completionBlock:(void(^)(NSInteger statusCode,id errorString, id responseObject ))completionBlock {
     
     if ([AFNetworkReachabilityManager sharedManager].networkReachabilityStatus==0){
-        [self dismiss_t];
+        
         [MHTToast showCenterWithText:@"网络连接失败,请检查您的网络"];
         completionBlock(0,@"网络连接失败,请检查您的网络",nil);
         return;
@@ -241,11 +237,10 @@
         }
         NSInteger statusCode = [response statusCode];
         if (statusCode==403) {
-            [self dismiss_t];
+            
             [self reLogin];
             return ;
         }
-        //        [self dismiss_t];
         NSLog(@"请求失败 url = %@\nerror = %@",url,error.description);
         completionBlock(statusCode,error.description,nil);
     }];    
@@ -409,84 +404,8 @@
     }];
 }
 
-+ (void)getTgtBack:(void(^)(void))completionBlock{
-    NSString *urlString = [NSString stringWithFormat:@"%@/sso/api/login",DefineZhaoCheUrl];
-    XZZUser *user = [XZZUserManager manager].user;
-    NSDictionary *parameters = @{@"username":user.mobile?user.mobile:@"",
-                                 @"password":user.password?user.password:@"",
-                                 @"service":@"http://dubhe.zhaochewisdom.com/"};
-    
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.requestSerializer = [AFJSONRequestSerializer serializer];
-    manager.requestSerializer.timeoutInterval = 30;
-    [manager.requestSerializer setValue:@"5a9cb35668d85500019e5bf17071320863b7470996a76b69f807c598" forHTTPHeaderField:@"ZC-Authorization"];
-    //            [manager.requestSerializer setValue:[RequestUtil authStr] forHTTPHeaderField:@"ZC-Authorization"];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"image/jpeg",@"image/png",@"text/plain",@"application/json",@"text/json",nil];
-    
-    [manager POST:urlString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        //                NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
-        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers | NSJSONReadingMutableLeaves error:nil];
-        if ([dic[@"code"] integerValue] != 0) {
-            [MHTToast showCenterWithText:[NSString stringWithFormat:@"用户中心登录失败 = > %@",dic[@"msg"]]];
-            NSLog(@"用户中心登录失败 = > %@",dic[@"msg"]);
-        }else{
-            NSDictionary *userData = dic[@"results"];
-            [[NSUserDefaults standardUserDefaults]setObject:userData forKey:DefineUserDataKey];
-            [[NSUserDefaults standardUserDefaults]synchronize];
-        }
-        
-        NSDictionary *cookie = [[NSUserDefaults standardUserDefaults]objectForKey:DefineUserDataKey];
-        
-        
-        
-        
-        NSMutableDictionary *cookieProperties = [NSMutableDictionary dictionary];//配置cookie的map
-        [cookieProperties setObject:@"tgt" forKey:NSHTTPCookieName];//cookie的名字，也就是服务的json数据中的
-        [cookieProperties setObject:cookie[@"tgt"] forKey:NSHTTPCookieValue];//cookie的数值，cookie是键值对（相当于map），也就是服务的json数据中的
-        [cookieProperties setObject:@"sso.zhaochewisdom.com" forKey:NSHTTPCookieDomain];//设置域名、也是服务器json返回的
-        [cookieProperties setObject:@"/" forKey:NSHTTPCookiePath];//路径
-        [cookieProperties setObject:[NSDate dateWithTimeIntervalSinceNow:60 * 60 * 24 * 2]  forKey:NSHTTPCookieExpires];//60 * 60 * 24 * 365，两天有效期
-        NSHTTPCookie *cookieuser = [NSHTTPCookie cookieWithProperties:cookieProperties];//讲cookieProperties（也就是map）配置到HttpCookie中，得到NSHTTPCookie对象。
-        [[NSHTTPCookieStorage sharedHTTPCookieStorage]  setCookie:cookieuser];//配置httpCookie。配置好，cookie就有了，访问web的时候，就会把cookie带过去。
-        completionBlock();
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-    }];
-}
 
-/**扫码登录*/
-+ (void)sendRequestForZhaoChe:(NSDictionary *)parameters url:(NSString *)urlPath completionBlock:(void(^)(NSInteger statusCode,id errorString, id responseObject ))completionBlock
-{
-    [self showToastWith:nil allowUserInteractions:NO];
-    NSString *urlString = [NSString stringWithFormat:@"%@/%@",DefineZhaoCheUrl,urlPath];//
-    
-    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.requestSerializer = [AFJSONRequestSerializer serializer];
-    manager.requestSerializer.timeoutInterval = 30;
-    [manager.requestSerializer setValue:@"5a9cb35668d85500019e5bf17071320863b7470996a76b69f807c598" forHTTPHeaderField:@"ZC-Authorization"];
-    //            [manager.requestSerializer setValue:[RequestUtil authStr] forHTTPHeaderField:@"ZC-Authorization"];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"image/jpeg",@"image/png",@"text/plain",@"application/json",@"text/json",nil];
-    
-    [manager POST:urlString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        //                NSHTTPURLResponse *response = (NSHTTPURLResponse *)task.response;
-        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers | NSJSONReadingMutableLeaves error:nil];
-        //        NSLog(@"%@",dic);
-        if ([dic[@"code"] integerValue] != 0) {
-            [MHTToast showCenterWithText:[NSString stringWithFormat:@"用户中心登录失败 = > %@",dic[@"msg"]]];
-            NSLog(@"用户中心登录失败 = > %@",dic[@"msg"]);
-        }else{
-            completionBlock([dic[@"code"] integerValue],nil,dic);
-        }
-        
-        [self dismiss_t];
-        
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        [self dismiss_t];
-    }];
-}
+
 //使用NSURLSession 发起一个get请求
 + (void)requestGetURLSession:(NSString *)urlString completionBlock:(void(^)(NSInteger statusCode,id errorString, id responseObject ))completionBlock
 {
@@ -569,8 +488,8 @@
     [[NSUserDefaults standardUserDefaults]synchronize];
 }
 + (void)reLogin{
-    AppDelegate *dele = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    [dele logOut];
+//    AppDelegate *dele = (AppDelegate *)[UIApplication sharedApplication].delegate;
+//    [dele logOut];
 }
 + (NSString *)getCookies
 {

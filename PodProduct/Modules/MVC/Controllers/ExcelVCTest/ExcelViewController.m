@@ -60,6 +60,7 @@
     [self performSelector:@selector(endMjrefresh) withObject:self afterDelay:2];
     NSLog(@"加载了");
 }
+#pragma -- ExcelViewDelegate --
 -(NSArray* )excelViewForTopArr:(ExcelView*)excelView
 {
     return @[@"注册时间",@"手机号码",@"邀请码",@"身份证号"];
@@ -80,4 +81,5 @@
 {
     return @"客户姓名";
 }
+
 @end

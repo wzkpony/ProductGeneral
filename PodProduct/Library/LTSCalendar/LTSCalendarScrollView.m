@@ -291,7 +291,7 @@
     
     self.weekNumView.frame = CGRectMake(self.weekNumView.py_x, 0, self.weekNumView.width, self.weekNumView.height);
     self.calendarView.frame = CGRectMake(self.calendarView.py_x, 0, self.calendarView.width, self.calendarView.height);
-    self.whiteSegView.py_height = 15;
+    self.whiteSegView.height = 15;
     self.tableView.contentInset = UIEdgeInsetsMake(25, 0, 0, 0);
     [self setContentOffset:CGPointMake(0, 0) animated:true];
 }

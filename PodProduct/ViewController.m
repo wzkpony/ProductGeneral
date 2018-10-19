@@ -10,15 +10,14 @@
 #import "IconFontImageView.h"
 #import "ConfigHead.h"
 #import "NSNumber+Format.h"
-#import "StudyBlock.h"
-#import "StudyRunTime.h"
-#import "StudyGCD.h"
-#import "StudyRACView.h"
-
 #import <MediaPlayer/MediaPlayer.h>
-@interface ViewController ()
+
+#import "ScanQRCodeViewController.h"
+#import "ExcelViewController.h"
+
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
-    StudyRACView *_redVeiw;
+    NSMutableArray *dataSource;
 }
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
@@ -30,74 +29,64 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
-//    NSNumber *number = [NSNumber numberWithDouble:-1];
+    dataSource = [[NSMutableArray alloc] init];
+    [dataSource addObjectsFromArray:@[@"二维码扫描",@"Excel表",@"GCD",@"Runtime",@"设计模式",@"Block",@"RAC",@"RunLoop",@"蓝牙"]];
+    
+        NSNumber *number = [NSNumber numberWithDouble:-1];
 //    NSLog(@"%@",number.formateCountNum);
-//    self.label.text = number.formateCountNum;
+    self.label.text = number.formateCountNum;
 //
 //    for (id laer in [self.label.layer sublayers]) {
 //        NSLog(@"%@",laer);
 //    }
 //
-//    _redVeiw = [[StudyRACView alloc] initWithFrame:CGRectMake(0, 88, 100, 200)];
-//    [_redVeiw configView];
-    
-  
-    
-#pragma mark -- block Test Start--
-    /*
-    StudyBlock *block = [StudyBlock shareStudyBlock];
-    NSMutableString* s = [[NSMutableString alloc] initWithString:@"a"];
-//    NSLog(@"对象地址：%p，指针指向的地址：%p",s,&s);
-    block.blockTest(s);
-//    NSLog(@"对象地址：%p，指针指向的地址：%p",s,&s);
-    */
-    
-#pragma mark -- block Test End --
-    
 
-#pragma mark -- runTime Start --
-    /*
-    StudyRunTime* runtime_ = [[StudyRunTime alloc] init];
-    [runtime_ gotoSchool];
-    [runtime_ funGetAllProperty];
-    [runtime_ loadChange];
-    [runtime_ functionOne];
-    */
-    
-    
-#pragma mark -- runTime End --
-#pragma mark -- GCD --
-//    [self selectButtonTest:nil];
-#pragma mark -- RAC --
-    
-#pragma mark --  --
     
 }
-- (IBAction)selectButtonTest:(id)sender {
-    /*
-     GCD测试
-    */
-    StudyGCD *gcd = [[StudyGCD alloc] init];
-    [gcd funcStudyGCD_Dispatch_Async];
-    [gcd funcStudyGCDMain];
-    [gcd funcStudyGCDOnce];
-    [gcd funcStudyGCDApply];
-    [gcd funcStudyGCDDelay];
-    [gcd funcStudyGCDGroup];
-    [gcd funcStudyGCDBarrier];
-    [gcd funcSemaphoreSync];
-    [gcd funcGroupEnterAndLeave];
-    
-    
-    /*
-     ReactiveCocoa 测试
-     */
-    //[self racTest];
-}
 
--(void)racTest
-{
-    [self.view addSubview:_redVeiw];
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return dataSource.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString *simpleTableIdentifier = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier forIndexPath:indexPath];
+    cell.textLabel.text = dataSource[indexPath.row];
+    return cell;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    if ([dataSource[indexPath.row] isEqualToString:@"二维码扫描"]) {
+        ScanQRCodeViewController *scanVC = [[ScanQRCodeViewController alloc] init];
+        [self.navigationController pushViewController:scanVC animated:YES];
+    }
+    else if ([dataSource[indexPath.row] isEqualToString:@"Excel表"]){
+        ExcelViewController *excelVC = [[ExcelViewController alloc] init];
+        [self.navigationController pushViewController:excelVC animated:YES];
+    }
+    else if ([dataSource[indexPath.row] isEqualToString:@"GCD"]){
+        
+        
+    }
+    else if ([dataSource[indexPath.row] isEqualToString:@"Runtime"]){
+        
+    }
+    else if ([dataSource[indexPath.row] isEqualToString:@"设计模式"]){
+        
+    }
+    else if ([dataSource[indexPath.row] isEqualToString:@"Block"]){
+        
+    }
+    else if ([dataSource[indexPath.row] isEqualToString:@"RAC"]){
+        
+    }
+    else if ([dataSource[indexPath.row] isEqualToString:@"RunLoop"]){
+        
+    }
+    else if ([dataSource[indexPath.row] isEqualToString:@"蓝牙"]){
+        
+    }
     
 }
 
