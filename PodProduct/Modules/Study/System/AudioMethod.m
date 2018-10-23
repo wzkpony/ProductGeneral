@@ -7,6 +7,7 @@
 //
 
 #import "AudioMethod.h"
+
 @implementation AudioMethod
 static  AudioMethod*shareOtherModel = nil;
 +(AudioMethod *)sharedController{
@@ -264,6 +265,7 @@ static  AudioMethod*shareOtherModel = nil;
         self.blockForLuXiang();
     }
 }
+
 
 
 @end

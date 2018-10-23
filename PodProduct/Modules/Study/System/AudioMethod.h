@@ -46,4 +46,6 @@
 
 -(UIImagePickerController* )imageForVideo;//录像
 -(UIImage*)thumbnailImageForVideo:(NSURL *)videoURL atTime:(NSTimeInterval)time;//获取视频图片
+
+
 @end

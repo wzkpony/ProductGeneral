@@ -20,6 +20,8 @@
 #import "RACViewController.h"
 #import "RunLoopViewController.h"
 #import "BlueToothViewController.h"
+#import "AVVoiceTestViewController.h"
+
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSMutableArray *dataSource;
@@ -35,7 +37,7 @@
     // Do any additional setup after loading the view, typically from a nib.
 
     dataSource = [[NSMutableArray alloc] init];
-    [dataSource addObjectsFromArray:@[@"二维码扫描",@"Excel表",@"GCD",@"Runtime",@"设计模式",@"Block",@"RAC",@"RunLoop",@"蓝牙"]];
+    [dataSource addObjectsFromArray:@[@"二维码扫描",@"Excel表",@"GCD",@"Runtime",@"设计模式",@"Block",@"RAC",@"RunLoop",@"蓝牙",@"声音"]];
     
         NSNumber *number = [NSNumber numberWithDouble:-1];
 //    NSLog(@"%@",number.formateCountNum);
@@ -97,7 +99,12 @@
     else if ([dataSource[indexPath.row] isEqualToString:@"蓝牙"]){
         BlueToothViewController *blueTooth = [[BlueToothViewController alloc] init];
         [self.navigationController pushViewController:blueTooth animated:YES];
-;
+
+    }
+    else if ([dataSource[indexPath.row] isEqualToString:@"声音"]){
+        AVVoiceTestViewController *av = [[AVVoiceTestViewController alloc] init];
+        [self.navigationController pushViewController:av animated:YES];
+
     }
     
 }

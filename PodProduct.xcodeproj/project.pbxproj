@@ -29,7 +29,6 @@
 		1D396E0621798D7200505A6E /* RACViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D396E0421798D7200505A6E /* RACViewController.xib */; };
 		1D396E0B2179A24400505A6E /* RunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D396E092179A24400505A6E /* RunLoopViewController.m */; };
 		1D396E0C2179A24400505A6E /* RunLoopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D396E0A2179A24400505A6E /* RunLoopViewController.xib */; };
-		1D396E102179A3DD00505A6E /* Bluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D396E0F2179A3DD00505A6E /* Bluetooth.m */; };
 		1D396E152179A66D00505A6E /* BlueToothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D396E132179A66D00505A6E /* BlueToothViewController.m */; };
 		1D396E162179A66D00505A6E /* BlueToothViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D396E142179A66D00505A6E /* BlueToothViewController.xib */; };
 		1D48BEC4204F8ED800F7A9DA /* StudyBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D48BEC3204F8ED800F7A9DA /* StudyBlock.m */; };
@@ -39,6 +38,9 @@
 		1D4ACCFF2061FE0200C2A92B /* StudyRACViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4ACCFE2061FE0200C2A92B /* StudyRACViewModel.m */; };
 		1D5DC4172016E9A300AA7A4E /* Presents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D5DC4162016E9A300AA7A4E /* Presents.plist */; };
 		1D5ECEF41F66257D00370606 /* ExcelRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5ECEF31F66257D00370606 /* ExcelRightView.m */; };
+		1D672E9C217D9C050048B2E6 /* BLEManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D672E99217D9C050048B2E6 /* BLEManage.m */; };
+		1D672EA0217DA1CB0048B2E6 /* BlueSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D672E9E217DA1CB0048B2E6 /* BlueSuccessViewController.m */; };
+		1D672EA1217DA1CB0048B2E6 /* BlueSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D672E9F217DA1CB0048B2E6 /* BlueSuccessViewController.xib */; };
 		1D678CF4200DCBDF00200B29 /* ColorConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D678CF3200DCBDF00200B29 /* ColorConfig.m */; };
 		1D678CF7200DCC0700200B29 /* FontConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D678CF6200DCC0700200B29 /* FontConfig.m */; };
 		1D69B0EC2174747300F0CAA6 /* 文件资源文件夹.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1D69B0EB2174747300F0CAA6 /* 文件资源文件夹.rtf */; };
@@ -147,6 +149,7 @@
 		1DBA0090205A7C1D0019DB1A /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA0086205A7C1D0019DB1A /* UIDevice+Hardware.m */; };
 		1DBA0091205A7C1D0019DB1A /* AudioMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DBA0088205A7C1D0019DB1A /* AudioMethod.m */; };
 		1DC9F5E11F6781410088275C /* ExcelContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC9F5E01F6781410088275C /* ExcelContentView.m */; };
+		1DCEF9E9217F03F700E34ACE /* SpeechString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCEF9E8217F03F700E34ACE /* SpeechString.m */; };
 		1DF3C18A1F163AB900EC8155 /* demo.css in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3C1801F163AB900EC8155 /* demo.css */; };
 		1DF3C18B1F163AB900EC8155 /* demo_fontclass.html in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3C1811F163AB900EC8155 /* demo_fontclass.html */; };
 		1DF3C18C1F163AB900EC8155 /* demo_symbol.html in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3C1821F163AB900EC8155 /* demo_symbol.html */; };
@@ -159,6 +162,8 @@
 		1DF3C1931F163AB900EC8155 /* iconfont.woff in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3C1891F163AB900EC8155 /* iconfont.woff */; };
 		1DF50209212AC9D6002C87BA /* Bottle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF50205212AC9D6002C87BA /* Bottle.m */; };
 		1DF5020A212AC9D6002C87BA /* Wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF50208212AC9D6002C87BA /* Wrapper.m */; };
+		1DFA85A9217EF4D800A956EF /* AVVoiceTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA85A7217EF4D800A956EF /* AVVoiceTestViewController.m */; };
+		1DFA85AA217EF4D800A956EF /* AVVoiceTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DFA85A8217EF4D800A956EF /* AVVoiceTestViewController.xib */; };
 		A95660C888921491DF5CA4C8 /* libPods-PodProduct.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82890BD67DF50D42652E4BCD /* libPods-PodProduct.a */; };
 /* End PBXBuildFile section */
 
@@ -244,8 +249,6 @@
 		1D396E082179A24400505A6E /* RunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopViewController.h; sourceTree = "<group>"; };
 		1D396E092179A24400505A6E /* RunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopViewController.m; sourceTree = "<group>"; };
 		1D396E0A2179A24400505A6E /* RunLoopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RunLoopViewController.xib; sourceTree = "<group>"; };
-		1D396E0E2179A3DD00505A6E /* Bluetooth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bluetooth.h; sourceTree = "<group>"; };
-		1D396E0F2179A3DD00505A6E /* Bluetooth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bluetooth.m; sourceTree = "<group>"; };
 		1D396E122179A66D00505A6E /* BlueToothViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueToothViewController.h; sourceTree = "<group>"; };
 		1D396E132179A66D00505A6E /* BlueToothViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueToothViewController.m; sourceTree = "<group>"; };
 		1D396E142179A66D00505A6E /* BlueToothViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlueToothViewController.xib; sourceTree = "<group>"; };
@@ -264,6 +267,12 @@
 		1D5DC4162016E9A300AA7A4E /* Presents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Presents.plist; sourceTree = "<group>"; };
 		1D5ECEF21F66257D00370606 /* ExcelRightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelRightView.h; sourceTree = "<group>"; };
 		1D5ECEF31F66257D00370606 /* ExcelRightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelRightView.m; sourceTree = "<group>"; };
+		1D672E99217D9C050048B2E6 /* BLEManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEManage.m; sourceTree = "<group>"; };
+		1D672E9A217D9C050048B2E6 /* SEBLEConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBLEConst.h; sourceTree = "<group>"; };
+		1D672E9B217D9C050048B2E6 /* BLEManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEManage.h; sourceTree = "<group>"; };
+		1D672E9D217DA1CB0048B2E6 /* BlueSuccessViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueSuccessViewController.h; sourceTree = "<group>"; };
+		1D672E9E217DA1CB0048B2E6 /* BlueSuccessViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueSuccessViewController.m; sourceTree = "<group>"; };
+		1D672E9F217DA1CB0048B2E6 /* BlueSuccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlueSuccessViewController.xib; sourceTree = "<group>"; };
 		1D678CF2200DCBDF00200B29 /* ColorConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConfig.h; sourceTree = "<group>"; };
 		1D678CF3200DCBDF00200B29 /* ColorConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorConfig.m; sourceTree = "<group>"; };
 		1D678CF5200DCC0700200B29 /* FontConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontConfig.h; sourceTree = "<group>"; };
@@ -478,6 +487,8 @@
 		1DBA008B205A7C1D0019DB1A /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
 		1DC9F5DF1F6781410088275C /* ExcelContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelContentView.h; sourceTree = "<group>"; };
 		1DC9F5E01F6781410088275C /* ExcelContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelContentView.m; sourceTree = "<group>"; };
+		1DCEF9E7217F03F700E34ACE /* SpeechString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeechString.h; sourceTree = "<group>"; };
+		1DCEF9E8217F03F700E34ACE /* SpeechString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechString.m; sourceTree = "<group>"; };
 		1DF3C1801F163AB900EC8155 /* demo.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = demo.css; sourceTree = "<group>"; };
 		1DF3C1811F163AB900EC8155 /* demo_fontclass.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo_fontclass.html; sourceTree = "<group>"; };
 		1DF3C1821F163AB900EC8155 /* demo_symbol.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo_symbol.html; sourceTree = "<group>"; };
@@ -493,6 +504,9 @@
 		1DF50206212AC9D6002C87BA /* Packing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Packing.h; sourceTree = "<group>"; };
 		1DF50207212AC9D6002C87BA /* Wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wrapper.h; sourceTree = "<group>"; };
 		1DF50208212AC9D6002C87BA /* Wrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wrapper.m; sourceTree = "<group>"; };
+		1DFA85A6217EF4D800A956EF /* AVVoiceTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVVoiceTestViewController.h; sourceTree = "<group>"; };
+		1DFA85A7217EF4D800A956EF /* AVVoiceTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVVoiceTestViewController.m; sourceTree = "<group>"; };
+		1DFA85A8217EF4D800A956EF /* AVVoiceTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AVVoiceTestViewController.xib; sourceTree = "<group>"; };
 		26C6B9F64F74D38DB6598374 /* Pods-PodProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodProduct/Pods-PodProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		53661698CC4DFE175F61A405 /* Pods-PodProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodProduct.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodProduct/Pods-PodProduct.release.xcconfig"; sourceTree = "<group>"; };
 		82890BD67DF50D42652E4BCD /* libPods-PodProduct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PodProduct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -566,6 +580,7 @@
 		1D396DDE2179780000505A6E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1DFA85A5217EF4B900A956EF /* AVVoiceTest */,
 				1D396E112179A64600505A6E /* BlueToothTest */,
 				1D396E072179A20A00505A6E /* RunLoopTest */,
 				1D396E0121798D4700505A6E /* RACTest */,
@@ -672,21 +687,15 @@
 			path = RunLoopTest;
 			sourceTree = "<group>";
 		};
-		1D396E0D2179A31900505A6E /* Bluetooth */ = {
-			isa = PBXGroup;
-			children = (
-				1D396E0E2179A3DD00505A6E /* Bluetooth.h */,
-				1D396E0F2179A3DD00505A6E /* Bluetooth.m */,
-			);
-			path = Bluetooth;
-			sourceTree = "<group>";
-		};
 		1D396E112179A64600505A6E /* BlueToothTest */ = {
 			isa = PBXGroup;
 			children = (
 				1D396E122179A66D00505A6E /* BlueToothViewController.h */,
 				1D396E132179A66D00505A6E /* BlueToothViewController.m */,
 				1D396E142179A66D00505A6E /* BlueToothViewController.xib */,
+				1D672E9D217DA1CB0048B2E6 /* BlueSuccessViewController.h */,
+				1D672E9E217DA1CB0048B2E6 /* BlueSuccessViewController.m */,
+				1D672E9F217DA1CB0048B2E6 /* BlueSuccessViewController.xib */,
 			);
 			path = BlueToothTest;
 			sourceTree = "<group>";
@@ -694,7 +703,7 @@
 		1D48BEC1204F8EC000F7A9DA /* Study */ = {
 			isa = PBXGroup;
 			children = (
-				1D396E0D2179A31900505A6E /* Bluetooth */,
+				1D672E98217D9C050048B2E6 /* BLEManage */,
 				1D822605212A6499002D3EA0 /* 设计模式 */,
 				1DDC9AF32126A33700F53074 /* System */,
 				1DDC9AF42126A35E00F53074 /* Block */,
@@ -742,6 +751,16 @@
 				1D48BEC1204F8EC000F7A9DA /* Study */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		1D672E98217D9C050048B2E6 /* BLEManage */ = {
+			isa = PBXGroup;
+			children = (
+				1D672E9A217D9C050048B2E6 /* SEBLEConst.h */,
+				1D672E9B217D9C050048B2E6 /* BLEManage.h */,
+				1D672E99217D9C050048B2E6 /* BLEManage.m */,
+			);
+			path = BLEManage;
 			sourceTree = "<group>";
 		};
 		1D69B0E82174733500F0CAA6 /* HUD */ = {
@@ -1233,6 +1252,8 @@
 			children = (
 				1DBA008A205A7C1D0019DB1A /* AudioMethod.h */,
 				1DBA0088205A7C1D0019DB1A /* AudioMethod.m */,
+				1DCEF9E7217F03F700E34ACE /* SpeechString.h */,
+				1DCEF9E8217F03F700E34ACE /* SpeechString.m */,
 				1DBA0087205A7C1D0019DB1A /* CallSMS.h */,
 				1DBA0085205A7C1C0019DB1A /* CallSMS.m */,
 				1DBA0089205A7C1D0019DB1A /* PathAndFiled.h */,
@@ -1324,6 +1345,16 @@
 				1DF50208212AC9D6002C87BA /* Wrapper.m */,
 			);
 			path = "包装";
+			sourceTree = "<group>";
+		};
+		1DFA85A5217EF4B900A956EF /* AVVoiceTest */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA85A6217EF4D800A956EF /* AVVoiceTestViewController.h */,
+				1DFA85A7217EF4D800A956EF /* AVVoiceTestViewController.m */,
+				1DFA85A8217EF4D800A956EF /* AVVoiceTestViewController.xib */,
+			);
+			path = AVVoiceTest;
 			sourceTree = "<group>";
 		};
 		6DC707D5A025ECE1EA8FD010 /* Pods */ = {
@@ -1476,6 +1507,7 @@
 				1D396DF421798B6E00505A6E /* GCDViewController.xib in Resources */,
 				1D748E741F62484500F6E41E /* ScanQRCodeViewController.xib in Resources */,
 				1DBA008E205A7C1D0019DB1A /* sound.plist in Resources */,
+				1D672EA1217DA1CB0048B2E6 /* BlueSuccessViewController.xib in Resources */,
 				1DF3C18D1F163AB900EC8155 /* demo_unicode.html in Resources */,
 				1D69B0EC2174747300F0CAA6 /* 文件资源文件夹.rtf in Resources */,
 				1D396E0C2179A24400505A6E /* RunLoopViewController.xib in Resources */,
@@ -1487,6 +1519,7 @@
 				1D69B132217475EE00F0CAA6 /* LICENCE in Resources */,
 				1D396DFA21798BE900505A6E /* BlockViewController.xib in Resources */,
 				1D69B12E217475EE00F0CAA6 /* PYSearch.bundle in Resources */,
+				1DFA85AA217EF4D800A956EF /* AVVoiceTestViewController.xib in Resources */,
 				1DF3C1901F163AB900EC8155 /* iconfont.js in Resources */,
 				1D69B16F2174975D00F0CAA6 /* PYSearchImage@3x.png in Resources */,
 				1D7E9B251EEE8D34008F18BF /* Main.storyboard in Resources */,
@@ -1607,6 +1640,7 @@
 				1D69B10C217475C700F0CAA6 /* LTSCalendarManager.m in Sources */,
 				1D1AA62B1F5924F300A591E8 /* BaseTableView.m in Sources */,
 				1D4ACCFF2061FE0200C2A92B /* StudyRACViewModel.m in Sources */,
+				1DFA85A9217EF4D800A956EF /* AVVoiceTestViewController.m in Sources */,
 				1D822627212A6499002D3EA0 /* AbstractFactory.m in Sources */,
 				1DF5020A212AC9D6002C87BA /* Wrapper.m in Sources */,
 				1DA1D52A1FB02CD3003FEB38 /* NSNumber+Format.m in Sources */,
@@ -1621,13 +1655,13 @@
 				1D2DDC93200C46E8005E8F53 /* NSData+Base64.m in Sources */,
 				1D69B10D217475C700F0CAA6 /* LTSCircleView.m in Sources */,
 				1DBA0090205A7C1D0019DB1A /* UIDevice+Hardware.m in Sources */,
+				1D672E9C217D9C050048B2E6 /* BLEManage.m in Sources */,
 				1D69B151217475FC00F0CAA6 /* TZImageCropManager.m in Sources */,
 				1DA1D52D1FB02CD3003FEB38 /* UIImage+Extension.m in Sources */,
 				1D822630212A64BB002D3EA0 /* SingleObject.m in Sources */,
 				1D69B15E217475FC00F0CAA6 /* TZLocationManager.m in Sources */,
 				1D69B15A217475FC00F0CAA6 /* TZImageManager.m in Sources */,
 				1D822628212A6499002D3EA0 /* ColorFactory.m in Sources */,
-				1D396E102179A3DD00505A6E /* Bluetooth.m in Sources */,
 				1DB93AD71EEFE61D00A6BAD7 /* BaseViewController.m in Sources */,
 				1D69B15B217475FC00F0CAA6 /* TZPhotoPickerController.m in Sources */,
 				1D69B15C217475FC00F0CAA6 /* TZPhotoPreviewCell.m in Sources */,
@@ -1638,6 +1672,7 @@
 				1D396DE821797AF300505A6E /* LoginModel.m in Sources */,
 				1DB93AD41EEFE60800A6BAD7 /* BaseImageView.m in Sources */,
 				1DC9F5E11F6781410088275C /* ExcelContentView.m in Sources */,
+				1DCEF9E9217F03F700E34ACE /* SpeechString.m in Sources */,
 				1D2DDC94200C46E8005E8F53 /* NSString+Base64.m in Sources */,
 				1D396DE921797AF300505A6E /* LoginVC.m in Sources */,
 				1D7E9B1F1EEE8D34008F18BF /* AppDelegate.m in Sources */,
@@ -1669,6 +1704,7 @@
 				1D69B112217475C700F0CAA6 /* LTSCalendarScrollView.m in Sources */,
 				1D69B152217475FC00F0CAA6 /* TZAssetCell.m in Sources */,
 				1D822646212A8866002D3EA0 /* VegBurger.m in Sources */,
+				1D672EA0217DA1CB0048B2E6 /* BlueSuccessViewController.m in Sources */,
 				1D48BECA204FD83700F7A9DA /* StudyGCD.m in Sources */,
 				1D748E831F62788600F6E41E /* ExcelLeftView.m in Sources */,
 				1D69B12A217475EE00F0CAA6 /* UIColor+PYSearchExtension.m in Sources */,
