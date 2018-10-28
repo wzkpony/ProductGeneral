@@ -22,6 +22,10 @@
 #import "BlueToothViewController.h"
 #import "AVVoiceTestViewController.h"
 
+//UI
+#import "GifViewController.h"
+#import "SinusBarChartViewController.h"
+//
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSMutableArray *dataSource;
@@ -37,7 +41,7 @@
     // Do any additional setup after loading the view, typically from a nib.
 
     dataSource = [[NSMutableArray alloc] init];
-    [dataSource addObjectsFromArray:@[@"二维码扫描",@"Excel表",@"GCD",@"Runtime",@"设计模式",@"Block",@"RAC",@"RunLoop",@"蓝牙",@"声音"]];
+    [dataSource addObjectsFromArray:@[@"二维码扫描",@"Excel表",@"GCD",@"Runtime",@"设计模式",@"Block",@"RAC",@"RunLoop",@"蓝牙",@"声音",@"UI"]];
     
         NSNumber *number = [NSNumber numberWithDouble:-1];
 //    NSLog(@"%@",number.formateCountNum);
@@ -48,6 +52,15 @@
 //    }
 //
 
+    
+//    NSString *string = @"1  2   3   4\nwzk  wzk wzk";
+    NSString *path = [NSString stringWithFormat:@"%@/Documents/test.xlsx",NSHomeDirectory()];
+    
+    NSData *data = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"WechatIMG110" ofType:@"jpeg"]];
+//    BOOL bol = [data writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:nil];
+    BOOL bol = [data writeToFile:path atomically:YES];
+
+    NSLog(@"%d",bol);
     
 }
 
@@ -105,6 +118,17 @@
         AVVoiceTestViewController *av = [[AVVoiceTestViewController alloc] init];
         [self.navigationController pushViewController:av animated:YES];
 
+    }
+    else if ([dataSource[indexPath.row] isEqualToString:@"UI"]){
+//        GifViewController *gif = [[GifViewController alloc] init];
+//        [self.navigationController pushViewController:gif animated:YES];
+        
+        SinusBarChartViewController *sinus = [[SinusBarChartViewController alloc] init];
+        [self.navigationController pushViewController:sinus animated:YES];
+
+        
+        
+        
     }
     
 }

@@ -14,9 +14,13 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
   - DZNEmptyDataSet (1.8.1)
   - HHRouter (0.1.9)
   - IQKeyboardManager (6.2.0)
+  - JCore (1.2.2)
   - JKCategories (1.8):
     - JKCategories/CoreData (= 1.8)
     - JKCategories/CoreLocation (= 1.8)
@@ -160,6 +164,8 @@ PODS:
   - JKCategories/UIKit/UIWebView (1.8):
     - JKCategories/UIKit/UIColor
   - JKCategories/UIKit/UIWindow (1.8)
+  - JPush (3.1.0):
+    - JCore (~> 1.2.0)
   - Masonry (1.1.0)
   - MJRefresh (3.1.15.7)
   - NJKWebViewProgress (0.2.3):
@@ -170,6 +176,7 @@ PODS:
   - NullSafe (1.2.3)
   - pop (1.0.12)
   - ReactiveObjC (3.1.0)
+  - SAMKeychain (1.5.3)
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
   - SDWebImage (4.4.2):
@@ -177,6 +184,24 @@ PODS:
   - SDWebImage/Core (4.4.2)
   - SVProgressHUD (2.2.5)
   - TTTAttributedLabel (2.0.0)
+  - UMCAnalytics (5.5.1):
+    - UMCCommon
+  - UMCCommon (1.5.2)
+  - UMCSecurityPlugins (1.0.6)
+  - UMCShare/Core (6.9.4):
+    - UMCCommon
+  - UMCShare/Social/AlipayShare (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedQQ (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedSina (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedWeChat (6.9.4):
+    - UMCCommon
+    - UMCShare/Core
   - WebViewJavascriptBridge (6.0.3)
   - Wonderful (1.2.1)
   - YYModel (1.0.4)
@@ -184,21 +209,30 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - Charts
   - DZNEmptyDataSet
-  - DZNEmptyDataSet (= 1.8.1)
   - HHRouter (= 0.1.9)
   - IQKeyboardManager
   - JKCategories
+  - JPush
   - Masonry
   - MJRefresh
   - NJKWebViewProgress
   - NullSafe (~> 1.2.3)
   - pop
   - ReactiveObjC
+  - SAMKeychain
   - SDCycleScrollView
   - SDWebImage
   - SVProgressHUD
   - TTTAttributedLabel
+  - UMCAnalytics
+  - UMCCommon
+  - UMCSecurityPlugins
+  - UMCShare/Social/AlipayShare
+  - UMCShare/Social/ReducedQQ
+  - UMCShare/Social/ReducedSina
+  - UMCShare/Social/ReducedWeChat
   - WebViewJavascriptBridge (~> 6.0)
   - Wonderful
   - YYModel (= 1.0.4)
@@ -207,20 +241,28 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - Charts
     - DZNEmptyDataSet
     - HHRouter
     - IQKeyboardManager
+    - JCore
     - JKCategories
+    - JPush
     - Masonry
     - MJRefresh
     - NJKWebViewProgress
     - NullSafe
     - pop
     - ReactiveObjC
+    - SAMKeychain
     - SDCycleScrollView
     - SDWebImage
     - SVProgressHUD
     - TTTAttributedLabel
+    - UMCAnalytics
+    - UMCCommon
+    - UMCSecurityPlugins
+    - UMCShare
     - WebViewJavascriptBridge
     - Wonderful
     - YYModel
@@ -228,25 +270,33 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   HHRouter: c096524e95a07a1970e6e23a19ee5a9592dc326d
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  JCore: f14c0549968a63c22e246a4875aa9d428446f373
   JKCategories: b62b30694ebe6d9fe5520b54ba250015dabd6dae
+  JPush: 5921e25ad13e0386351079217b009f2039084eac
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   NullSafe: c5dde0d07fe0136a8194d6af9e285b0322b6c068
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  UMCAnalytics: 0aff87e39008e2a650e5917430db0da2de2f8495
+  UMCCommon: 4392868ac47ff1b101663106bb114ba616fabbad
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+  UMCShare: aa233aecad67979930fe43f3a2f676023b669439
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   Wonderful: e46da4dd601c3ae08da576e451be8f4dc740c206
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 4cd38a81b6f06d4f1413258d594645bc7ba03952
+PODFILE CHECKSUM: 5efa435f6974ebc16e713dcce057b6d0c7c7ac35
 
 COCOAPODS: 1.5.3

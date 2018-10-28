@@ -10,6 +10,7 @@
 		1D0A80BE2052988C0080600B /* WZKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A80BD2052988C0080600B /* WZKAnimation.m */; };
 		1D1AA62B1F5924F300A591E8 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AA62A1F5924F300A591E8 /* BaseTableView.m */; };
 		1D1AA62E1F59250400A591E8 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AA62D1F59250400A591E8 /* BaseTableViewCell.m */; };
+		1D2AECA32184D2B7000BCCF2 /* PushObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2AECA22184D2B7000BCCF2 /* PushObject.m */; };
 		1D2B818820734D5500AABEF2 /* RunLoopTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B818720734D5500AABEF2 /* RunLoopTime.m */; };
 		1D2DDC93200C46E8005E8F53 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC8E200C46E8005E8F53 /* NSData+Base64.m */; };
 		1D2DDC94200C46E8005E8F53 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC90200C46E8005E8F53 /* NSString+Base64.m */; };
@@ -38,6 +39,14 @@
 		1D4ACCFF2061FE0200C2A92B /* StudyRACViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4ACCFE2061FE0200C2A92B /* StudyRACViewModel.m */; };
 		1D5DC4172016E9A300AA7A4E /* Presents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D5DC4162016E9A300AA7A4E /* Presents.plist */; };
 		1D5ECEF41F66257D00370606 /* ExcelRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5ECEF31F66257D00370606 /* ExcelRightView.m */; };
+		1D62014F218193CA00FD39D6 /* UIImageView+Gif.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D62014E218193CA00FD39D6 /* UIImageView+Gif.m */; };
+		1D6201512181A14500FD39D6 /* deskTop.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1D6201502181A14500FD39D6 /* deskTop.gif */; };
+		1D6201562181A3D900FD39D6 /* GifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6201542181A3D900FD39D6 /* GifViewController.m */; };
+		1D6201572181A3D900FD39D6 /* GifViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D6201552181A3D900FD39D6 /* GifViewController.xib */; };
+		1D62015D2181AD1B00FD39D6 /* ChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D62015B2181AD1B00FD39D6 /* ChartsViewController.m */; };
+		1D62015E2181AD1B00FD39D6 /* ChartsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D62015C2181AD1B00FD39D6 /* ChartsViewController.xib */; };
+		1D6201622181AE2D00FD39D6 /* SinusBarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D62015F2181AE2D00FD39D6 /* SinusBarChartViewController.xib */; };
+		1D6201632181AE2D00FD39D6 /* SinusBarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D6201612181AE2D00FD39D6 /* SinusBarChartViewController.m */; };
 		1D672E9C217D9C050048B2E6 /* BLEManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D672E99217D9C050048B2E6 /* BLEManage.m */; };
 		1D672EA0217DA1CB0048B2E6 /* BlueSuccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D672E9E217DA1CB0048B2E6 /* BlueSuccessViewController.m */; };
 		1D672EA1217DA1CB0048B2E6 /* BlueSuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D672E9F217DA1CB0048B2E6 /* BlueSuccessViewController.xib */; };
@@ -164,7 +173,10 @@
 		1DF5020A212AC9D6002C87BA /* Wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF50208212AC9D6002C87BA /* Wrapper.m */; };
 		1DFA85A9217EF4D800A956EF /* AVVoiceTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA85A7217EF4D800A956EF /* AVVoiceTestViewController.m */; };
 		1DFA85AA217EF4D800A956EF /* AVVoiceTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DFA85A8217EF4D800A956EF /* AVVoiceTestViewController.xib */; };
-		A95660C888921491DF5CA4C8 /* libPods-PodProduct.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82890BD67DF50D42652E4BCD /* libPods-PodProduct.a */; };
+		1DFFAE8E2182B611004B02A4 /* SHAClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFAE8D2182B611004B02A4 /* SHAClass.m */; };
+		1DFFAE922182C026004B02A4 /* ShareObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFFAE912182C026004B02A4 /* ShareObject.m */; };
+		1DFFAE9421831EBA004B02A4 /* WechatIMG110.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1DFFAE9321831EBA004B02A4 /* WechatIMG110.jpeg */; };
+		DD40D6F7094C3F8DDFB64251 /* Pods_PodProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EDA49AEC1DCB0C607AA1CFD /* Pods_PodProduct.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -216,6 +228,8 @@
 		1D1AA62D1F59250400A591E8 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		1D1AA62F1F59274A00A591E8 /* BaseUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseUIKit.h; sourceTree = "<group>"; };
 		1D1AA6301F5927BB00A591E8 /* PodLibraryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodLibraryHeader.h; sourceTree = "<group>"; };
+		1D2AECA12184D2B7000BCCF2 /* PushObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushObject.h; sourceTree = "<group>"; };
+		1D2AECA22184D2B7000BCCF2 /* PushObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushObject.m; sourceTree = "<group>"; };
 		1D2B818620734D5500AABEF2 /* RunLoopTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopTime.h; sourceTree = "<group>"; };
 		1D2B818720734D5500AABEF2 /* RunLoopTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopTime.m; sourceTree = "<group>"; };
 		1D2DDC8D200C46E8005E8F53 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
@@ -267,6 +281,19 @@
 		1D5DC4162016E9A300AA7A4E /* Presents.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Presents.plist; sourceTree = "<group>"; };
 		1D5ECEF21F66257D00370606 /* ExcelRightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelRightView.h; sourceTree = "<group>"; };
 		1D5ECEF31F66257D00370606 /* ExcelRightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelRightView.m; sourceTree = "<group>"; };
+		1D62014D218193CA00FD39D6 /* UIImageView+Gif.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Gif.h"; sourceTree = "<group>"; };
+		1D62014E218193CA00FD39D6 /* UIImageView+Gif.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Gif.m"; sourceTree = "<group>"; };
+		1D6201502181A14500FD39D6 /* deskTop.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = deskTop.gif; sourceTree = "<group>"; };
+		1D6201532181A3D900FD39D6 /* GifViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifViewController.h; sourceTree = "<group>"; };
+		1D6201542181A3D900FD39D6 /* GifViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GifViewController.m; sourceTree = "<group>"; };
+		1D6201552181A3D900FD39D6 /* GifViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GifViewController.xib; sourceTree = "<group>"; };
+		1D62015A2181AD1B00FD39D6 /* ChartsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartsViewController.h; sourceTree = "<group>"; };
+		1D62015B2181AD1B00FD39D6 /* ChartsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartsViewController.m; sourceTree = "<group>"; };
+		1D62015C2181AD1B00FD39D6 /* ChartsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartsViewController.xib; sourceTree = "<group>"; };
+		1D62015F2181AE2D00FD39D6 /* SinusBarChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SinusBarChartViewController.xib; sourceTree = "<group>"; };
+		1D6201602181AE2D00FD39D6 /* SinusBarChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinusBarChartViewController.h; sourceTree = "<group>"; };
+		1D6201612181AE2D00FD39D6 /* SinusBarChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinusBarChartViewController.m; sourceTree = "<group>"; };
+		1D6201642181B08400FD39D6 /* PodProduct-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PodProduct-Bridging-Header.h"; sourceTree = "<group>"; };
 		1D672E99217D9C050048B2E6 /* BLEManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEManage.m; sourceTree = "<group>"; };
 		1D672E9A217D9C050048B2E6 /* SEBLEConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEBLEConst.h; sourceTree = "<group>"; };
 		1D672E9B217D9C050048B2E6 /* BLEManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEManage.h; sourceTree = "<group>"; };
@@ -507,9 +534,14 @@
 		1DFA85A6217EF4D800A956EF /* AVVoiceTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVVoiceTestViewController.h; sourceTree = "<group>"; };
 		1DFA85A7217EF4D800A956EF /* AVVoiceTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVVoiceTestViewController.m; sourceTree = "<group>"; };
 		1DFA85A8217EF4D800A956EF /* AVVoiceTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AVVoiceTestViewController.xib; sourceTree = "<group>"; };
+		1DFFAE8C2182B611004B02A4 /* SHAClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHAClass.h; sourceTree = "<group>"; };
+		1DFFAE8D2182B611004B02A4 /* SHAClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHAClass.m; sourceTree = "<group>"; };
+		1DFFAE902182C026004B02A4 /* ShareObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareObject.h; sourceTree = "<group>"; };
+		1DFFAE912182C026004B02A4 /* ShareObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareObject.m; sourceTree = "<group>"; };
+		1DFFAE9321831EBA004B02A4 /* WechatIMG110.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WechatIMG110.jpeg; sourceTree = "<group>"; };
 		26C6B9F64F74D38DB6598374 /* Pods-PodProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodProduct/Pods-PodProduct.debug.xcconfig"; sourceTree = "<group>"; };
+		2EDA49AEC1DCB0C607AA1CFD /* Pods_PodProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53661698CC4DFE175F61A405 /* Pods-PodProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodProduct.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodProduct/Pods-PodProduct.release.xcconfig"; sourceTree = "<group>"; };
-		82890BD67DF50D42652E4BCD /* libPods-PodProduct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PodProduct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -517,7 +549,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A95660C888921491DF5CA4C8 /* libPods-PodProduct.a in Frameworks */,
+				DD40D6F7094C3F8DDFB64251 /* Pods_PodProduct.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +570,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D2AECA02184D298000BCCF2 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				1D2AECA12184D2B7000BCCF2 /* PushObject.h */,
+				1D2AECA22184D2B7000BCCF2 /* PushObject.m */,
+			);
+			path = Push;
+			sourceTree = "<group>";
+		};
 		1D2DDC8C200C46E8005E8F53 /* RSA */ = {
 			isa = PBXGroup;
 			children = (
@@ -580,6 +621,7 @@
 		1D396DDE2179780000505A6E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1D6201522181A3BD00FD39D6 /* UI */,
 				1DFA85A5217EF4B900A956EF /* AVVoiceTest */,
 				1D396E112179A64600505A6E /* BlueToothTest */,
 				1D396E072179A20A00505A6E /* RunLoopTest */,
@@ -703,6 +745,7 @@
 		1D48BEC1204F8EC000F7A9DA /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				1D62014B218191D200FD39D6 /* UI */,
 				1D672E98217D9C050048B2E6 /* BLEManage */,
 				1D822605212A6499002D3EA0 /* 设计模式 */,
 				1DDC9AF32126A33700F53074 /* System */,
@@ -751,6 +794,39 @@
 				1D48BEC1204F8EC000F7A9DA /* Study */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		1D62014B218191D200FD39D6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1D62014C218191E200FD39D6 /* Gif */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1D62014C218191E200FD39D6 /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				1D62014D218193CA00FD39D6 /* UIImageView+Gif.h */,
+				1D62014E218193CA00FD39D6 /* UIImageView+Gif.m */,
+			);
+			path = Gif;
+			sourceTree = "<group>";
+		};
+		1D6201522181A3BD00FD39D6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1D6201602181AE2D00FD39D6 /* SinusBarChartViewController.h */,
+				1D6201612181AE2D00FD39D6 /* SinusBarChartViewController.m */,
+				1D62015F2181AE2D00FD39D6 /* SinusBarChartViewController.xib */,
+				1D6201532181A3D900FD39D6 /* GifViewController.h */,
+				1D6201542181A3D900FD39D6 /* GifViewController.m */,
+				1D6201552181A3D900FD39D6 /* GifViewController.xib */,
+				1D62015A2181AD1B00FD39D6 /* ChartsViewController.h */,
+				1D62015B2181AD1B00FD39D6 /* ChartsViewController.m */,
+				1D62015C2181AD1B00FD39D6 /* ChartsViewController.xib */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		1D672E98217D9C050048B2E6 /* BLEManage */ = {
@@ -963,6 +1039,7 @@
 		1D77CFB7209C6C530048B7CF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1D6201502181A14500FD39D6 /* deskTop.gif */,
 				1DF3C17F1F163AB900EC8155 /* iconFont */,
 			);
 			path = Resource;
@@ -1005,6 +1082,7 @@
 				1D7E9B1E1EEE8D34008F18BF /* AppDelegate.m */,
 				1D7E9B201EEE8D34008F18BF /* ViewController.h */,
 				1D7E9B211EEE8D34008F18BF /* ViewController.m */,
+				1DFFAE9321831EBA004B02A4 /* WechatIMG110.jpeg */,
 				1D7E9B231EEE8D34008F18BF /* Main.storyboard */,
 				1D7E9B261EEE8D34008F18BF /* Assets.xcassets */,
 				1D7E9B281EEE8D34008F18BF /* LaunchScreen.storyboard */,
@@ -1012,6 +1090,7 @@
 				1D7E9B1A1EEE8D34008F18BF /* Supporting Files */,
 				1D5DC3DC2016E19E00AA7A4E /* PrefixHeader.pch */,
 				1D5DC4162016E9A300AA7A4E /* Presents.plist */,
+				1D6201642181B08400FD39D6 /* PodProduct-Bridging-Header.h */,
 			);
 			path = PodProduct;
 			sourceTree = "<group>";
@@ -1074,6 +1153,9 @@
 		1D7E9B651EEE9309008F18BF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1D2AECA02184D298000BCCF2 /* Push */,
+				1DFFAE8F2182C009004B02A4 /* Share */,
+				1DFFAE8B2182B611004B02A4 /* SHA加密 */,
 				1D69B0F02174758800F0CAA6 /* RouterConfig */,
 				1D69B0E82174733500F0CAA6 /* HUD */,
 				1D2DDC96200C46ED005E8F53 /* CodeResourcesClass */,
@@ -1357,6 +1439,24 @@
 			path = AVVoiceTest;
 			sourceTree = "<group>";
 		};
+		1DFFAE8B2182B611004B02A4 /* SHA加密 */ = {
+			isa = PBXGroup;
+			children = (
+				1DFFAE8C2182B611004B02A4 /* SHAClass.h */,
+				1DFFAE8D2182B611004B02A4 /* SHAClass.m */,
+			);
+			path = "SHA加密";
+			sourceTree = "<group>";
+		};
+		1DFFAE8F2182C009004B02A4 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				1DFFAE902182C026004B02A4 /* ShareObject.h */,
+				1DFFAE912182C026004B02A4 /* ShareObject.m */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
 		6DC707D5A025ECE1EA8FD010 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1369,8 +1469,8 @@
 		F41C781773D326753B251DE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				82890BD67DF50D42652E4BCD /* libPods-PodProduct.a */,
 				1D353C381F3AFA220021FE15 /* NotificationCenter.framework */,
+				2EDA49AEC1DCB0C607AA1CFD /* Pods_PodProduct.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1386,9 +1486,9 @@
 				1D7E9B131EEE8D34008F18BF /* Sources */,
 				1D7E9B141EEE8D34008F18BF /* Frameworks */,
 				1D7E9B151EEE8D34008F18BF /* Resources */,
-				224B8D997878111E9F5B835E /* [CP] Copy Pods Resources */,
 				1D353C481F3AFA220021FE15 /* Embed App Extensions */,
 				1D8E15C0205257DC0031B19D /* Embed Frameworks */,
+				993B1A65D78E6F2398DCAAFE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1447,6 +1547,7 @@
 					1D7E9B161EEE8D34008F18BF = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 65ZPEUXB9L;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -1495,15 +1596,19 @@
 			files = (
 				1DF3C18A1F163AB900EC8155 /* demo.css in Resources */,
 				1D7E9B2A1EEE8D34008F18BF /* LaunchScreen.storyboard in Resources */,
+				1D62015E2181AD1B00FD39D6 /* ChartsViewController.xib in Resources */,
 				1D69B131217475EE00F0CAA6 /* README.md in Resources */,
+				1DFFAE9421831EBA004B02A4 /* WechatIMG110.jpeg in Resources */,
 				1D396E162179A66D00505A6E /* BlueToothViewController.xib in Resources */,
 				1D7E9B271EEE8D34008F18BF /* Assets.xcassets in Resources */,
 				1DF3C1931F163AB900EC8155 /* iconfont.woff in Resources */,
 				1DF3C18E1F163AB900EC8155 /* iconfont.css in Resources */,
+				1D6201622181AE2D00FD39D6 /* SinusBarChartViewController.xib in Resources */,
 				1D396DEA21797AF300505A6E /* LoginVC.xib in Resources */,
 				1D396E0621798D7200505A6E /* RACViewController.xib in Resources */,
 				1DF3C18F1F163AB900EC8155 /* iconfont.eot in Resources */,
 				1DF3C1911F163AB900EC8155 /* iconfont.svg in Resources */,
+				1D6201572181A3D900FD39D6 /* GifViewController.xib in Resources */,
 				1D396DF421798B6E00505A6E /* GCDViewController.xib in Resources */,
 				1D748E741F62484500F6E41E /* ScanQRCodeViewController.xib in Resources */,
 				1DBA008E205A7C1D0019DB1A /* sound.plist in Resources */,
@@ -1516,6 +1621,7 @@
 				1DF3C1921F163AB900EC8155 /* iconfont.ttf in Resources */,
 				1DF3C18B1F163AB900EC8155 /* demo_fontclass.html in Resources */,
 				1D69B158217475FC00F0CAA6 /* TZImagePickerController.bundle in Resources */,
+				1D6201512181A14500FD39D6 /* deskTop.gif in Resources */,
 				1D69B132217475EE00F0CAA6 /* LICENCE in Resources */,
 				1D396DFA21798BE900505A6E /* BlockViewController.xib in Resources */,
 				1D69B12E217475EE00F0CAA6 /* PYSearch.bundle in Resources */,
@@ -1545,28 +1651,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		224B8D997878111E9F5B835E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PodProduct/Pods-PodProduct-resources.sh",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PodProduct/Pods-PodProduct-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		721A5EDB1E994AFA3B15B285 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1583,6 +1667,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		993B1A65D78E6F2398DCAAFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PodProduct/Pods-PodProduct-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/HHRouter/HHRouter.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JKCategories/JKCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/NJKWebViewProgress/NJKWebViewProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/NullSafe/NullSafe.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
+				"${BUILT_PRODUCTS_DIR}/Wonderful/Wonderful.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HHRouter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JKCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NJKWebViewProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NullSafe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewJavascriptBridge.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Wonderful.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PodProduct/Pods-PodProduct-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1633,6 +1779,7 @@
 				1D748E841F62788600F6E41E /* ExcelView.m in Sources */,
 				1DBA008F205A7C1D0019DB1A /* CallSMS.m in Sources */,
 				1D822643212A87D9002D3EA0 /* ColdDrink.m in Sources */,
+				1D62014F218193CA00FD39D6 /* UIImageView+Gif.m in Sources */,
 				1D82264F212A8D06002D3EA0 /* Pepsi.m in Sources */,
 				1D69B155217475FC00F0CAA6 /* NSBundle+TZImagePicker.m in Sources */,
 				1D69B0F42174758800F0CAA6 /* TSRouter.m in Sources */,
@@ -1663,9 +1810,13 @@
 				1D69B15A217475FC00F0CAA6 /* TZImageManager.m in Sources */,
 				1D822628212A6499002D3EA0 /* ColorFactory.m in Sources */,
 				1DB93AD71EEFE61D00A6BAD7 /* BaseViewController.m in Sources */,
+				1DFFAE922182C026004B02A4 /* ShareObject.m in Sources */,
+				1DFFAE8E2182B611004B02A4 /* SHAClass.m in Sources */,
 				1D69B15B217475FC00F0CAA6 /* TZPhotoPickerController.m in Sources */,
 				1D69B15C217475FC00F0CAA6 /* TZPhotoPreviewCell.m in Sources */,
+				1D62015D2181AD1B00FD39D6 /* ChartsViewController.m in Sources */,
 				1DB93ACE1EEFE5E400A6BAD7 /* BaseButton.m in Sources */,
+				1D6201632181AE2D00FD39D6 /* SinusBarChartViewController.m in Sources */,
 				1D396DF921798BE900505A6E /* BlockViewController.m in Sources */,
 				1D69B157217475FC00F0CAA6 /* TZPhotoPreviewController.m in Sources */,
 				1D2DDC99200C46ED005E8F53 /* CodeResourcesClass.m in Sources */,
@@ -1690,6 +1841,8 @@
 				1DB93ACA1EEFE14700A6BAD7 /* TimeStampToString.m in Sources */,
 				1DB93AC71EEFE12F00A6BAD7 /* NetworkManage.m in Sources */,
 				1D822626212A6499002D3EA0 /* Red.m in Sources */,
+				1D6201562181A3D900FD39D6 /* GifViewController.m in Sources */,
+				1D2AECA32184D2B7000BCCF2 /* PushObject.m in Sources */,
 				1D48BEC4204F8ED800F7A9DA /* StudyBlock.m in Sources */,
 				1DB93AD11EEFE5F600A6BAD7 /* BaseLabel.m in Sources */,
 				1D69B0EF2174756300F0CAA6 /* RequestUtil.m in Sources */,
@@ -1867,6 +2020,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1897,6 +2051,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PodProduct/PodProduct-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -1906,6 +2063,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1936,6 +2094,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PodProduct/PodProduct-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

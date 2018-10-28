@@ -11,7 +11,7 @@
 
 #define WX_AppKey @""
 #define QQ_AppKey @""//
-#define UMeng_AppKey @""//
+#define UMeng_AppKey @"5bd28764b465f5d6200002b0"//
 #define Reg_From @""
 #define JiGuang_AppKey @""//
 #define iOSChannle   1

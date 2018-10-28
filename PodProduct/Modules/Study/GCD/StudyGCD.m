@@ -113,8 +113,8 @@
 /*
  dispatch_group
  dispatch_get_global_queue 全局队列，是并行的
- dispatch_queue_create 创建一个串行队列
- dispatch_queue_create 创建一个并行队列
+ DISPATCH_QUEUE_SERIAL 创建一个串行队列
+ DISPATCH_QUEUE_CONCURRENT 创建一个并行队列
  dispatch_get_main_queue 主队列主线程
  
  dispatch_queue_t serialqueue = dispatch_queue_create("serialqueue", DISPATCH_QUEUE_SERIAL);//串行线程队列
@@ -129,7 +129,7 @@
     dispatch_group_t gp = dispatch_group_create();
     // ---------------dipatch_group------------
     dispatch_group_async(gp, globalQueue, ^{
-        sleep(2);//会阻塞主线程
+//        sleep(2);//会阻塞主线程
         NSLog(@"globalQueue1");
     });
     
@@ -137,6 +137,7 @@
         //等待线程完成之后调用，在notify之前调用
         //暂停当前线程（阻塞当前线程，但是不会阻塞其他线程和主线程），等待指定的 group 中的任务执行完成后，才会往下继续执行。
         dispatch_group_wait(gp, dispatch_time(DISPATCH_TIME_NOW, 20 * NSEC_PER_SEC));
+
         NSLog(@"globalQueue2");
     });
     
@@ -165,7 +166,6 @@
  */
 
 - (void)funcGroupEnterAndLeave{
-    NSLog(@"currentThread---%@",[NSThread currentThread]);
     // 打印当前线程NSLog(@"group---begin");
     dispatch_group_t group = dispatch_group_create();
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0);
@@ -174,35 +174,35 @@
     dispatch_group_enter(group);
     dispatch_async(queue, ^{
         // 追加任务1
-        for(int i =0; i <2; ++i) {
-            [NSThread sleepForTimeInterval:2];
-            // 模拟耗时操作
-            NSLog(@"1---%@",[NSThread currentThread]);
-            // 打印当前线程
-            
-        }
+//        for(int i =0; i <2; ++i) {
+//            [NSThread sleepForTimeInterval:0];
+//            // 模拟耗时操作
+//            NSLog(@"1---%@",[NSThread currentThread]);
+//            // 打印当前线程
+//
+//        }
+        NSLog(@"1111");
         dispatch_group_leave(group);
     });
     
     dispatch_group_enter(group);
     dispatch_async(queue, ^{
         // 追加任务2
-        for(int i =0; i <2; ++i) {
-            [NSThread sleepForTimeInterval:2];
-            // 模拟耗时操作
-            NSLog(@"2---%@",[NSThread currentThread]);
-            // 打印当前线程
-            
-        }
-        dispatch_group_leave(group);
+//        __weak typeof(self)myself = self;
+//        NSTimer *timer = [NSTimer timerWithTimeInterval:1 target:myself selector:@selector(timerFunctionForGCDGroup) userInfo:nil repeats:YES];
+//        [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+//        dispatch_group_leave(group);
+//        [[NSRunLoop currentRunLoop] run];
+        
     });
     dispatch_group_notify(group, dispatch_get_main_queue(), ^{
         // 等前面的异步操作都执行完毕后，回到主线程.
-        for(int i =0; i <2; ++i) {
-            [NSThread sleepForTimeInterval:2];// 模拟耗时操作
-            NSLog(@"3---%@",[NSThread currentThread]);// 打印当前线程}NSLog(@"group---end");
-            
-        }
+//        for(int i =0; i <2; ++i) {
+//            [NSThread sleepForTimeInterval:2];// 模拟耗时操作
+//            NSLog(@"3---%@",[NSThread currentThread]);// 打印当前线程}NSLog(@"group---end");
+//
+//        }
+        NSLog(@"%@",@"3333");
     });
     
     // 等待上面的任务全部完成后，会往下继续执行（会阻塞当前线程）//
@@ -262,6 +262,9 @@
     
 }
 
-
+- (void)timerFunctionForGCDGroup
+{
+    NSLog(@"2222");
+}
 
 @end

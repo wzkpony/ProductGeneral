@@ -30,8 +30,8 @@
 	<string>app需要您的同意，才能在使用期间访问位置</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>app需要您的同意，才能访问您的相册</string>
-    <key>NSBluetoothPeripheralUsageDescription</key>
-    <string>App需要您的同意,才能访问蓝牙</string> 
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>App需要您的同意,才能访问蓝牙</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>iconfont.ttf</string>
@@ -61,5 +61,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
 </dict>
 </plist>

@@ -25,7 +25,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-
 }
 - (IBAction)sendAVVoice:(id)sender {
     [[SpeechString sharedSpeech] speechSynthesizerString:self.textField.text langeuage:@"" rate:0 duration:1*60];

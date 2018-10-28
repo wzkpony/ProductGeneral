@@ -141,6 +141,53 @@ strip_invalid_archs() {
   STRIP_BINARY_RETVAL=1
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Charts/Charts.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/HHRouter/HHRouter.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JKCategories/JKCategories.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/NJKWebViewProgress/NJKWebViewProgress.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/NullSafe/NullSafe.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Wonderful/Wonderful.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYText/YYText.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/pop/pop.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Charts/Charts.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/HHRouter/HHRouter.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JKCategories/JKCategories.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/NJKWebViewProgress/NJKWebViewProgress.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/NullSafe/NullSafe.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Wonderful/Wonderful.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/YYText/YYText.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/pop/pop.framework"
+fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi

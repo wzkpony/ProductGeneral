@@ -44,17 +44,7 @@ static  SpeechString*speech = nil;
     }
     return nil;
 }
-- (void)speechSynthesizerString:(nullable NSString *)string
-                      langeuage:(nullable NSString *)language
-                           rate:(CGFloat )rate
-{
-    AVSpeechUtterance * utterance = [[AVSpeechUtterance alloc] initWithString:string];//需要转换的文本
-    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:language];//国家语言
-    
-    utterance.rate = rate;//声速
-    
-    [self.synthsizer speakUtterance:utterance];
-}
+
 - (void)stopTimer
 {
     if ([_timer isValid]) {
@@ -91,4 +81,18 @@ static  SpeechString*speech = nil;
     NSString *string = Content(minute);
     [self speechSynthesizerString:string langeuage:self.language rate:self.rate];
 }
+
+- (void)speechSynthesizerString:(nullable NSString *)string
+                      langeuage:(nullable NSString *)language
+                           rate:(CGFloat )rate
+{
+    AVSpeechUtterance * utterance = [[AVSpeechUtterance alloc] initWithString:string];//需要转换的文本
+    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:language];//国家语言
+    
+    utterance.rate = rate;//声速
+    
+    [self.synthsizer speakUtterance:utterance];
+}
+
+
 @end

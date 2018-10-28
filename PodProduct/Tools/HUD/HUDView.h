@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <SVProgressHUD.h>
+#import "SVProgressHUD.h"
 @interface HUDView : UIView
 + (void)showToastWith:(NSString *)status;
 + (void)showToastWith:(NSString *)status allowUserInteractions:(BOOL)allow;

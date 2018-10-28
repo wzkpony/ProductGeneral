@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ReactiveObjC.h>
 @interface LoginVM : NSObject
 @property(nonatomic, strong) RACCommand *subscribeCommand;
 

@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ReactiveObjC.h>
-#import <RACReturnSignal.h>
 
 @interface StudyRACViewModel : NSObject
 @property(nonatomic,strong)RACCommand *loginCommand;

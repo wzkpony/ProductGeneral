@@ -29,5 +29,10 @@
 
 #import <objc/runtime.h>
 #import <objc/message.h>
-
+#import "UIImage+GIF.h"
+#import "UIImageView+WebCache.h"
+#import "ReactiveObjC.h"
+#import "RACReturnSignal.h"
+#import <UMShare/UMShare.h>
+#import "ShareObject.h"
 #endif /* ConfigHead_h */
