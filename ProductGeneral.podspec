@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "ProductGeneral"
   s.version      = "0.0.2"
-  s.summary      = "A short description of ProductGeneral."
+  s.summary      = "This is a library of tools that can be used as components"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-A short description of ProductGeneral. it is long.                  
+这个是一个model封装，和一些方法调用形成的工具，封装起来这些工具，形成组件方式。                  
  DESC
 
   s.homepage     = "https://github.com/wzkpony/ProductGeneral"
@@ -39,8 +39,8 @@ A short description of ProductGeneral. it is long.
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = 'MIT'
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  #  s.license      = 'MIT'
+   s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -64,8 +64,8 @@ A short description of ProductGeneral. it is long.
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  # s.platform     = :osx, '10.0'
+    s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -91,7 +91,7 @@ A short description of ProductGeneral. it is long.
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "PodProduct/Tools", "PodProduct/Tools/**/*.{h,m}"
+  s.source_files  = "PodProduct/Tools/CodeResourcesClass", "PodProduct/Tools/CodeResourcesClass/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -118,10 +118,10 @@ A short description of ProductGeneral. it is long.
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+   s.frameworks = 'UIKit'
 
   # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
+  #  s.libraries = 
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -133,6 +133,6 @@ A short description of ProductGeneral. it is long.
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+
 
 end

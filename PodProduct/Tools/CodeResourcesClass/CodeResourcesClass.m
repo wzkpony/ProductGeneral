@@ -23,7 +23,6 @@
 //                <#statements#>
 //            }
             if (![valueRequest isEqual:valueCodeResource]) {
-                SLLog(@"%@",diffValue);
                 same = NO;
             }
             
@@ -37,9 +36,9 @@
 + (NSDictionary* )getCodeResources
 {
     NSString* bundlePath = [[NSBundle mainBundle] resourcePath];
-    NSFileManager* manager = [NSFileManager defaultManager];
+//    NSFileManager* manager = [NSFileManager defaultManager];
     NSString* path = [NSString stringWithFormat:@"%@/_CodeSignature/CodeResources",bundlePath];
-    NSData* data = [manager contentsAtPath:path];
+//    NSData* data = [manager contentsAtPath:path];
     
     NSDictionary* dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     NSDictionary* dictFiled = dict[@"files"];
@@ -48,7 +47,7 @@
 //从本地服务获取 CodeResources的hash
 + (NSDictionary* )getRequestCodeResources
 {
-    NSString* path = [NSString stringWithFormat:@"%@/readFile.htm?path=api/static/ios/CodeResources.xml",BASE_URL];
+    NSString* path = [NSString stringWithFormat:@"%@/readFile.htm?path=api/static/ios/CodeResources.xml",@"你的url地址"];
     NSDictionary* dict = [[NSDictionary alloc] initWithContentsOfURL:[NSURL URLWithString:path]];
     NSDictionary* dictFiled = dict[@"files"];
     return dictFiled;
