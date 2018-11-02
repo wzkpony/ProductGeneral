@@ -124,7 +124,7 @@
 //        [self.navigationController pushViewController:gif animated:YES];
         
         SinusBarChartViewController *sinus = [[SinusBarChartViewController alloc] init];
-        [self.navigationController pushViewController:sinus animated:YES];
+        [self.navigationController pushViewController:sinus animated:NO];
 
         
         

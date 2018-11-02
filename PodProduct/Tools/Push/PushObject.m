@@ -14,6 +14,7 @@
  */
 @implementation PushObject
 - (void)registerJPushWith:(NSDictionary *)launchOptions {
+    /*
 #if !(TARGET_IPHONE_SIMULATOR)
     if (IOS10_OR_LATER) {
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
@@ -39,7 +40,7 @@
     // 在模拟器情况下
     
 #endif
-    
+    */
 }
 
 @end
