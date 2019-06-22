@@ -91,5 +91,20 @@
     NSString *name = [infoDictionary objectForKey:@"CFBundleDisplayName"];
     return name;
 }
-
+/*
+//获取设备👌
++ (NSString *)getDeviceId:(NSString *)kKeychainService kKeychainDeviceId:(NSString *)kKeychainDeviceId {
+    // 读取设备号
+    NSString *localDeviceId = [SAMKeychain passwordForService:kKeychainService account:kKeychainDeviceId];
+    if (!localDeviceId) {
+        // 保存设备号
+        CFUUIDRef deviceId = CFUUIDCreate(NULL);
+        assert(deviceId != NULL);
+        CFStringRef deviceIdStr = CFUUIDCreateString(NULL, deviceId);
+        [SAMKeychain setPassword:[NSString stringWithFormat:@"%@", deviceIdStr] forService:kKeychainService account:kKeychainDeviceId];
+        localDeviceId = [NSString stringWithFormat:@"%@", deviceIdStr];
+    }
+    return localDeviceId;
+}
+*/
 @end

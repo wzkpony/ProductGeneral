@@ -14,13 +14,17 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - AvoidCrash (2.5.2)
+  - BRPickerView (2.2.1)
+  - Bugly (2.5.0)
   - Charts (3.2.1):
     - Charts/Core (= 3.2.1)
   - Charts/Core (3.2.1)
   - DZNEmptyDataSet (1.8.1)
+  - FBRetainCycleDetector (0.1.4)
   - HHRouter (0.1.9)
   - IQKeyboardManager (6.2.0)
-  - JCore (1.2.2)
+  - JCore (1.2.5)
   - JKCategories (1.8):
     - JKCategories/CoreData (= 1.8)
     - JKCategories/CoreLocation (= 1.8)
@@ -164,10 +168,14 @@ PODS:
   - JKCategories/UIKit/UIWebView (1.8):
     - JKCategories/UIKit/UIColor
   - JKCategories/UIKit/UIWindow (1.8)
-  - JPush (3.1.0):
-    - JCore (~> 1.2.0)
+  - JPush (3.1.1.1):
+    - JCore (~> 1.2.5)
+  - JXCategoryView (1.1.3)
   - Masonry (1.1.0)
+  - MGSwipeTableCell (1.6.8)
   - MJRefresh (3.1.15.7)
+  - MLeaksFinder (1.0.0):
+    - FBRetainCycleDetector
   - NJKWebViewProgress (0.2.3):
     - NJKWebViewProgress/Core (= 0.2.3)
     - NJKWebViewProgress/ProgressView (= 0.2.3)
@@ -179,44 +187,51 @@ PODS:
   - SAMKeychain (1.5.3)
   - SDCycleScrollView (1.75):
     - SDWebImage (>= 4.0.0)
-  - SDWebImage (4.4.2):
-    - SDWebImage/Core (= 4.4.2)
-  - SDWebImage/Core (4.4.2)
+  - SDWebImage (4.4.3):
+    - SDWebImage/Core (= 4.4.3)
+  - SDWebImage/Core (4.4.3)
   - SVProgressHUD (2.2.5)
   - TTTAttributedLabel (2.0.0)
-  - UMCAnalytics (5.5.1):
+  - UMCAnalytics (5.5.2):
     - UMCCommon
-  - UMCCommon (1.5.2)
+  - UMCCommon (1.5.3)
   - UMCSecurityPlugins (1.0.6)
-  - UMCShare/Core (6.9.4):
+  - UMCShare/Core (6.9.5):
     - UMCCommon
-  - UMCShare/Social/AlipayShare (6.9.4):
-    - UMCCommon
-    - UMCShare/Core
-  - UMCShare/Social/ReducedQQ (6.9.4):
+  - UMCShare/Social/AlipayShare (6.9.5):
     - UMCCommon
     - UMCShare/Core
-  - UMCShare/Social/ReducedSina (6.9.4):
+  - UMCShare/Social/ReducedQQ (6.9.5):
     - UMCCommon
     - UMCShare/Core
-  - UMCShare/Social/ReducedWeChat (6.9.4):
+  - UMCShare/Social/ReducedSina (6.9.5):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/ReducedWeChat (6.9.5):
     - UMCCommon
     - UMCShare/Core
   - WebViewJavascriptBridge (6.0.3)
   - Wonderful (1.2.1)
-  - YYModel (1.0.4)
-  - YYText (1.0.7)
+  - ZFPlayer (3.2.2):
+    - ZFPlayer/Core (= 3.2.2)
+  - ZFPlayer/Core (3.2.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - AvoidCrash (~> 2.5.2)
+  - BRPickerView
+  - Bugly
   - Charts
   - DZNEmptyDataSet
   - HHRouter (= 0.1.9)
   - IQKeyboardManager
   - JKCategories
   - JPush
+  - JXCategoryView
   - Masonry
+  - MGSwipeTableCell
   - MJRefresh
+  - MLeaksFinder
   - NJKWebViewProgress
   - NullSafe (~> 1.2.3)
   - pop
@@ -235,21 +250,27 @@ DEPENDENCIES:
   - UMCShare/Social/ReducedWeChat
   - WebViewJavascriptBridge (~> 6.0)
   - Wonderful
-  - YYModel (= 1.0.4)
-  - YYText (= 1.0.7)
+  - ZFPlayer
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - AvoidCrash
+    - BRPickerView
+    - Bugly
     - Charts
     - DZNEmptyDataSet
+    - FBRetainCycleDetector
     - HHRouter
     - IQKeyboardManager
     - JCore
     - JKCategories
     - JPush
+    - JXCategoryView
     - Masonry
+    - MGSwipeTableCell
     - MJRefresh
+    - MLeaksFinder
     - NJKWebViewProgress
     - NullSafe
     - pop
@@ -265,38 +286,43 @@ SPEC REPOS:
     - UMCShare
     - WebViewJavascriptBridge
     - Wonderful
-    - YYModel
-    - YYText
+    - ZFPlayer
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
+  BRPickerView: 0590a8c5de9bd98c6b4e4f117a3dff6de287d5b2
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   HHRouter: c096524e95a07a1970e6e23a19ee5a9592dc326d
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
-  JCore: f14c0549968a63c22e246a4875aa9d428446f373
+  JCore: 14706de2640b25fb77dbd02332696491407f37c9
   JKCategories: b62b30694ebe6d9fe5520b54ba250015dabd6dae
-  JPush: 5921e25ad13e0386351079217b009f2039084eac
+  JPush: 25dd9013fbe106082c14f9f30a82364ee98852fb
+  JXCategoryView: 10bf2cf22d6e25b4086df4d199490b0621fc73bb
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MGSwipeTableCell: dc4eca3212ed38a563b27d6aa7b3c01ce656c1e2
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   NullSafe: c5dde0d07fe0136a8194d6af9e285b0322b6c068
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
-  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SDWebImage: c5594f1a19c48d526d321e548902b56b479cd508
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  UMCAnalytics: 0aff87e39008e2a650e5917430db0da2de2f8495
-  UMCCommon: 4392868ac47ff1b101663106bb114ba616fabbad
+  UMCAnalytics: 6654fd3c8201ff6da5c86a3ae29cd5c8436d3b7b
+  UMCCommon: 016af43c0f769feb1ae1861d65aaf2b23b89c9c7
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
-  UMCShare: aa233aecad67979930fe43f3a2f676023b669439
+  UMCShare: 552b29753f1b4da87b51d96545ed19e6263df397
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
   Wonderful: e46da4dd601c3ae08da576e451be8f4dc740c206
-  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
-  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
+  ZFPlayer: 8547effaab9e2764c2e9f72ecf32530d6bd96165
 
-PODFILE CHECKSUM: 5efa435f6974ebc16e713dcce057b6d0c7c7ac35
+PODFILE CHECKSUM: 88ef7666e8865cae9e16c326c4a2bbd0d8478f98
 
 COCOAPODS: 1.5.3

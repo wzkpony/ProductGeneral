@@ -41,7 +41,7 @@
     // Do any additional setup after loading the view, typically from a nib.
 
     dataSource = [[NSMutableArray alloc] init];
-    [dataSource addObjectsFromArray:@[@"二维码扫描",@"Excel表",@"GCD",@"Runtime",@"设计模式",@"Block",@"RAC",@"RunLoop",@"蓝牙",@"声音",@"UI"]];
+    [dataSource addObjectsFromArray:@[@"二维码扫描",@"Excel表",@"GCD",@"Runtime",@"设计模式",@"Block",@"RAC",@"RunLoop",@"蓝牙",@"声音",@"UI",@"MoviePlayer"]];
     
         NSNumber *number = [NSNumber numberWithDouble:-1];
 //    NSLog(@"%@",number.formateCountNum);
@@ -129,6 +129,30 @@
         
         
         
+    }
+    
+    else if ([dataSource[indexPath.row] isEqualToString:@"MoviePlayer"]){
+//        NSString* localFilePath=[[NSBundle mainBundle]pathForResource:@"不能说的秘密" ofType:@"mp4"];
+//        NSURL *localVideoUrl = [NSURL fileURLWithPath:localFilePath];
+        //在线视频
+//        NSString *webVideoPath = @"http://s8.wy6z50.cn/live/728695_9d7f52b3a128e417cb5c.flv?auth_key=1543184450-0-0-824e62f2aab2524c856c311fee611438";
+//        NSURL *webVideoUrl = [NSURL URLWithString:webVideoPath];
+//
+//        //第二步:创建视频播放器
+//        MPMoviePlayerViewController *playerViewController = [[MPMoviePlayerViewController alloc] initWithContentURL:webVideoUrl];
+//
+//        //第三步:设置播放器属性
+//        //通过moviePlayer属性设置播放器属性(与MPMoviePlayerController类似)
+//        playerViewController.moviePlayer.scalingMode = MPMovieScalingModeFill;
+//
+//        //第四步:跳转视频播放界面
+//        [self presentViewController:playerViewController animated:YES completion:nil];
+//        UIWebView *webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+//        [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://s8.wy6z50.cn/live/728695_9d7f52b3a128e417cb5c.flv?auth_key=1543184450-0-0-824e62f2aab2524c856c311fee611438"]]];
+//        [self.view addSubview:webView];
+        
+      
+      
     }
     
 }

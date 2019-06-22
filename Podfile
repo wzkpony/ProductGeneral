@@ -50,8 +50,21 @@ pod 'UMCAnalytics'
 #极光推送 参考：
 pod 'JPush'
 
-pod 'Atlas'#聊天
+#pod 'Atlas'#聊天
+
+pod 'ZFPlayer'
+
+pod 'AvoidCrash', '~> 2.5.2' #防止崩溃
+pod 'MLeaksFinder' #内存泄漏检测
+pod 'Bugly' #日志搜集
+pod 'BRPickerView' #日期选择器、时间选择器、地址选择器、自定义单列字符串选择器、自定义多列字符串选择器等
+pod 'JXCategoryView'#测划控件
+
+pod 'MGSwipeTableCell' #左滑编辑
+
+pod 'LEEAlert'#Alert弹框
 
 
-
+pod 'FTPopOverMenu'#popView弹框
+pod 'CYLTabBarController'#TabBar
 end

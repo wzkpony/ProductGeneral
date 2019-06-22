@@ -10,6 +10,8 @@
 		1D0A80BE2052988C0080600B /* WZKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0A80BD2052988C0080600B /* WZKAnimation.m */; };
 		1D1AA62B1F5924F300A591E8 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AA62A1F5924F300A591E8 /* BaseTableView.m */; };
 		1D1AA62E1F59250400A591E8 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1AA62D1F59250400A591E8 /* BaseTableViewCell.m */; };
+		1D24F3AE21BB92D60048E86C /* COSLocalizedHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D24F3AC21BB92D60048E86C /* COSLocalizedHelper.m */; };
+		1D24F3B221BB93160048E86C /* COSLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D24F3B121BB93160048E86C /* COSLocationManager.m */; };
 		1D2AECA32184D2B7000BCCF2 /* PushObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2AECA22184D2B7000BCCF2 /* PushObject.m */; };
 		1D2B818820734D5500AABEF2 /* RunLoopTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2B818720734D5500AABEF2 /* RunLoopTime.m */; };
 		1D2DDC93200C46E8005E8F53 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2DDC8E200C46E8005E8F53 /* NSData+Base64.m */; };
@@ -90,8 +92,6 @@
 		1D69B15D217475FC00F0CAA6 /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69B14D217475FB00F0CAA6 /* TZImagePickerController.m */; };
 		1D69B15E217475FC00F0CAA6 /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69B14E217475FB00F0CAA6 /* TZLocationManager.m */; };
 		1D69B15F217475FC00F0CAA6 /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69B14F217475FB00F0CAA6 /* TZGifPhotoPreviewController.m */; };
-		1D69B1652174760A00F0CAA6 /* SAMKeychainQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69B1612174760A00F0CAA6 /* SAMKeychainQuery.m */; };
-		1D69B1662174760A00F0CAA6 /* SAMKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69B1642174760A00F0CAA6 /* SAMKeychain.m */; };
 		1D69B1692174772E00F0CAA6 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69B1682174772E00F0CAA6 /* BaseNavigationController.m */; };
 		1D69B16C2174786200F0CAA6 /* UIView+XZZAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D69B16B2174786200F0CAA6 /* UIView+XZZAdd.m */; };
 		1D69B16F2174975D00F0CAA6 /* PYSearchImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D69B16D2174975D00F0CAA6 /* PYSearchImage@3x.png */; };
@@ -228,6 +228,10 @@
 		1D1AA62D1F59250400A591E8 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		1D1AA62F1F59274A00A591E8 /* BaseUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseUIKit.h; sourceTree = "<group>"; };
 		1D1AA6301F5927BB00A591E8 /* PodLibraryHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodLibraryHeader.h; sourceTree = "<group>"; };
+		1D24F3AC21BB92D60048E86C /* COSLocalizedHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COSLocalizedHelper.m; sourceTree = "<group>"; };
+		1D24F3AD21BB92D60048E86C /* COSLocalizedHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COSLocalizedHelper.h; sourceTree = "<group>"; };
+		1D24F3B021BB93160048E86C /* COSLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COSLocationManager.h; sourceTree = "<group>"; };
+		1D24F3B121BB93160048E86C /* COSLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COSLocationManager.m; sourceTree = "<group>"; };
 		1D2AECA12184D2B7000BCCF2 /* PushObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushObject.h; sourceTree = "<group>"; };
 		1D2AECA22184D2B7000BCCF2 /* PushObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushObject.m; sourceTree = "<group>"; };
 		1D2B818620734D5500AABEF2 /* RunLoopTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopTime.h; sourceTree = "<group>"; };
@@ -378,10 +382,6 @@
 		1D69B14E217475FB00F0CAA6 /* TZLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZLocationManager.m; sourceTree = "<group>"; };
 		1D69B14F217475FB00F0CAA6 /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
 		1D69B150217475FB00F0CAA6 /* TZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
-		1D69B1612174760A00F0CAA6 /* SAMKeychainQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychainQuery.m; sourceTree = "<group>"; };
-		1D69B1622174760A00F0CAA6 /* SAMKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychain.h; sourceTree = "<group>"; };
-		1D69B1632174760A00F0CAA6 /* SAMKeychainQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAMKeychainQuery.h; sourceTree = "<group>"; };
-		1D69B1642174760A00F0CAA6 /* SAMKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAMKeychain.m; sourceTree = "<group>"; };
 		1D69B1672174772E00F0CAA6 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		1D69B1682174772E00F0CAA6 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
 		1D69B16A2174786200F0CAA6 /* UIView+XZZAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XZZAdd.h"; sourceTree = "<group>"; };
@@ -570,6 +570,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D24F3AB21BB92D60048E86C /* LocalizedHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1D24F3AD21BB92D60048E86C /* COSLocalizedHelper.h */,
+				1D24F3AC21BB92D60048E86C /* COSLocalizedHelper.m */,
+			);
+			path = LocalizedHelper;
+			sourceTree = "<group>";
+		};
+		1D24F3AF21BB93160048E86C /* LocationManger */ = {
+			isa = PBXGroup;
+			children = (
+				1D24F3B021BB93160048E86C /* COSLocationManager.h */,
+				1D24F3B121BB93160048E86C /* COSLocationManager.m */,
+			);
+			path = LocationManger;
+			sourceTree = "<group>";
+		};
 		1D2AECA02184D298000BCCF2 /* Push */ = {
 			isa = PBXGroup;
 			children = (
@@ -975,17 +993,6 @@
 			path = TZImagePickerController;
 			sourceTree = "<group>";
 		};
-		1D69B1602174760A00F0CAA6 /* SAMKeychain */ = {
-			isa = PBXGroup;
-			children = (
-				1D69B1612174760A00F0CAA6 /* SAMKeychainQuery.m */,
-				1D69B1622174760A00F0CAA6 /* SAMKeychain.h */,
-				1D69B1632174760A00F0CAA6 /* SAMKeychainQuery.h */,
-				1D69B1642174760A00F0CAA6 /* SAMKeychain.m */,
-			);
-			path = SAMKeychain;
-			sourceTree = "<group>";
-		};
 		1D748E6E1F62452200F6E41E /* ErCodeVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1027,7 +1034,6 @@
 		1D77CFB5209C6C530048B7CF /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				1D69B1602174760A00F0CAA6 /* SAMKeychain */,
 				1D69B133217475FB00F0CAA6 /* TZImagePickerController */,
 				1D69B118217475EE00F0CAA6 /* PYSearch */,
 				1D69B0F5217475C700F0CAA6 /* LTSCalendar */,
@@ -1153,6 +1159,8 @@
 		1D7E9B651EEE9309008F18BF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1D24F3AF21BB93160048E86C /* LocationManger */,
+				1D24F3AB21BB92D60048E86C /* LocalizedHelper */,
 				1D2AECA02184D298000BCCF2 /* Push */,
 				1DFFAE8F2182C009004B02A4 /* Share */,
 				1DFFAE8B2182B611004B02A4 /* SHA加密 */,
@@ -1679,12 +1687,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PodProduct/Pods-PodProduct-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/AvoidCrash/AvoidCrash.framework",
+				"${BUILT_PRODUCTS_DIR}/BRPickerView/BRPickerView.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
 				"${BUILT_PRODUCTS_DIR}/HHRouter/HHRouter.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/JKCategories/JKCategories.framework",
+				"${BUILT_PRODUCTS_DIR}/JXCategoryView/JXCategoryView.framework",
+				"${BUILT_PRODUCTS_DIR}/MGSwipeTableCell/MGSwipeTableCell.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/NJKWebViewProgress/NJKWebViewProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/NullSafe/NullSafe.framework",
@@ -1696,8 +1710,7 @@
 				"${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
 				"${BUILT_PRODUCTS_DIR}/Wonderful/Wonderful.framework",
-				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
-				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
+				"${BUILT_PRODUCTS_DIR}/ZFPlayer/ZFPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1705,12 +1718,18 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AvoidCrash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BRPickerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HHRouter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JKCategories.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXCategoryView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGSwipeTableCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NJKWebViewProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NullSafe.framework",
@@ -1722,8 +1741,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTTAttributedLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewJavascriptBridge.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Wonderful.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZFPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1745,7 +1763,6 @@
 				1D82262C212A6499002D3EA0 /* Rectangle.m in Sources */,
 				1DA1D52C1FB02CD3003FEB38 /* UIColor+HexColor.m in Sources */,
 				1D822658212A936F002D3EA0 /* BuilderPatternDemo.m in Sources */,
-				1D69B1662174760A00F0CAA6 /* SAMKeychain.m in Sources */,
 				1D822640212A8661002D3EA0 /* Burger.m in Sources */,
 				1D69B113217475C700F0CAA6 /* LTSCalendarCollectionViewFlowLayout.m in Sources */,
 				1DA672FF1EF0F5F3007C2348 /* BaseTextView.m in Sources */,
@@ -1757,7 +1774,6 @@
 				1DB93ABB1EEFE09D00A6BAD7 /* HUDView.m in Sources */,
 				1DA672FC1EF0F5E0007C2348 /* BaseTextField.m in Sources */,
 				1D9AC59A205B651B002ABE58 /* StudyRACModel.m in Sources */,
-				1D69B1652174760A00F0CAA6 /* SAMKeychainQuery.m in Sources */,
 				1D1AA62E1F59250400A591E8 /* BaseTableViewCell.m in Sources */,
 				1D69B153217475FC00F0CAA6 /* TZVideoPlayerController.m in Sources */,
 				1D0A80BE2052988C0080600B /* WZKAnimation.m in Sources */,
@@ -1811,6 +1827,7 @@
 				1D822628212A6499002D3EA0 /* ColorFactory.m in Sources */,
 				1DB93AD71EEFE61D00A6BAD7 /* BaseViewController.m in Sources */,
 				1DFFAE922182C026004B02A4 /* ShareObject.m in Sources */,
+				1D24F3AE21BB92D60048E86C /* COSLocalizedHelper.m in Sources */,
 				1DFFAE8E2182B611004B02A4 /* SHAClass.m in Sources */,
 				1D69B15B217475FC00F0CAA6 /* TZPhotoPickerController.m in Sources */,
 				1D69B15C217475FC00F0CAA6 /* TZPhotoPreviewCell.m in Sources */,
@@ -1854,6 +1871,7 @@
 				1D82262A212A6499002D3EA0 /* FactoryProducer.m in Sources */,
 				1D7E9B1C1EEE8D34008F18BF /* main.m in Sources */,
 				1D69B110217475C700F0CAA6 /* LTSCalendarViewController.m in Sources */,
+				1D24F3B221BB93160048E86C /* COSLocationManager.m in Sources */,
 				1D69B112217475C700F0CAA6 /* LTSCalendarScrollView.m in Sources */,
 				1D69B152217475FC00F0CAA6 /* TZAssetCell.m in Sources */,
 				1D822646212A8866002D3EA0 /* VegBurger.m in Sources */,

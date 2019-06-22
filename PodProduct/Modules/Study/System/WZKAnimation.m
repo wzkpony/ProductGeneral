@@ -9,6 +9,28 @@
 #import "WZKAnimation.h"
 
 @implementation WZKAnimation
+/**
+ 打开
+ */
+- (void)openView:(UIView *)view
+{
+    [UIView animateWithDuration:0.25 animations:^{
+        view.transform = CGAffineTransformMakeRotation(M_PI);
+    }];
+}
+
+
+/**
+ 关闭
+ */
+- (void)closeView:(UIView *)view
+{
+    [UIView animateWithDuration:0.25 animations:^{
+        view.transform = CGAffineTransformIdentity;
+    }];
+}
+
+
 + (void)showAnimationType:(NSString *)type
               withSubType:(NSString *)subType withFillMode:(NSString *)fillMode
                  duration:(CFTimeInterval)duration
